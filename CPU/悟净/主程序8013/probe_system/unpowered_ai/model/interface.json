@@ -1,0 +1,435 @@
+{
+  "schema": "unpowered-rc-joint-v1",
+  "power": "unpowered",
+  "ground": "fixed_common_ground",
+  "Rs": [
+    100,
+    10000
+  ],
+  "actions": [
+    {
+      "rs_ohm": 100,
+      "sense": "P",
+      "frequency_hz": 2000,
+      "adc_contact": false,
+      "internal_vb_only": true
+    },
+    {
+      "rs_ohm": 100,
+      "sense": "P",
+      "frequency_hz": 5000,
+      "adc_contact": false,
+      "internal_vb_only": true
+    },
+    {
+      "rs_ohm": 100,
+      "sense": "P",
+      "frequency_hz": 10000,
+      "adc_contact": false,
+      "internal_vb_only": true
+    },
+    {
+      "rs_ohm": 100,
+      "sense": "P",
+      "frequency_hz": 20000,
+      "adc_contact": false,
+      "internal_vb_only": true
+    },
+    {
+      "rs_ohm": 100,
+      "sense": "P",
+      "frequency_hz": 50000,
+      "adc_contact": false,
+      "internal_vb_only": true
+    },
+    {
+      "rs_ohm": 100,
+      "sense": "P",
+      "frequency_hz": 100000,
+      "adc_contact": false,
+      "internal_vb_only": true
+    },
+    {
+      "rs_ohm": 100,
+      "sense": "N1",
+      "frequency_hz": 2000,
+      "adc_contact": true,
+      "internal_vb_only": false
+    },
+    {
+      "rs_ohm": 100,
+      "sense": "N1",
+      "frequency_hz": 5000,
+      "adc_contact": true,
+      "internal_vb_only": false
+    },
+    {
+      "rs_ohm": 100,
+      "sense": "N1",
+      "frequency_hz": 10000,
+      "adc_contact": true,
+      "internal_vb_only": false
+    },
+    {
+      "rs_ohm": 100,
+      "sense": "N1",
+      "frequency_hz": 20000,
+      "adc_contact": true,
+      "internal_vb_only": false
+    },
+    {
+      "rs_ohm": 100,
+      "sense": "N1",
+      "frequency_hz": 50000,
+      "adc_contact": true,
+      "internal_vb_only": false
+    },
+    {
+      "rs_ohm": 100,
+      "sense": "N1",
+      "frequency_hz": 100000,
+      "adc_contact": true,
+      "internal_vb_only": false
+    },
+    {
+      "rs_ohm": 100,
+      "sense": "OUT",
+      "frequency_hz": 2000,
+      "adc_contact": true,
+      "internal_vb_only": false
+    },
+    {
+      "rs_ohm": 100,
+      "sense": "OUT",
+      "frequency_hz": 5000,
+      "adc_contact": true,
+      "internal_vb_only": false
+    },
+    {
+      "rs_ohm": 100,
+      "sense": "OUT",
+      "frequency_hz": 10000,
+      "adc_contact": true,
+      "internal_vb_only": false
+    },
+    {
+      "rs_ohm": 100,
+      "sense": "OUT",
+      "frequency_hz": 20000,
+      "adc_contact": true,
+      "internal_vb_only": false
+    },
+    {
+      "rs_ohm": 100,
+      "sense": "OUT",
+      "frequency_hz": 50000,
+      "adc_contact": true,
+      "internal_vb_only": false
+    },
+    {
+      "rs_ohm": 100,
+      "sense": "OUT",
+      "frequency_hz": 100000,
+      "adc_contact": true,
+      "internal_vb_only": false
+    },
+    {
+      "rs_ohm": 10000,
+      "sense": "P",
+      "frequency_hz": 2000,
+      "adc_contact": false,
+      "internal_vb_only": true
+    },
+    {
+      "rs_ohm": 10000,
+      "sense": "P",
+      "frequency_hz": 5000,
+      "adc_contact": false,
+      "internal_vb_only": true
+    },
+    {
+      "rs_ohm": 10000,
+      "sense": "P",
+      "frequency_hz": 10000,
+      "adc_contact": false,
+      "internal_vb_only": true
+    },
+    {
+      "rs_ohm": 10000,
+      "sense": "P",
+      "frequency_hz": 20000,
+      "adc_contact": false,
+      "internal_vb_only": true
+    },
+    {
+      "rs_ohm": 10000,
+      "sense": "P",
+      "frequency_hz": 50000,
+      "adc_contact": false,
+      "internal_vb_only": true
+    },
+    {
+      "rs_ohm": 10000,
+      "sense": "P",
+      "frequency_hz": 100000,
+      "adc_contact": false,
+      "internal_vb_only": true
+    },
+    {
+      "rs_ohm": 10000,
+      "sense": "N1",
+      "frequency_hz": 2000,
+      "adc_contact": true,
+      "internal_vb_only": false
+    },
+    {
+      "rs_ohm": 10000,
+      "sense": "N1",
+      "frequency_hz": 5000,
+      "adc_contact": true,
+      "internal_vb_only": false
+    },
+    {
+      "rs_ohm": 10000,
+      "sense": "N1",
+      "frequency_hz": 10000,
+      "adc_contact": true,
+      "internal_vb_only": false
+    },
+    {
+      "rs_ohm": 10000,
+      "sense": "N1",
+      "frequency_hz": 20000,
+      "adc_contact": true,
+      "internal_vb_only": false
+    },
+    {
+      "rs_ohm": 10000,
+      "sense": "N1",
+      "frequency_hz": 50000,
+      "adc_contact": true,
+      "internal_vb_only": false
+    },
+    {
+      "rs_ohm": 10000,
+      "sense": "N1",
+      "frequency_hz": 100000,
+      "adc_contact": true,
+      "internal_vb_only": false
+    },
+    {
+      "rs_ohm": 10000,
+      "sense": "OUT",
+      "frequency_hz": 2000,
+      "adc_contact": true,
+      "internal_vb_only": false
+    },
+    {
+      "rs_ohm": 10000,
+      "sense": "OUT",
+      "frequency_hz": 5000,
+      "adc_contact": true,
+      "internal_vb_only": false
+    },
+    {
+      "rs_ohm": 10000,
+      "sense": "OUT",
+      "frequency_hz": 10000,
+      "adc_contact": true,
+      "internal_vb_only": false
+    },
+    {
+      "rs_ohm": 10000,
+      "sense": "OUT",
+      "frequency_hz": 20000,
+      "adc_contact": true,
+      "internal_vb_only": false
+    },
+    {
+      "rs_ohm": 10000,
+      "sense": "OUT",
+      "frequency_hz": 50000,
+      "adc_contact": true,
+      "internal_vb_only": false
+    },
+    {
+      "rs_ohm": 10000,
+      "sense": "OUT",
+      "frequency_hz": 100000,
+      "adc_contact": true,
+      "internal_vb_only": false
+    }
+  ],
+  "catalogues": {
+    "rc_ladder": [
+      "normal",
+      "R1:low",
+      "R1:high",
+      "R1:open",
+      "R1:short",
+      "C1:low",
+      "C1:high",
+      "C1:open",
+      "C1:short",
+      "R2:low",
+      "R2:high",
+      "R2:open",
+      "R2:short",
+      "C2:low",
+      "C2:high",
+      "C2:open",
+      "C2:short"
+    ],
+    "cr_ladder": [
+      "normal",
+      "C1:low",
+      "C1:high",
+      "C1:open",
+      "C1:short",
+      "R1:low",
+      "R1:high",
+      "R1:open",
+      "R1:short",
+      "C2:low",
+      "C2:high",
+      "C2:open",
+      "C2:short",
+      "R2:low",
+      "R2:high",
+      "R2:open",
+      "R2:short"
+    ],
+    "rc_bandpass": [
+      "normal",
+      "C1:low",
+      "C1:high",
+      "C1:open",
+      "C1:short",
+      "R1:low",
+      "R1:high",
+      "R1:open",
+      "R1:short",
+      "R2:low",
+      "R2:high",
+      "R2:open",
+      "R2:short",
+      "C2:low",
+      "C2:high",
+      "C2:open",
+      "C2:short"
+    ],
+    "r_divider": [
+      "normal",
+      "R1:low",
+      "R1:high",
+      "R1:open",
+      "R1:short",
+      "R2:low",
+      "R2:high",
+      "R2:open",
+      "R2:short",
+      "R3:low",
+      "R3:high",
+      "R3:open",
+      "R3:short",
+      "R4:low",
+      "R4:high",
+      "R4:open",
+      "R4:short"
+    ],
+    "loaded_lowpass": [
+      "normal",
+      "R1:low",
+      "R1:high",
+      "R1:open",
+      "R1:short",
+      "C1:low",
+      "C1:high",
+      "C1:open",
+      "C1:short",
+      "R2:low",
+      "R2:high",
+      "R2:open",
+      "R2:short",
+      "C2:low",
+      "C2:high",
+      "C2:open",
+      "C2:short",
+      "R3:low",
+      "R3:high",
+      "R3:open",
+      "R3:short"
+    ],
+    "bridged_rc": [
+      "normal",
+      "R1:low",
+      "R1:high",
+      "R1:open",
+      "R1:short",
+      "R2:low",
+      "R2:high",
+      "R2:open",
+      "R2:short",
+      "R3:low",
+      "R3:high",
+      "R3:open",
+      "R3:short",
+      "C1:low",
+      "C1:high",
+      "C1:open",
+      "C1:short",
+      "C2:low",
+      "C2:high",
+      "C2:open",
+      "C2:short"
+    ],
+    "parallel_rc": [
+      "normal",
+      "R1:low",
+      "R1:high",
+      "R1:open",
+      "R1:short",
+      "C1:low",
+      "C1:high",
+      "C1:open",
+      "C1:short",
+      "R2:low",
+      "R2:high",
+      "R2:open",
+      "R2:short",
+      "C2:low",
+      "C2:high",
+      "C2:open",
+      "C2:short",
+      "R3:low",
+      "R3:high",
+      "R3:open",
+      "R3:short"
+    ],
+    "shunted_highpass": [
+      "normal",
+      "C1:low",
+      "C1:high",
+      "C1:open",
+      "C1:short",
+      "R1:low",
+      "R1:high",
+      "R1:open",
+      "R1:short",
+      "C2:low",
+      "C2:high",
+      "C2:open",
+      "C2:short",
+      "R2:low",
+      "R2:high",
+      "R2:open",
+      "R2:short",
+      "R3:low",
+      "R3:high",
+      "R3:open",
+      "R3:short"
+    ]
+  },
+  "unknown_active_circuit": "reject",
+  "hardware_qualified": false
+}

@@ -1,0 +1,70 @@
+{
+  "variant": "B_NE5532_1N4148_PL_LSQ_100_10K_V1",
+  "action_policy": {
+    "allowed": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      24,
+      25,
+      26,
+      27,
+      30,
+      31,
+      32,
+      33
+    ],
+    "excluded": [
+      22,
+      23,
+      28,
+      29,
+      34,
+      35
+    ],
+    "reserve": [
+      9,
+      16
+    ],
+    "initial": [
+      2,
+      8,
+      14,
+      20,
+      26,
+      32
+    ],
+    "reason": "B NE5532: 10k/50-100kHz excluded after development non-periodic response audit; no fault-specific routing"
+  },
+  "neural_source_sha256": "7bf7132d92e50675d597839523817ce16daab9ab8127d31104edc62ab17aad4c",
+  "bank_files": {
+    "calibration.json": "2bf9fd91b3d5e4a8b3b686680df7d1c26bfa9f3a39c494763792f547a3da1e50",
+    "hybrid_selection.json": "9f34bb67991713f092feb20c207cd768c6c49e916eb48f6ecc0a806c6f9edfa7",
+    "physical_bank.npz": "0e71f17a346328458742d44c2cd86d0a30c14b4fdfcc500cb577e182f17f27d3",
+    "components/baseline/calibration.json": "b1f9dc18f849f8f4411ec3269b0cc07005689ca75e4806f80f6ff11aba82c55d",
+    "components/baseline/physical_bank.npz": "b52060e4110e2cc1dc4f8551c51a3185219c14b5090176ead330299624a17881",
+    "components/baseline/waveform_bank.npz": "06c89885af3349752172d6c2cf169d756ce9d20785471b8087e969299b4376d3",
+    "components/extra/calibration.json": "34985152e5025cbebc2c3693d244ee9ca3a2a61c955c4fb79cb7025462a236a4",
+    "components/extra/physical_bank.npz": "d0a7ec16e273b9b7b053ff22d05ecdfe8eb9ef4092304d56f4fc8a3377bfa576",
+    "components/extra/waveform_bank.npz": "23a0965cda199e8f7d381299adda45512bf7acfbab52d12e25be3cc775f85e9c"
+  }
+}

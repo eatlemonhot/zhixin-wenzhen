@@ -1,0 +1,184 @@
+{
+  "valid": true,
+  "established_at_utc": "2026-10-19T14:15:11.451700+00:00",
+  "port": "usb://ch340",
+  "baud": 115200,
+  "mm_per_rev": 40,
+  "degrees_per_mm": 9,
+  "coordinate_type": "independent_carriage_reference",
+  "conventions": {
+    "X": "each arm inward from its own outer homing release",
+    "Y": "front to back from each front homing release",
+    "machine_x_positive": "right",
+    "machine_y_positive": "back",
+    "right_x_increasing_value_moves": "left",
+    "left_x_increasing_value_moves": "right"
+  },
+  "common_probe_tip_frame_calibrated": false,
+  "external_position_accuracy_measured": false,
+  "home_release_mm": 0.5555555555555556,
+  "soft_margin_from_release_mm": 2,
+  "homing_speed_rpm": 10,
+  "ordinary_speed_rpm": 5,
+  "joint_x_limit": {
+    "min_each_inward_mm": 2,
+    "max_combined_inward_mm": 201.2,
+    "measured_release_sums_mm": [
+      203.31321614583334,
+      203.21189778645834
+    ],
+    "additional_clearance_mm": 2,
+    "nominal_rail_length_mm": 300,
+    "approximate_block_length_mm": 45,
+    "nominal_free_length_mm": 210,
+    "constraint": "right_x_inward_mm + left_x_inward_mm <= max_combined_inward_mm"
+  },
+  "axes": {
+    "1": {
+      "name": "right_x",
+      "axis": "X",
+      "arm": "right",
+      "home_direction": 1,
+      "positive_mm_sign": 1,
+      "address": 1,
+      "origin": {
+        "origin_encoder_deg": 347.6129150390625,
+        "reference_sample": {
+          "voltage_v": 11.29,
+          "bus_current_ma": 23,
+          "phase_current_ma": 410,
+          "raw_encoder": 48686,
+          "encoder": 63281,
+          "target_deg": 0.0,
+          "speed_rpm": 0.0,
+          "position_deg": 0.0,
+          "position_error_deg": 0.01,
+          "temperature_c": 29.0,
+          "home_flags": 3,
+          "motor_flags": 131,
+          "position_mm": 0.0,
+          "monotonic_s": 76051.5335952,
+          "sample_gap_s": 0.016168230009498075
+        },
+        "zero_acknowledged": true
+      },
+      "soft_min_mm": 2,
+      "soft_max_mm": 199.2,
+      "measured_full_span_mm": null,
+      "origin_repeat_error_deg": 0.10986328125
+    },
+    "2": {
+      "name": "left_x",
+      "axis": "X",
+      "arm": "left",
+      "home_direction": 1,
+      "positive_mm_sign": 1,
+      "address": 2,
+      "origin": {
+        "origin_encoder_deg": 121.83837890625,
+        "reference_sample": {
+          "voltage_v": 11.242,
+          "bus_current_ma": 12,
+          "phase_current_ma": 320,
+          "raw_encoder": 27866,
+          "encoder": 22180,
+          "target_deg": 0.0,
+          "speed_rpm": 0.0,
+          "position_deg": 0.0,
+          "position_error_deg": 0.0,
+          "temperature_c": 28.0,
+          "home_flags": 3,
+          "motor_flags": 131,
+          "position_mm": 0.0,
+          "monotonic_s": 76051.55781543,
+          "sample_gap_s": 0.015619969999534078
+        },
+        "zero_acknowledged": true
+      },
+      "soft_min_mm": 2,
+      "soft_max_mm": 199.2,
+      "measured_full_span_mm": null,
+      "origin_repeat_error_deg": 0.0
+    },
+    "3": {
+      "name": "left_y",
+      "axis": "Y",
+      "arm": "left",
+      "home_direction": 0,
+      "positive_mm_sign": -1,
+      "address": 3,
+      "origin": {
+        "origin_encoder_deg": 268.5772705078125,
+        "reference_sample": {
+          "voltage_v": 11.312,
+          "bus_current_ma": 0,
+          "phase_current_ma": 93,
+          "raw_encoder": 15194,
+          "encoder": 48893,
+          "target_deg": 0.0,
+          "speed_rpm": 0.0,
+          "position_deg": 0.0,
+          "position_error_deg": -0.03,
+          "temperature_c": 29.0,
+          "home_flags": 3,
+          "motor_flags": 131,
+          "position_mm": -0.0,
+          "monotonic_s": 76051.58194667,
+          "sample_gap_s": 0.015630959998816252
+        },
+        "zero_acknowledged": true
+      },
+      "soft_min_mm": 2,
+      "soft_max_mm": 157.1,
+      "measured_full_span_mm": 159.1133978949653,
+      "origin_repeat_error_deg": 0.076904296875
+    },
+    "4": {
+      "name": "right_y",
+      "axis": "Y",
+      "arm": "right",
+      "home_direction": 1,
+      "positive_mm_sign": 1,
+      "address": 4,
+      "origin": {
+        "origin_encoder_deg": 70.90576171875,
+        "reference_sample": {
+          "voltage_v": 11.467,
+          "bus_current_ma": 0,
+          "phase_current_ma": 30,
+          "raw_encoder": 56818,
+          "encoder": 12908,
+          "target_deg": 0.0,
+          "speed_rpm": 0.0,
+          "position_deg": 0.0,
+          "position_error_deg": -0.02,
+          "temperature_c": 29.0,
+          "home_flags": 3,
+          "motor_flags": 131,
+          "position_mm": 0.0,
+          "monotonic_s": 76051.60606547,
+          "sample_gap_s": 0.015625920001184568
+        },
+        "zero_acknowledged": true
+      },
+      "soft_min_mm": 2,
+      "soft_max_mm": 157.0,
+      "measured_full_span_mm": 159.05847981770833,
+      "origin_repeat_error_deg": 0.02197265625
+    }
+  },
+  "measurement_file": "C:\\Users\\xoyz\\Desktop\\something\\FPGA\\zdt\\machine_coordinates\\measure_limits_results.json",
+  "verification_file": "C:\\Users\\xoyz\\Desktop\\something\\FPGA\\zdt\\machine_coordinates\\20261019_221511_verify_coordinates_summary.json",
+  "last_verified_at_utc": "2026-03-14T00:36:07.583049+00:00",
+  "last_verification_file": "/root/wujing_motor_control/zdt/machine_coordinates/20260314_003552_web_d9cd45d4a2dd4dad83a7b04ec097a2b9_fast_rebuild_summary.json",
+  "final_positions_mm": {
+    "1": 2.033333333333333,
+    "2": 2.022222222222222,
+    "3": 2.0,
+    "4": 2.0
+  },
+  "last_rehomed_at_utc": "2026-03-14T00:35:43.538493+00:00",
+  "transport": "userspace CH340 libusb",
+  "last_recovery_verification": "/root/wujing_motor_control/zdt/wujing_usb_probe/20261022_circle_attempt01_verified.json",
+  "last_display_at_utc": "2026-03-14T00:36:06.302736+00:00"
+}

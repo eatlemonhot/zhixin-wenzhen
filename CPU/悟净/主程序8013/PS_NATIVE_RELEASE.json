@@ -1,0 +1,10 @@
+{
+  "version": "PS_NATIVE_OPS_VALIDATION_20261028",
+  "native_default": "0",
+  "recommended_opt_in": "both",
+  "neural_weights_changed": false,
+  "NPU_response_experiment_enabled": false,
+  "live_service_changed": false,
+  "board_diagnoses": 48,
+  "real_measurements": false
+}

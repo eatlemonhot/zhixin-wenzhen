@@ -1,0 +1,38 @@
+{
+  "labels": [
+    7,
+    13
+  ],
+  "source": "Known disconnection with 1G leakage bounded below measurement floor; independently checked on validation100-105 and calibration200-205",
+  "test_data_read": false,
+  "audit": [
+    {
+      "label": 7,
+      "enabled": true,
+      "error": {
+        "validation": {
+          "before": 0.007449216258234704,
+          "after": 0.00744798079871828
+        },
+        "calibration": {
+          "before": 0.008468738945118195,
+          "after": 0.008467503987719702
+        }
+      }
+    },
+    {
+      "label": 13,
+      "enabled": true,
+      "error": {
+        "validation": {
+          "before": 25.736456289817763,
+          "after": 25.73626150648033
+        },
+        "calibration": {
+          "before": 13.242341151162725,
+          "after": 13.24214596542255
+        }
+      }
+    }
+  ]
+}

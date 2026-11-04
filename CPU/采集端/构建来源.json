@@ -1,0 +1,44 @@
+{
+  "schema": "probe-firmware-build/1.0",
+  "board_revision": "LXB-R4-SENSE117",
+  "sense_protocol": 1,
+  "role_masks": [
+    1,
+    4
+  ],
+  "source_sha256": {
+    "fdw_adc_capture.c": "41d317ab11989c48646b1888b7830599cfdcd6c375482bd2af2ec45b7a024c38",
+    "fdw_adc_capture.h": "789e1fdc9abf81a251285509ab8371375d3c339cd8a44c07952a10ab7bc6c6b4",
+    "fdw_adc_control.c": "d4ddb363d4cc19b8d2c14f094c4d5d62117e6f3a28974614b6a6184eddd23acc",
+    "fdw_adc_control.h": "571e764ac2786f4eb0d879eb8381cc8e0d8c1753183b3e0537a00c954b485ae3",
+    "fdw_bulk_frame.c": "bb9b72b1d57b3eaf1176c6986ee8988ea30b4f383a6dd2c06dc53d00bc31ecf3",
+    "fdw_bulk_frame.h": "a82d60be99ce46b1fdfbdb6a873f43897b91f283753ac496fe56c2d1796d3bd7",
+    "fdw_dac_control.c": "d994ec8df2c718f44b0743e04cf95c391863c75cb7d65bcf0ef681f78a1f375f",
+    "fdw_dac_control.h": "d9816859cb05c24ae577a9bb8dc888080b3844f74abea1e5fb46208132da9dd5",
+    "fdw_digital_control.c": "efceda35efb03ec35ffec7b5a4dfe0f7c25ac77befa0d46d316e132b8d6f6265",
+    "fdw_digital_control.h": "3b15b0a554c1c2638113b9d078495029913bc4d413d36a4d5e44204cf9a11960",
+    "fdw_irq_vectors.S": "43bad5395832bb3dffc3e395dcf1c30d64023983e693de7462c9fe2f86e16054",
+    "fdw_lxb_io.c": "87698c268e1776bb828ae16d1c3b5703b074668f348db93c0b74f4a2d90e6f94",
+    "fdw_lxb_io.h": "2439368b2e57ee2fef4e061ef0a8c789da6d79b60fe5f608e6c651dbceff088b",
+    "fdw_lxb_phy.c": "9beb9bbb1bfed2a5b73a1b12216ff0b7049317a16ee3d613cbd4d019a3790130",
+    "fdw_lxb_phy.h": "53a1615abb0e4a248a33c2db88ab3303f2f091986d468f600b24f1177f526e22",
+    "fdw_lxb_physpeed.c": "4981fb61ffc8a56f3247d1e54cd088514d865b8fb9e0e167e1bb3e420d5eedd7",
+    "fdw_phase_control.c": "0c165830cfdf037621867dc652cc7f7375b758b9f7146f53c227cd1bf8f0f7d7",
+    "fdw_phase_control.h": "4aeaa55ab934918085e166651cf57be554993c3a0a00ab0c781a01cbaf56ddab",
+    "fdw_probe_control.c": "0af7f9931d0b27cc0104d12fc6688240306e201e0ce09b52a6e71869df974a44",
+    "fdw_probe_control.h": "c47b5a03f3e0b6c6622ae53b89d0ea17610dd04b8f74af3eb75e96b63efe3690",
+    "fdw_pwm_control.c": "1236083f972de111cbd4839dd64de3ce99246e518bfa6c904759d38fbb35a042",
+    "fdw_pwm_control.h": "25c7712708b539f34e12873ae7b90876c8e8223a275c2e9111b1ca74b6be4c22",
+    "lscript.ld": "3ebe5a9d8c14adaba99eed3e2aa170d7b9381ed5527d87a378f047a6342b6bdb",
+    "main.c": "f560f7dfc6abfb70dd4f3f49a48d613c53e8dd78e39667c76b8de3314e073458",
+    "platform.c": "401df360a6efabc3981e1ddaad0939b834c47daea4a73c780255de2469690759",
+    "platform.h": "c3bfd8904a6a26899d0262c17b3f17f130cea69bd3be682487c7135926d02116",
+    "platform_config.h": "d86306bb52f12142c3342c17e48fb269abd18df65a65574b717e0b95b8e784bf",
+    "tcp_server.c": "fa9a1dea38ff4acbbbbe469038ee35149416b0f32fb7b671bdf812f9caba3fea"
+  },
+  "files": {
+    "application.elf": "728a896521ca89e8d0298ace82d0161d89506934e006f43a5bdbe165e2e2a7f8",
+    "BOOT.bin": "aecad905f23ddfe924683e2be6ea0785bfddd4239efdd6e85579914fecd663ce",
+    "system.bit": "d3c61e710d23427c973c45e8fbf47454ade74d76674c395d61b47ac74289bd95"
+  }
+}

@@ -1,0 +1,25 @@
+#main-view{min-width:280px;position:relative;display:flex;flex-direction:column;overflow:hidden;flex:1}
+#workflow-strip{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 14px;background:#152532;color:#b7cbd6;font-size:.87rem;flex-wrap:wrap}
+#execution-mode{padding:5px;background:#213b4a;color:#a4e4ce;border:1px solid #386175;border-radius:4px}
+#workbench-status{padding:7px 14px;background:#203240;color:#b9d2df;font-size:.86rem;line-height:1.4}
+.main-display-section{position:relative;flex:1;min-height:0!important;overflow:hidden}
+.main-display-section[hidden]{display:none!important}
+#main-display-selection{flex-shrink:0}
+#schematic-canvas{position:absolute;inset:40px 0 0;background:#f8fafc;color:#253e4e;display:flex;align-items:center;justify-content:center}
+#schematic-canvas svg{width:100%;height:100%;touch-action:none;user-select:none;cursor:grab}
+.sch-component{cursor:pointer}.sch-component.selected{filter:drop-shadow(0 0 4px #00a5c0)}
+.view-tools{position:absolute;left:10px;right:10px;top:7px;z-index:3;display:flex;gap:7px;align-items:center;flex-wrap:wrap;font-size:.78rem;color:#c0d6df}
+#main-schematics-section .view-tools{color:#c0d6df}
+.view-tools button,.view-tools select,.view-fit{padding:4px 9px;border:1px solid #587383;border-radius:4px;background:#233e4d;color:#e6f2f6;cursor:pointer}
+.view-fit{position:absolute;top:10px;left:10px;z-index:3}
+#assembly-legend{position:absolute;bottom:9px;left:12px;right:10px;color:#bfd3de;font-size:.8rem;z-index:2;pointer-events:none}
+#main-pcb-3D-section canvas{width:100%;height:100%;display:block}
+.workbench-panel{text-align:left;font-size:.88rem}.workbench-panel h2{font-size:1rem;color:#c5e0ec}.workbench-panel p{color:#a9bfcd;font-size:.84rem;line-height:1.55}
+.workbench-panel input{width:100%;background:#253640;color:#ecf4f9;border:1px solid #5f7888;border-radius:4px;padding:6px;margin:4px 0}
+.workbench-actions{display:flex;flex-wrap:wrap;gap:5px}.workbench-actions button{padding:6px;font-size:.82rem}
+.pannel{width:20rem;min-width:18rem}.pannel-section h2{font-size:1.1rem}
+@media(max-width:1000px){.pannel{width:17rem;min-width:15rem}#workflow-strip span{display:none}}
+#main-display-selection{margin:10px 1rem}
+.workbench-actions button{width:auto;margin:0}
+.workbench-actions label{display:flex;align-items:center;gap:4px}.workbench-actions input[type=checkbox]{width:auto;margin:0}
+#main-view .main-display-section{height:auto}

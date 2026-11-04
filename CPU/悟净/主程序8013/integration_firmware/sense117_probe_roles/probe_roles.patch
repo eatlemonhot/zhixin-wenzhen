@@ -1,0 +1,80 @@
+--- a/src/fdw_lxb_io.c
++++ b/src/fdw_lxb_io.c
+@@ -63,8 +63,8 @@
+     fdw_dac_read_status(&dac);
+     fdw_probe_read_status(&route);
+     mask = fdw_lxb_relay_mask();
+-    /* 首版只批准针1注入、针2测量；不借本接口换用途、量程或数字输出。 */
+-    if ((mask & 15U) != 1U || route.mode || route.output_enabled || route.capture_active ||
++    /* Only one DAC and the other ADC; K5/K7 never change roles or Rs. */
++    if (((mask & 15U) != 1U && (mask & 15U) != 4U) || route.mode || route.output_enabled || route.capture_active ||
+         route.settling || route.finite || fdw_lxb_output_mask()) return -42;
+     if (dac.busy || dac.error_code || (dac.enabled && (!dac.ready || !dac.configured ||
+         !dac.waveform_active || dac.clipped || !dac.tag || !dac.frequency_word))) return -42;
+--- a/src/tcp_server.c
++++ b/src/tcp_server.c
+@@ -112,7 +112,7 @@
+ /* 长采集期间只接受读命令及显式停波/取消，禁止半帧改变激励和路由。 */
+ static int allowed_while_busy(const char *command)
+ {
+-    static const char *const reads[]={"PING","INFO","LXB_STATUS","RELAY_STATUS","SENSE_STATUS","ADC_SENSE_STATUS","ADC_JOB_STATUS","ADC_PHASE_STATUS",
++    static const char *const reads[]={"PING","INFO","LXB_STATUS","RELAY_STATUS","SENSE_CAPS","SENSE_STATUS","ADC_SENSE_STATUS","ADC_JOB_STATUS","ADC_PHASE_STATUS",
+         "ADC_STATUS","DAC_STATUS","MODE_STATUS","PWM_STATUS","PWM_BURST_STATUS","DIG_STATUS",
+         "HALT","DAC_ENABLE 0"};
+     unsigned i;
+@@ -173,6 +173,9 @@
+         snprintf(state->response,sizeof(state->response),"{\"ok\":%s,\"code\":%d}\n",result==0?"true":"false",result);
+     } else if (strcmp(state->command, "PING") == 0) {
+         snprintf(state->response, sizeof(state->response), "{\"ok\":true,\"pong\":true}\n");
++    } else if (strcmp(state->command, "SENSE_CAPS") == 0) {
++        snprintf(state->response, sizeof(state->response),
++                 "{\"ok\":true,\"schema\":\"fdw-probe-roles/1\",\"role_masks\":[1,4],\"hot_role_switch\":false}\n");
+     } else if (strcmp(state->command, "SENSE_STATUS") == 0) {
+         struct fdw_lxb_sense_status sense;
+         fdw_lxb_sense_status(&sense);
+--- a/tests/test_sense_control.c
++++ b/tests/test_sense_control.c
+@@ -115,7 +115,7 @@
+         for (selected = 1U; selected <= 3U; ++selected) {
+             uint32_t original = gpio[0];
+             int result = fdw_lxb_sense_select(selected, 10U);
+-            if ((mask & 15U) == 1U) {
++            if ((mask & 15U) == 1U || (mask & 15U) == 4U) {
+                 assert(result == 0 && ((gpio[0] ^ original) & ~0x50U) == 0U);
+                 usleep(10000U);
+             } else assert(result == -42 && gpio[0] == original);
+@@ -141,6 +141,34 @@
+     /* HALT不能为了看似复位而把两针切到共享ADC。 */
+     fdw_lxb_io_halt(); assert(gpio[0] == 33U);
+     assert(invalidations > 0U);
++
++    /* Both role assignments, both Rs; preserve hot role/ADC-transfer locks. */
++    {
++        uint32_t role, range, path, bad;
++        for (role = 1U; role <= 4U; role += 3U) {
++            for (range = 0U; range <= 32U; range += 32U) {
++                dac.enabled = 0U;
++                assert(fdw_lxb_relay_set(role | range) == 0);
++                dac.enabled = 1U;
++                for (path = 1U; path <= 3U; ++path) {
++                    uint32_t expected = role | range | (path != 3U ? 16U : 0U) | (path == 1U ? 64U : 0U);
++                    assert(fdw_lxb_sense_select(path, 10U) == 0);
++                    fdw_lxb_sense_status(&sense);
++                    assert(sense.relay_mask == expected && sense.selected == path);
++                    usleep(10000U);
++                    assert(fdw_lxb_relay_set((role == 1U ? 4U : 1U) | range) == -2);
++                }
++            }
++        }
++        dac.enabled = 0U;
++        for (bad = 0U; bad < 16U; ++bad) {
++            if (bad == 1U || bad == 4U) continue;
++            assert(fdw_lxb_relay_set(bad) == 0);
++            before = writes;
++            assert(fdw_lxb_sense_select(FDW_SENSE_VA, 10U) == -42);
++            assert(writes == before);
++        }
++    }
+     puts("FDW_SENSE117_REAL_IO_ADC_PASS");
+     return 0;
+ }

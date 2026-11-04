@@ -1,0 +1,23 @@
+{
+  "ABI": 1,
+  "precision": "IEEE FP64; no fast-math; FP contraction disabled",
+  "compiler": "g++.EXE (x86_64-posix-seh-rev0, Built by MinGW-W64 project) 8.1.0",
+  "compiler_target": "x86_64-w64-mingw32",
+  "command": [
+    "E:\\vscode\\mingw64\\bin\\g++.EXE",
+    "-std=c++17",
+    "-O3",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-shared",
+    "-static-libstdc++",
+    "-static-libgcc",
+    "E:\\ngspice\\ab_native_ops_20261028\\candidate_app\\native_ops\\ps_diagnostic.cpp",
+    "-o",
+    "E:\\ngspice\\ab_native_ops_20261028\\candidate_app\\native_ops\\ps_diagnostic.dll"
+  ],
+  "architecture": "windows",
+  "library": "ps_diagnostic.dll",
+  "source_sha256": "0801509c14f6a6f368badbec06a7ad4dc48f637358d12fcafb286e74fd58cd56",
+  "library_sha256": "856ecf00fbf2f10558d1c02c1c7b44249d3460792ba7ee2eb0e3c00c429c1b93"
+}

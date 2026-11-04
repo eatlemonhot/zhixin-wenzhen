@@ -1,0 +1,3461 @@
+{
+  "schema": "circuitscout.step-mesh/v1",
+  "layout_id": "d6c5a425b6e4ca13cb78f4d47bda45201a80db2e597c7cb253967478e2f68fe5",
+  "source": "3D_PCB1_2026-10-25.step",
+  "source_sha256": "c5150e6b2bd5fffd7623b3ff6b84ecb5a4ad0a3d991d2d192a46234595ff7f8b",
+  "units": "mm",
+  "coordinate_frame": "unrotated_pcb_mm_z_from_board_bottom",
+  "width_mm": 100.00000066,
+  "height_mm": 100.00000066,
+  "source_origin_mm": [
+    0,
+    0.127
+  ],
+  "board_thickness_mm": 1.600050800102,
+  "component_count": 72,
+  "missing_references": [],
+  "conversion": {
+    "library": "occt-import-js",
+    "version": "0.0.23",
+    "linearUnit": "millimeter",
+    "linearDeflectionType": "absolute_value",
+    "linearDeflection": 0.035,
+    "angularDeflection": 0.3
+  },
+  "binary": "meshes.bin",
+  "binary_bytes": 12087408,
+  "binary_sha256": "5bc63900f25a0e5aff1c758c74b7b6f3306d87b2fe8a6cbc39697b5d3d779c38",
+  "parts": [
+    {
+      "reference": "Board",
+      "kind": "board",
+      "name": "Board~nQEh",
+      "bounds": {
+        "min": [
+          0.01270002540005,
+          0.012700279400999992,
+          0
+        ],
+        "max": [
+          99.987500635001,
+          99.987500889,
+          1.600050800102
+        ]
+      },
+      "colors": [
+        [
+          0,
+          0.1450980007648468,
+          0.36470499634742737
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 50832,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 0,
+        "count": 51000,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 204000,
+        "count": 51000,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 408000,
+        "count": 50832,
+        "type": "u32"
+      },
+      "triangles": 16944
+    },
+    {
+      "reference": "LED2",
+      "kind": "component",
+      "name": "LED2~LED0603-FD~LED0603_Inf~nQEh",
+      "bounds": {
+        "min": [
+          70.105090321746,
+          4.064008375447,
+          1.6000508001471285
+        ],
+        "max": [
+          71.62719314281999,
+          4.826009912589,
+          2.171076889701
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 2904,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 611328,
+        "count": 3414,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 624984,
+        "count": 3414,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 638640,
+        "count": 2904,
+        "type": "u32"
+      },
+      "triangles": 968
+    },
+    {
+      "reference": "LED3",
+      "kind": "component",
+      "name": "LED3~LED0603-FD~LED0603_Inf~nQEh",
+      "bounds": {
+        "min": [
+          76.201102513771,
+          4.064008375447,
+          1.6000508001471285
+        ],
+        "max": [
+          77.72320533484499,
+          4.826009912589,
+          2.171076889701
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 2904,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 650256,
+        "count": 3414,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 663912,
+        "count": 3414,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 677568,
+        "count": 2904,
+        "type": "u32"
+      },
+      "triangles": 968
+    },
+    {
+      "reference": "LED5",
+      "kind": "component",
+      "name": "LED5~LED0603-FD~LED0603_Inf~nQEh",
+      "bounds": {
+        "min": [
+          82.170114451795,
+          4.064008375447,
+          1.6000508001471285
+        ],
+        "max": [
+          83.69221727286899,
+          4.826009912589,
+          2.171076889701
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 2904,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 689184,
+        "count": 3414,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 702840,
+        "count": 3414,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 716496,
+        "count": 2904,
+        "type": "u32"
+      },
+      "triangles": 968
+    },
+    {
+      "reference": "LED6",
+      "kind": "component",
+      "name": "LED6~LED0603-FD~LED0603_Inf~nQEh",
+      "bounds": {
+        "min": [
+          88.01212613581801,
+          4.064008375447,
+          1.6000508001471285
+        ],
+        "max": [
+          89.534228956892,
+          4.826009912589,
+          2.171076889701
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 2904,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 728112,
+        "count": 3414,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 741768,
+        "count": 3414,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 755424,
+        "count": 2904,
+        "type": "u32"
+      },
+      "triangles": 968
+    },
+    {
+      "reference": "LED1",
+      "kind": "component",
+      "name": "LED1~LED0603-FD~LED0603_Inf~nQEh",
+      "bounds": {
+        "min": [
+          64.136078383723,
+          4.064008375447,
+          1.6000508001471285
+        ],
+        "max": [
+          65.65818120479699,
+          4.826009912589,
+          2.171076889701
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 2904,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 767040,
+        "count": 3414,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 780696,
+        "count": 3414,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 794352,
+        "count": 2904,
+        "type": "u32"
+      },
+      "triangles": 968
+    },
+    {
+      "reference": "R2",
+      "kind": "component",
+      "name": "R2~R0603~R0603~nQEh",
+      "bounds": {
+        "min": [
+          70.183141988668,
+          6.961014991990001,
+          1.6000507998784825
+        ],
+        "max": [
+          71.8031419839,
+          7.771014989606001,
+          2.050050798554
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 5808,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 805968,
+        "count": 7224,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 834864,
+        "count": 7224,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 863760,
+        "count": 5808,
+        "type": "u32"
+      },
+      "triangles": 1936
+    },
+    {
+      "reference": "R3",
+      "kind": "component",
+      "name": "R3~R0603~R0603~nQEh",
+      "bounds": {
+        "min": [
+          45.79909322056999,
+          36.2980736661,
+          1.6000507998784825
+        ],
+        "max": [
+          47.419093215802,
+          37.108073663716,
+          2.050050798554
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 5808,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 886992,
+        "count": 7224,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 915888,
+        "count": 7224,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 944784,
+        "count": 5808,
+        "type": "u32"
+      },
+      "triangles": 1936
+    },
+    {
+      "reference": "R4",
+      "kind": "component",
+      "name": "R4~R0603~R0603~nQEh",
+      "bounds": {
+        "min": [
+          45.291092204567995,
+          24.868050796524003,
+          1.6000507998784825
+        ],
+        "max": [
+          46.9110921998,
+          25.678050794140002,
+          2.050050798554
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 5808,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 968016,
+        "count": 7224,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 996912,
+        "count": 7224,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 1025808,
+        "count": 5808,
+        "type": "u32"
+      },
+      "triangles": 1936
+    },
+    {
+      "reference": "R6",
+      "kind": "component",
+      "name": "R6~R0603~R0603~nQEh",
+      "bounds": {
+        "min": [
+          76.152153926692,
+          7.215015490455,
+          1.6000507998784825
+        ],
+        "max": [
+          77.772153921924,
+          8.025015488071,
+          2.050050798554
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 5808,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 1049040,
+        "count": 7224,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 1077936,
+        "count": 7224,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 1106832,
+        "count": 5808,
+        "type": "u32"
+      },
+      "triangles": 1936
+    },
+    {
+      "reference": "R8",
+      "kind": "component",
+      "name": "R8~R0603~R0603~nQEh",
+      "bounds": {
+        "min": [
+          82.248166118716,
+          7.342015753991,
+          1.6000507998784825
+        ],
+        "max": [
+          83.868166113948,
+          8.152015751607,
+          2.050050798554
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 5808,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 1130064,
+        "count": 7224,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 1158960,
+        "count": 7224,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 1187856,
+        "count": 5808,
+        "type": "u32"
+      },
+      "triangles": 1936
+    },
+    {
+      "reference": "R9",
+      "kind": "component",
+      "name": "R9~R0603~R0603~nQEh",
+      "bounds": {
+        "min": [
+          88.09017780274,
+          7.342015753991,
+          1.6000507998784825
+        ],
+        "max": [
+          89.71017779797201,
+          8.152015751607,
+          2.050050798554
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 5808,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 1211088,
+        "count": 7224,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 1239984,
+        "count": 7224,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 1268880,
+        "count": 5808,
+        "type": "u32"
+      },
+      "triangles": 1936
+    },
+    {
+      "reference": "R10",
+      "kind": "component",
+      "name": "R10~R0603~R0603~nQEh",
+      "bounds": {
+        "min": [
+          83.13716789672,
+          25.88405283806,
+          1.6000507998784825
+        ],
+        "max": [
+          84.75716789195201,
+          26.694052835676,
+          2.050050798554
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 5808,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 1292112,
+        "count": 7224,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 1321008,
+        "count": 7224,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 1349904,
+        "count": 5808,
+        "type": "u32"
+      },
+      "triangles": 1936
+    },
+    {
+      "reference": "R11",
+      "kind": "component",
+      "name": "R11~R0603~R0603~nQEh",
+      "bounds": {
+        "min": [
+          73.61214884668199,
+          37.31407569811,
+          1.6000507998784825
+        ],
+        "max": [
+          75.232148841914,
+          38.124075695726,
+          2.050050798554
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 5808,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 1373136,
+        "count": 7224,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 1402032,
+        "count": 7224,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 1430928,
+        "count": 5808,
+        "type": "u32"
+      },
+      "triangles": 1936
+    },
+    {
+      "reference": "R12",
+      "kind": "component",
+      "name": "R12~R0603~R0603~nQEh",
+      "bounds": {
+        "min": [
+          73.61214884668199,
+          39.600080260584,
+          1.6000507998784825
+        ],
+        "max": [
+          75.232148841914,
+          40.4100802582,
+          2.050050798554
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 5808,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 1454160,
+        "count": 7224,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 1483056,
+        "count": 7224,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 1511952,
+        "count": 5808,
+        "type": "u32"
+      },
+      "triangles": 1936
+    },
+    {
+      "reference": "R13",
+      "kind": "component",
+      "name": "R13~R0603~R0603~nQEh",
+      "bounds": {
+        "min": [
+          92.916187454759,
+          36.044073148563996,
+          1.6000507998784825
+        ],
+        "max": [
+          94.536187449991,
+          36.85407314617999,
+          2.050050798554
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 5808,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 1535184,
+        "count": 7224,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 1564080,
+        "count": 7224,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 1592976,
+        "count": 5808,
+        "type": "u32"
+      },
+      "triangles": 1936
+    },
+    {
+      "reference": "R15",
+      "kind": "component",
+      "name": "R15~R0603~R0603~nQEh",
+      "bounds": {
+        "min": [
+          73.739149100682,
+          41.759084588120004,
+          1.6000507998784825
+        ],
+        "max": [
+          75.359149095914,
+          42.569084585736,
+          2.050050798554
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 5808,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 1616208,
+        "count": 7224,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 1645104,
+        "count": 7224,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 1674000,
+        "count": 5808,
+        "type": "u32"
+      },
+      "triangles": 1936
+    },
+    {
+      "reference": "R16",
+      "kind": "component",
+      "name": "R16~R0603~R0603~nQEh",
+      "bounds": {
+        "min": [
+          73.739149100682,
+          43.918088896594,
+          1.6000507998784825
+        ],
+        "max": [
+          75.359149095914,
+          44.728088894209996,
+          2.050050798554
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 5808,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 1697232,
+        "count": 7224,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 1726128,
+        "count": 7224,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 1755024,
+        "count": 5808,
+        "type": "u32"
+      },
+      "triangles": 1936
+    },
+    {
+      "reference": "R1",
+      "kind": "component",
+      "name": "R1~R0603~R0603~nQEh",
+      "bounds": {
+        "min": [
+          64.08712979664399,
+          7.215015499991001,
+          1.6000507998784825
+        ],
+        "max": [
+          65.707129791876,
+          8.025015497606999,
+          2.050050798554
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 5808,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 1778256,
+        "count": 7224,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 1807152,
+        "count": 7224,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 1836048,
+        "count": 5808,
+        "type": "u32"
+      },
+      "triangles": 1936
+    },
+    {
+      "reference": "C20",
+      "kind": "component",
+      "name": "C20~CAP-TH_BD6.3-P2.50-D0.5-FD~CAP-TH_BD6.3-P2.50-D0.5-FD~nQEh",
+      "bounds": {
+        "min": [
+          76.847688234088,
+          30.505067536035003,
+          -3.399949199898
+        ],
+        "max": [
+          83.16764556693708,
+          36.805067592225,
+          12.610050942895
+        ]
+      },
+      "colors": [
+        [
+          0.2158605009317398,
+          0.05126945674419403,
+          0
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 22602,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 1859280,
+        "count": 20562,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 1941528,
+        "count": 20562,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 2023776,
+        "count": 22602,
+        "type": "u32"
+      },
+      "triangles": 7534
+    },
+    {
+      "reference": "C9",
+      "kind": "component",
+      "name": "C9~CAP-TH_BD6.3-P2.50-D0.5-FD~CAP-TH_BD6.3-P2.50-D0.5-FD~nQEh",
+      "bounds": {
+        "min": [
+          31.889598317907996,
+          30.378067282035,
+          -3.399949199898
+        ],
+        "max": [
+          38.20955565075708,
+          36.678067338225,
+          12.610050942895
+        ]
+      },
+      "colors": [
+        [
+          0.2158605009317398,
+          0.05126945674419403,
+          0
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 22602,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 2114184,
+        "count": 20562,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 2196432,
+        "count": 20562,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 2278680,
+        "count": 22602,
+        "type": "u32"
+      },
+      "triangles": 7534
+    },
+    {
+      "reference": "R14",
+      "kind": "component",
+      "name": "R14~RES-ADJ-TH_3296W~RES-ADJ-TH_3296W~nQEh",
+      "bounds": {
+        "min": [
+          87.19831108537,
+          28.775057499476997,
+          -1.899949199898
+        ],
+        "max": [
+          96.698310707874,
+          33.575057308742004,
+          13.100050204056
+        ]
+      },
+      "colors": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 17940,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 2369088,
+        "count": 19740,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 2448048,
+        "count": 19740,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 2527008,
+        "count": 17940,
+        "type": "u32"
+      },
+      "triangles": 5980
+    },
+    {
+      "reference": "R5",
+      "kind": "component",
+      "name": "R5~RES-ADJ-TH_3296W~RES-ADJ-TH_3296W~nQEh",
+      "bounds": {
+        "min": [
+          43.383223455195,
+          28.648057245476995,
+          -1.899949199898
+        ],
+        "max": [
+          52.88322307769901,
+          33.448057054742,
+          13.100050204056
+        ]
+      },
+      "colors": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 17940,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 2598768,
+        "count": 19740,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 2677728,
+        "count": 19740,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 2756688,
+        "count": 17940,
+        "type": "u32"
+      },
+      "triangles": 5980
+    },
+    {
+      "reference": "C3",
+      "kind": "component",
+      "name": "C3~C0603~C0603_L1.6-W0.8-H0.8~nQEh",
+      "bounds": {
+        "min": [
+          55.734112274185,
+          19.012039890001,
+          1.6000508060624645
+        ],
+        "max": [
+          56.534112262265005,
+          20.612039866159,
+          2.400050794142
+        ]
+      },
+      "colors": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 12978,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 2828448,
+        "count": 13653,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 2883060,
+        "count": 13653,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 2937672,
+        "count": 12978,
+        "type": "u32"
+      },
+      "triangles": 4326
+    },
+    {
+      "reference": "C4",
+      "kind": "component",
+      "name": "C4~C0603~C0603_L1.6-W0.8-H0.8~nQEh",
+      "bounds": {
+        "min": [
+          58.655118116196,
+          19.012039890001,
+          1.6000508060624645
+        ],
+        "max": [
+          59.455118104276,
+          20.612039866159,
+          2.400050794142
+        ]
+      },
+      "colors": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 12978,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 2989584,
+        "count": 13653,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 3044196,
+        "count": 13653,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 3098808,
+        "count": 12978,
+        "type": "u32"
+      },
+      "triangles": 4326
+    },
+    {
+      "reference": "C5",
+      "kind": "component",
+      "name": "C5~C0603~C0603_L1.6-W0.8-H0.8~nQEh",
+      "bounds": {
+        "min": [
+          37.446075698110995,
+          44.158090182101,
+          1.6000508060624645
+        ],
+        "max": [
+          38.246075686191,
+          45.758090158259,
+          2.400050794142
+        ]
+      },
+      "colors": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 12978,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 3150720,
+        "count": 13653,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 3205332,
+        "count": 13653,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 3259944,
+        "count": 12978,
+        "type": "u32"
+      },
+      "triangles": 4326
+    },
+    {
+      "reference": "C7",
+      "kind": "component",
+      "name": "C7~C0603~C0603_L1.6-W0.8-H0.8~nQEh",
+      "bounds": {
+        "min": [
+          44.939090684141,
+          13.551028967970998,
+          1.6000508060624645
+        ],
+        "max": [
+          45.739090672221,
+          15.151028944129001,
+          2.400050794142
+        ]
+      },
+      "colors": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 12978,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 3311856,
+        "count": 13653,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 3366468,
+        "count": 13653,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 3421080,
+        "count": 12978,
+        "type": "u32"
+      },
+      "triangles": 4326
+    },
+    {
+      "reference": "C8",
+      "kind": "component",
+      "name": "C8~C0603~C0603_L1.6-W0.8-H0.8~nQEh",
+      "bounds": {
+        "min": [
+          56.985115582152,
+          24.23804953605,
+          1.6000508060624645
+        ],
+        "max": [
+          58.58511555831,
+          25.038049524130003,
+          2.400050794142
+        ]
+      },
+      "colors": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 12978,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 3472992,
+        "count": 13653,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 3527604,
+        "count": 13653,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 3582216,
+        "count": 12978,
+        "type": "u32"
+      },
+      "triangles": 4326
+    },
+    {
+      "reference": "C10",
+      "kind": "component",
+      "name": "C10~C0603~C0603_L1.6-W0.8-H0.8~nQEh",
+      "bounds": {
+        "min": [
+          50.654102114164,
+          43.777089420090995,
+          1.6000508060624645
+        ],
+        "max": [
+          51.454102102244,
+          45.377089396249,
+          2.400050794142
+        ]
+      },
+      "colors": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 12978,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 3634128,
+        "count": 13653,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 3688740,
+        "count": 13653,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 3743352,
+        "count": 12978,
+        "type": "u32"
+      },
+      "triangles": 4326
+    },
+    {
+      "reference": "C12",
+      "kind": "component",
+      "name": "C12~C0603~C0603_L1.6-W0.8-H0.8~nQEh",
+      "bounds": {
+        "min": [
+          93.199187204334,
+          20.028041922000998,
+          1.6000508060624645
+        ],
+        "max": [
+          93.999187192414,
+          21.628041898159,
+          2.400050794142
+        ]
+      },
+      "colors": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 12978,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 3795264,
+        "count": 13653,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 3849876,
+        "count": 13653,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 3904488,
+        "count": 12978,
+        "type": "u32"
+      },
+      "triangles": 4326
+    },
+    {
+      "reference": "C13",
+      "kind": "component",
+      "name": "C13~C0603~C0603_L1.6-W0.8-H0.8~nQEh",
+      "bounds": {
+        "min": [
+          92.92618746429599,
+          39.09707925410999,
+          1.6000508060624645
+        ],
+        "max": [
+          94.52618744045401,
+          39.897079242189996,
+          2.400050794142
+        ]
+      },
+      "colors": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 12978,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 3956400,
+        "count": 13653,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 4011012,
+        "count": 13653,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 4065624,
+        "count": 12978,
+        "type": "u32"
+      },
+      "triangles": 4326
+    },
+    {
+      "reference": "C14",
+      "kind": "component",
+      "name": "C14~C0603~C0603_L1.6-W0.8-H0.8~nQEh",
+      "bounds": {
+        "min": [
+          92.92618746429599,
+          41.76408458812,
+          1.6000508060624645
+        ],
+        "max": [
+          94.52618744045401,
+          42.5640845762,
+          2.400050794142
+        ]
+      },
+      "colors": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 12978,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 4117536,
+        "count": 13653,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 4172148,
+        "count": 13653,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 4226760,
+        "count": 12978,
+        "type": "u32"
+      },
+      "triangles": 4326
+    },
+    {
+      "reference": "C15",
+      "kind": "component",
+      "name": "C15~C0603~C0603_L1.6-W0.8-H0.8~nQEh",
+      "bounds": {
+        "min": [
+          95.993192792346,
+          19.901041668001,
+          1.6000508060624645
+        ],
+        "max": [
+          96.793192780426,
+          21.501041644159002,
+          2.400050794142
+        ]
+      },
+      "colors": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 12978,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 4278672,
+        "count": 13653,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 4333284,
+        "count": 13653,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 4387896,
+        "count": 12978,
+        "type": "u32"
+      },
+      "triangles": 4326
+    },
+    {
+      "reference": "C16",
+      "kind": "component",
+      "name": "C16~C0603~C0603_L1.6-W0.8-H0.8~nQEh",
+      "bounds": {
+        "min": [
+          91.29418339432699,
+          46.571095008110994,
+          1.6000508060624645
+        ],
+        "max": [
+          92.094183382407,
+          48.171094984269,
+          2.400050794142
+        ]
+      },
+      "colors": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 12978,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 4439808,
+        "count": 13653,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 4494420,
+        "count": 13653,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 4549032,
+        "count": 12978,
+        "type": "u32"
+      },
+      "triangles": 4326
+    },
+    {
+      "reference": "C17",
+      "kind": "component",
+      "name": "C17~C0603~C0603_L1.6-W0.8-H0.8~nQEh",
+      "bounds": {
+        "min": [
+          94.342189490339,
+          46.444094754100995,
+          1.6000508060624645
+        ],
+        "max": [
+          95.142189478419,
+          48.044094730259,
+          2.400050794142
+        ]
+      },
+      "colors": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 12978,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 4600944,
+        "count": 13653,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 4655556,
+        "count": 13653,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 4710168,
+        "count": 12978,
+        "type": "u32"
+      },
+      "triangles": 4326
+    },
+    {
+      "reference": "C18",
+      "kind": "component",
+      "name": "C18~C0603~C0603_L1.6-W0.8-H0.8~nQEh",
+      "bounds": {
+        "min": [
+          81.769164344289,
+          14.186030237980997,
+          1.6000508060624645
+        ],
+        "max": [
+          82.569164332369,
+          15.786030214139,
+          2.400050794142
+        ]
+      },
+      "colors": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 12978,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 4762080,
+        "count": 13653,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 4816692,
+        "count": 13653,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 4871304,
+        "count": 12978,
+        "type": "u32"
+      },
+      "triangles": 4326
+    },
+    {
+      "reference": "C19",
+      "kind": "component",
+      "name": "C19~C0603~C0603_L1.6-W0.8-H0.8~nQEh",
+      "bounds": {
+        "min": [
+          94.196190004301,
+          24.11104928205,
+          1.6000508060624645
+        ],
+        "max": [
+          95.79618998045899,
+          24.911049270130004,
+          2.400050794142
+        ]
+      },
+      "colors": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 12978,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 4923216,
+        "count": 13653,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 4977828,
+        "count": 13653,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 5032440,
+        "count": 12978,
+        "type": "u32"
+      },
+      "triangles": 4326
+    },
+    {
+      "reference": "C21",
+      "kind": "component",
+      "name": "C21~C0603~C0603_L1.6-W0.8-H0.8~nQEh",
+      "bounds": {
+        "min": [
+          78.721158248276,
+          39.840081546080995,
+          1.6000508060624645
+        ],
+        "max": [
+          79.521158236356,
+          41.440081522239,
+          2.400050794142
+        ]
+      },
+      "colors": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 12978,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 5084352,
+        "count": 13653,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 5138964,
+        "count": 13653,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 5193576,
+        "count": 12978,
+        "type": "u32"
+      },
+      "triangles": 4326
+    },
+    {
+      "reference": "C22",
+      "kind": "component",
+      "name": "C22~C0603~C0603_L1.6-W0.8-H0.8~nQEh",
+      "bounds": {
+        "min": [
+          85.56017273226601,
+          46.20909347814,
+          1.6000508060624645
+        ],
+        "max": [
+          87.160172708424,
+          47.00909346622,
+          2.400050794142
+        ]
+      },
+      "colors": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 12978,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 5245488,
+        "count": 13653,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 5300100,
+        "count": 13653,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 5354712,
+        "count": 12978,
+        "type": "u32"
+      },
+      "triangles": 4326
+    },
+    {
+      "reference": "C1",
+      "kind": "component",
+      "name": "C1~C0603~C0603_L1.6-W0.8-H0.8~nQEh",
+      "bounds": {
+        "min": [
+          43.396088404098,
+          39.224079508109995,
+          1.6000508060624645
+        ],
+        "max": [
+          44.996088380256005,
+          40.02407949619,
+          2.400050794142
+        ]
+      },
+      "colors": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 12978,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 5406624,
+        "count": 13653,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 5461236,
+        "count": 13653,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 5515848,
+        "count": 12978,
+        "type": "u32"
+      },
+      "triangles": 4326
+    },
+    {
+      "reference": "CN2",
+      "kind": "component",
+      "name": "CN2~CONN-TH_2P-P2.50_HX-2.54MM-2P-ZZ-MS~CONN-TH_2P-P2.50_HX-2.54MM-2P-ZZ-MS~nQEh",
+      "bounds": {
+        "min": [
+          50.098107813167,
+          65.540136230101,
+          -1.899949199898
+        ],
+        "max": [
+          57.598107579263,
+          71.35013604890301,
+          8.600050472636
+        ]
+      },
+      "colors": [
+        [
+          0.2158605009317398,
+          0.05126945674419403,
+          0.05126945674419403
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 10224,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 5567760,
+        "count": 11916,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 5615424,
+        "count": 11916,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 5663088,
+        "count": 10224,
+        "type": "u32"
+      },
+      "triangles": 3408
+    },
+    {
+      "reference": "CN3",
+      "kind": "component",
+      "name": "CN3~CONN-TH_2P-P2.50_HX-2.54MM-2P-ZZ-MS~CONN-TH_2P-P2.50_HX-2.54MM-2P-ZZ-MS~nQEh",
+      "bounds": {
+        "min": [
+          1.9130087218479894,
+          69.656147183242,
+          -1.899949199898
+        ],
+        "max": [
+          7.723008540650001,
+          77.15614694933801,
+          8.600050472636
+        ]
+      },
+      "colors": [
+        [
+          0.2158605009317398,
+          0.05126945674419403,
+          0.05126945674419403
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 10224,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 5703984,
+        "count": 11916,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 5751648,
+        "count": 11916,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 5799312,
+        "count": 10224,
+        "type": "u32"
+      },
+      "triangles": 3408
+    },
+    {
+      "reference": "CN4",
+      "kind": "component",
+      "name": "CN4~CONN-TH_2P-P2.50_HX-2.54MM-2P-ZZ-MS~CONN-TH_2P-P2.50_HX-2.54MM-2P-ZZ-MS~nQEh",
+      "bounds": {
+        "min": [
+          50.352108321168,
+          83.57417229817099,
+          -1.899949199898
+        ],
+        "max": [
+          57.852108087264,
+          89.384172116973,
+          8.600050472636
+        ]
+      },
+      "colors": [
+        [
+          0.2158605009317398,
+          0.05126945674419403,
+          0.05126945674419403
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 10224,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 5840208,
+        "count": 11916,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 5887872,
+        "count": 11916,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 5935536,
+        "count": 10224,
+        "type": "u32"
+      },
+      "triangles": 3408
+    },
+    {
+      "reference": "CN5",
+      "kind": "component",
+      "name": "CN5~CONN-TH_2P-P2.50_HX-2.54MM-2P-ZZ-MS~CONN-TH_2P-P2.50_HX-2.54MM-2P-ZZ-MS~nQEh",
+      "bounds": {
+        "min": [
+          50.098107813167,
+          74.684154518131,
+          -1.899949199898
+        ],
+        "max": [
+          57.598107579263,
+          80.49415433693301,
+          8.600050472636
+        ]
+      },
+      "colors": [
+        [
+          0.2158605009317398,
+          0.05126945674419403,
+          0.05126945674419403
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 10224,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 5976432,
+        "count": 11916,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 6024096,
+        "count": 11916,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 6071760,
+        "count": 10224,
+        "type": "u32"
+      },
+      "triangles": 3408
+    },
+    {
+      "reference": "CN1",
+      "kind": "component",
+      "name": "CN1~CONN-TH_2P-P2.50_HX-2.54MM-2P-ZZ-MS~CONN-TH_2P-P2.50_HX-2.54MM-2P-ZZ-MS~nQEh",
+      "bounds": {
+        "min": [
+          49.971107559166995,
+          56.01511718006099,
+          -1.899949199898
+        ],
+        "max": [
+          57.471107325263,
+          61.825116998863,
+          8.600050472636
+        ]
+      },
+      "colors": [
+        [
+          0.2158605009317398,
+          0.05126945674419403,
+          0.05126945674419403
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 10224,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 6112656,
+        "count": 11916,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 6160320,
+        "count": 11916,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 6207984,
+        "count": 10224,
+        "type": "u32"
+      },
+      "triangles": 3408
+    },
+    {
+      "reference": "U5",
+      "kind": "component",
+      "name": "U5~ESOP-8_L4.9-W3.9-P1.27-LS6.0-TL-EP~ESOP-8_L4.9-W3.9-P1.27-LS6.0-TL-EP~nQEh",
+      "bounds": {
+        "min": [
+          82.82636531111899,
+          18.331062023804,
+          1.600050788181071
+        ],
+        "max": [
+          88.826365194343,
+          23.231061928436,
+          3.1500507580140003
+        ]
+      },
+      "colors": [
+        [
+          0.2158605009317398,
+          0.05126945674419403,
+          0
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 16488,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 6248880,
+        "count": 17511,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 6318924,
+        "count": 17511,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 6388968,
+        "count": 16488,
+        "type": "u32"
+      },
+      "triangles": 5496
+    },
+    {
+      "reference": "U2",
+      "kind": "component",
+      "name": "U2~ESOP-8_L4.9-W3.9-P1.27-LS6.0-TL-EP~ESOP-8_L4.9-W3.9-P1.27-LS6.0-TL-EP~nQEh",
+      "bounds": {
+        "min": [
+          44.980289618967,
+          17.747610156904003,
+          1.600050788181071
+        ],
+        "max": [
+          50.980289502191006,
+          22.647610061536,
+          3.1500507580140003
+        ]
+      },
+      "colors": [
+        [
+          0.2158605009317398,
+          0.05126945674419403,
+          0
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 16488,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 6454920,
+        "count": 17511,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 6524964,
+        "count": 17511,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 6595008,
+        "count": 16488,
+        "type": "u32"
+      },
+      "triangles": 5496
+    },
+    {
+      "reference": "CN7",
+      "kind": "component",
+      "name": "CN7~CONN-TH_3P-P2.50_HC-XH-3A-G~CONN-TH_3P-P2.50_HC-XH-3A-G~nQEh",
+      "bounds": {
+        "min": [
+          1.7860211297259982,
+          80.217170760955,
+          -1.7999491045309999
+        ],
+        "max": [
+          7.696021043895001,
+          90.21717061572501,
+          8.600050744431
+        ]
+      },
+      "colors": [
+        [
+          0.2158605009317398,
+          0.05126945674419403,
+          0.05126945674419403
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 10488,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 6660960,
+        "count": 12336,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 6710304,
+        "count": 12336,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 6759648,
+        "count": 10488,
+        "type": "u32"
+      },
+      "triangles": 3496
+    },
+    {
+      "reference": "CN8",
+      "kind": "component",
+      "name": "CN8~CONN-TH_3P-P2.50_HC-XH-3A-G~CONN-TH_3P-P2.50_HC-XH-3A-G~nQEh",
+      "bounds": {
+        "min": [
+          80.85217177695799,
+          75.235145072432,
+          -1.7999491045309999
+        ],
+        "max": [
+          90.852171631728,
+          81.145144986601,
+          8.600050744431
+        ]
+      },
+      "colors": [
+        [
+          0.2158605009317398,
+          0.05126945674419403,
+          0.05126945674419403
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 10488,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 6801600,
+        "count": 12336,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 6850944,
+        "count": 12336,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 6900288,
+        "count": 10488,
+        "type": "u32"
+      },
+      "triangles": 3496
+    },
+    {
+      "reference": "CN9",
+      "kind": "component",
+      "name": "CN9~CONN-TH_3P-P2.50_HC-XH-3A-G~CONN-TH_3P-P2.50_HC-XH-3A-G~nQEh",
+      "bounds": {
+        "min": [
+          65.104140280895,
+          74.34614329443201,
+          -1.7999491045309999
+        ],
+        "max": [
+          75.104140135665,
+          80.256143208601,
+          8.600050744431
+        ]
+      },
+      "colors": [
+        [
+          0.2158605009317398,
+          0.05126945674419403,
+          0.05126945674419403
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 10488,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 6942240,
+        "count": 12336,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 6991584,
+        "count": 12336,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 7040928,
+        "count": 10488,
+        "type": "u32"
+      },
+      "triangles": 3496
+    },
+    {
+      "reference": "CN10",
+      "kind": "component",
+      "name": "CN10~CONN-TH_3P-P2.50_HC-XH-3A-G~CONN-TH_3P-P2.50_HC-XH-3A-G~nQEh",
+      "bounds": {
+        "min": [
+          80.725171522958,
+          55.423105448352,
+          -1.7999491045309999
+        ],
+        "max": [
+          90.725171377728,
+          61.333105362520996,
+          8.600050744431
+        ]
+      },
+      "colors": [
+        [
+          0.2158605009317398,
+          0.05126945674419403,
+          0.05126945674419403
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 10488,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 7082880,
+        "count": 12336,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 7132224,
+        "count": 12336,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 7181568,
+        "count": 10488,
+        "type": "u32"
+      },
+      "triangles": 3496
+    },
+    {
+      "reference": "CN11",
+      "kind": "component",
+      "name": "CN11~CONN-TH_3P-P2.50_HC-XH-3A-G~CONN-TH_3P-P2.50_HC-XH-3A-G~nQEh",
+      "bounds": {
+        "min": [
+          80.85217177695799,
+          85.01416463047201,
+          -1.7999491045309999
+        ],
+        "max": [
+          90.852171631728,
+          90.924164544641,
+          8.600050744431
+        ]
+      },
+      "colors": [
+        [
+          0.2158605009317398,
+          0.05126945674419403,
+          0.05126945674419403
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 10488,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 7223520,
+        "count": 12336,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 7272864,
+        "count": 12336,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 7322208,
+        "count": 10488,
+        "type": "u32"
+      },
+      "triangles": 3496
+    },
+    {
+      "reference": "CN12",
+      "kind": "component",
+      "name": "CN12~CONN-TH_3P-P2.50_HC-XH-3A-G~CONN-TH_3P-P2.50_HC-XH-3A-G~nQEh",
+      "bounds": {
+        "min": [
+          64.46913901089299,
+          55.804106210351996,
+          -1.7999491045309999
+        ],
+        "max": [
+          74.469138865663,
+          61.714106124520995,
+          8.600050744431
+        ]
+      },
+      "colors": [
+        [
+          0.2158605009317398,
+          0.05126945674419403,
+          0.05126945674419403
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 10488,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 7364160,
+        "count": 12336,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 7413504,
+        "count": 12336,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 7462848,
+        "count": 10488,
+        "type": "u32"
+      },
+      "triangles": 3496
+    },
+    {
+      "reference": "CN13",
+      "kind": "component",
+      "name": "CN13~CONN-TH_3P-P2.50_HC-XH-3A-G~CONN-TH_3P-P2.50_HC-XH-3A-G~nQEh",
+      "bounds": {
+        "min": [
+          64.596139264893,
+          65.456125514392,
+          -1.7999491045309999
+        ],
+        "max": [
+          74.59613911966301,
+          71.36612542856099,
+          8.600050744431
+        ]
+      },
+      "colors": [
+        [
+          0.2158605009317398,
+          0.05126945674419403,
+          0.05126945674419403
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 10488,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 7504800,
+        "count": 12336,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 7554144,
+        "count": 12336,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 7603488,
+        "count": 10488,
+        "type": "u32"
+      },
+      "triangles": 3496
+    },
+    {
+      "reference": "CN6",
+      "kind": "component",
+      "name": "CN6~CONN-TH_3P-P2.50_HC-XH-3A-G~CONN-TH_3P-P2.50_HC-XH-3A-G~nQEh",
+      "bounds": {
+        "min": [
+          80.85217177695799,
+          64.948124498392,
+          -1.7999491045309999
+        ],
+        "max": [
+          90.852171631728,
+          70.858124412561,
+          8.600050744431
+        ]
+      },
+      "colors": [
+        [
+          0.2158605009317398,
+          0.05126945674419403,
+          0.05126945674419403
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 10488,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 7645440,
+        "count": 12336,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 7694784,
+        "count": 12336,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 7744128,
+        "count": 10488,
+        "type": "u32"
+      },
+      "triangles": 3496
+    },
+    {
+      "reference": "L2",
+      "kind": "component",
+      "name": "L2~IND-SMD_L13.45-W12.6~IND-SMD_L13.45-W12.6-H4.8~nQEh",
+      "bounds": {
+        "min": [
+          63.550139891014,
+          13.595041097681998,
+          1.6000507998784825
+        ],
+        "max": [
+          76.150139509544,
+          27.045040690478004,
+          6.410050654254
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 17928,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 7786080,
+        "count": 20112,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 7866528,
+        "count": 20112,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 7946976,
+        "count": 17928,
+        "type": "u32"
+      },
+      "triangles": 5976
+    },
+    {
+      "reference": "L1",
+      "kind": "component",
+      "name": "L1~IND-SMD_L13.45-W12.6~IND-SMD_L13.45-W12.6-H4.8~nQEh",
+      "bounds": {
+        "min": [
+          26.085064960864994,
+          13.468040843681996,
+          1.6000507998784825
+        ],
+        "max": [
+          38.685064579395004,
+          26.918040436478,
+          6.410050654254
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 17928,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 8018688,
+        "count": 20112,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 8099136,
+        "count": 20112,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 8179584,
+        "count": 17928,
+        "type": "u32"
+      },
+      "triangles": 5976
+    },
+    {
+      "reference": "U1",
+      "kind": "component",
+      "name": "U1~CONN-TH_P5.08_KF128-5.08-2P~CONN-TH_P5.08_KF128-5.08-2P~nQEh",
+      "bounds": {
+        "min": [
+          36.830035619581,
+          0.33001204075900037,
+          -1.899949199898
+        ],
+        "max": [
+          47.590132251926,
+          11.030008691914,
+          15.700045291721
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 40332,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 8251296,
+        "count": 34794,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 8390472,
+        "count": 34794,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 8529648,
+        "count": 40332,
+        "type": "u32"
+      },
+      "triangles": 13444
+    },
+    {
+      "reference": "D2",
+      "kind": "component",
+      "name": "D2~SMA_L4.3-W2.6-LS5.2-RD~SMA_L4.3-W2.6-LS5.2-RD~nQEh",
+      "bounds": {
+        "min": [
+          88.201181016165,
+          13.178029162366,
+          1.6000508015921335
+        ],
+        "max": [
+          92.901181188559,
+          15.778029257734,
+          3.70005087862
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 15540,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 8690976,
+        "count": 15678,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 8753688,
+        "count": 15678,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 8816400,
+        "count": 15540,
+        "type": "u32"
+      },
+      "triangles": 5180
+    },
+    {
+      "reference": "D1",
+      "kind": "component",
+      "name": "D1~SMA_L4.3-W2.6-LS5.2-RD~SMA_L4.3-W2.6-LS5.2-RD~nQEh",
+      "bounds": {
+        "min": [
+          50.228105070013,
+          13.559029924376,
+          1.6000508015921335
+        ],
+        "max": [
+          54.928105242407,
+          16.159030019744,
+          3.70005087862
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 15540,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 8878560,
+        "count": 15678,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 8941272,
+        "count": 15678,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 9003984,
+        "count": 15540,
+        "type": "u32"
+      },
+      "triangles": 5180
+    },
+    {
+      "reference": "U6",
+      "kind": "component",
+      "name": "U6~VQFN-20_L5.0-W5.0-P0.65-TL-EP~VQFN-20_L5.0-W5.0-H1.0-P0.65~nQEh",
+      "bounds": {
+        "min": [
+          83.32827786701901,
+          38.463949952358,
+          1.600050799654965
+        ],
+        "max": [
+          88.348277886093,
+          43.483949971432,
+          2.6210508035339997
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 19512,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 9066144,
+        "count": 22374,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 9155640,
+        "count": 22374,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 9245136,
+        "count": 19512,
+        "type": "u32"
+      },
+      "triangles": 6504
+    },
+    {
+      "reference": "U3",
+      "kind": "component",
+      "name": "U3~VQFN-20_L5.0-W5.0-P0.65-TL-EP~VQFN-20_L5.0-W5.0-H1.0-P0.65~nQEh",
+      "bounds": {
+        "min": [
+          41.932164074791004,
+          41.986416297287995,
+          1.600050799654965
+        ],
+        "max": [
+          46.952164093864994,
+          47.00641631636199,
+          2.6210508035339997
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 19512,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 9323184,
+        "count": 22374,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 9412680,
+        "count": 22374,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 9502176,
+        "count": 19512,
+        "type": "u32"
+      },
+      "triangles": 6504
+    },
+    {
+      "reference": "DC2",
+      "kind": "component",
+      "name": "DC2~DC-IN-TH_DC-005-A250~DC-IN-TH_DC-005-A250~nQEh",
+      "bounds": {
+        "min": [
+          0.2950217336129999,
+          40.140094329547,
+          -2.399949199898
+        ],
+        "max": [
+          14.295021446479,
+          49.440094138813,
+          12.600050492465
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 26916,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 9580224,
+        "count": 25656,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 9682848,
+        "count": 25656,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 9785472,
+        "count": 26916,
+        "type": "u32"
+      },
+      "triangles": 8972
+    },
+    {
+      "reference": "DC3",
+      "kind": "component",
+      "name": "DC3~DC-IN-TH_DC-005-A250~DC-IN-TH_DC-005-A250~nQEh",
+      "bounds": {
+        "min": [
+          0.2950217336129999,
+          26.678067405497,
+          -2.399949199898
+        ],
+        "max": [
+          14.295021446479,
+          35.978067214763,
+          12.600050492465
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 26916,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 9893136,
+        "count": 25656,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 9995760,
+        "count": 25656,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 10098384,
+        "count": 26916,
+        "type": "u32"
+      },
+      "triangles": 8972
+    },
+    {
+      "reference": "DC1",
+      "kind": "component",
+      "name": "DC1~DC-IN-TH_DC-005-A250~DC-IN-TH_DC-005-A250~nQEh",
+      "bounds": {
+        "min": [
+          0.1680214796129995,
+          13.343040735446996,
+          -2.399949199898
+        ],
+        "max": [
+          14.168021192479,
+          22.643040544713003,
+          12.600050492465
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 26916,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 10206048,
+        "count": 25656,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 10308672,
+        "count": 25656,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 10411296,
+        "count": 26916,
+        "type": "u32"
+      },
+      "triangles": 8972
+    },
+    {
+      "reference": "H2",
+      "kind": "component",
+      "name": "H2~HDR-TH_4P-P2.54-V-M~HDR-TH_4P-P2.54-M-LI-1X4P~nQEh",
+      "bounds": {
+        "min": [
+          17.339037983102,
+          1.006014914586,
+          -1.399949199898
+        ],
+        "max": [
+          19.999036693048,
+          11.176009982314,
+          10.140045203404
+        ]
+      },
+      "colors": [
+        [
+          0.5271151065826416,
+          0.5271151065826416,
+          0.5271151065826416
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 11724,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 10518960,
+        "count": 13920,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 10574640,
+        "count": 13920,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 10630320,
+        "count": 11724,
+        "type": "u32"
+      },
+      "triangles": 3908
+    },
+    {
+      "reference": "H3",
+      "kind": "component",
+      "name": "H3~HDR-TH_4P-P2.54-V-M~HDR-TH_4P-P2.54-M-LI-1X4P~nQEh",
+      "bounds": {
+        "min": [
+          1.7780161797379996,
+          59.122121803267,
+          -1.399949199898
+        ],
+        "max": [
+          11.948011247465999,
+          61.782120513212995,
+          10.140045203404
+        ]
+      },
+      "colors": [
+        [
+          0.5271151065826416,
+          0.5271151065826416,
+          0.5271151065826416
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 11724,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 10677216,
+        "count": 13920,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 10732896,
+        "count": 13920,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 10788576,
+        "count": 11724,
+        "type": "u32"
+      },
+      "triangles": 3908
+    },
+    {
+      "reference": "H4",
+      "kind": "component",
+      "name": "H4~HDR-TH_4P-P2.54-V-M~HDR-TH_4P-P2.54-M-LI-1X4P~nQEh",
+      "bounds": {
+        "min": [
+          1.8950164385889998,
+          64.456132471287,
+          -1.399949199898
+        ],
+        "max": [
+          12.065011506317,
+          67.116131181233,
+          10.140045203404
+        ]
+      },
+      "colors": [
+        [
+          0.5271151065826416,
+          0.5271151065826416,
+          0.5271151065826416
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 11724,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 10835472,
+        "count": 13920,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 10891152,
+        "count": 13920,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 10946832,
+        "count": 11724,
+        "type": "u32"
+      },
+      "triangles": 3908
+    },
+    {
+      "reference": "H5",
+      "kind": "component",
+      "name": "H5~HDR-TH_4P-P2.54-V-M~HDR-TH_4P-P2.54-M-LI-1X4P~nQEh",
+      "bounds": {
+        "min": [
+          1.7680161845880003,
+          53.280110119236994,
+          -1.399949199898
+        ],
+        "max": [
+          11.938011252316,
+          55.940108829183,
+          10.140045203404
+        ]
+      },
+      "colors": [
+        [
+          0.5271151065826416,
+          0.5271151065826416,
+          0.5271151065826416
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 11724,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 10993728,
+        "count": 13920,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 11049408,
+        "count": 13920,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 11105088,
+        "count": 11724,
+        "type": "u32"
+      },
+      "triangles": 3908
+    },
+    {
+      "reference": "H1",
+      "kind": "component",
+      "name": "H1~HDR-TH_4P-P2.54-V-M~HDR-TH_4P-P2.54-M-LI-1X4P~nQEh",
+      "bounds": {
+        "min": [
+          27.753058811143,
+          0.7520144065850001,
+          -1.399949199898
+        ],
+        "max": [
+          30.413057521089,
+          10.922009474312999,
+          10.140045203404
+        ]
+      },
+      "colors": [
+        [
+          0.5271151065826416,
+          0.5271151065826416,
+          0.5271151065826416
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 11724,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 11151984,
+        "count": 13920,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 11207664,
+        "count": 13920,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 11263344,
+        "count": 11724,
+        "type": "u32"
+      },
+      "triangles": 3908
+    },
+    {
+      "reference": "SW2",
+      "kind": "component",
+      "name": "SW2~SW-TH_6P-L7.0-W7.0-P2.00~SW-TH_6P-L7.0-W7.0-P2.00~nQEh",
+      "bounds": {
+        "min": [
+          59.49163061078199,
+          30.536072988234004,
+          -1.899949199898
+        ],
+        "max": [
+          66.492621285243,
+          37.536063664026,
+          14.200029354424
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 21180,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 11310240,
+        "count": 21792,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 11397408,
+        "count": 21792,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 11484576,
+        "count": 21180,
+        "type": "u32"
+      },
+      "triangles": 7060
+    },
+    {
+      "reference": "SW4",
+      "kind": "component",
+      "name": "SW4~SW-TH_6P-L7.0-W7.0-P2.00~SW-TH_6P-L7.0-W7.0-P2.00~nQEh",
+      "bounds": {
+        "min": [
+          59.365130392355,
+          40.44159276469999,
+          -1.899949199898
+        ],
+        "max": [
+          66.365121068147,
+          47.442583439161,
+          14.200029354424
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 21180,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 11569296,
+        "count": 21792,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 11656464,
+        "count": 21792,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 11743632,
+        "count": 21180,
+        "type": "u32"
+      },
+      "triangles": 7060
+    },
+    {
+      "reference": "SW1",
+      "kind": "component",
+      "name": "SW1~SW-TH_6P-L7.0-W7.0-P2.00~SW-TH_6P-L7.0-W7.0-P2.00~nQEh",
+      "bounds": {
+        "min": [
+          51.999115660326,
+          2.0875160565529907,
+          -1.899949199898
+        ],
+        "max": [
+          58.999106336118004,
+          9.088506731013998,
+          14.200029354424
+        ]
+      },
+      "colors": [
+        [
+          0.6,
+          0.6,
+          0.6
+        ]
+      ],
+      "groups": [
+        {
+          "start": 0,
+          "count": 21180,
+          "material": 0
+        }
+      ],
+      "position": {
+        "offset": 11828352,
+        "count": 21792,
+        "type": "f32"
+      },
+      "normal": {
+        "offset": 11915520,
+        "count": 21792,
+        "type": "f32"
+      },
+      "index": {
+        "offset": 12002688,
+        "count": 21180,
+        "type": "u32"
+      },
+      "triangles": 7060
+    }
+  ]
+}

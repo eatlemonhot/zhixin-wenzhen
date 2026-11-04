@@ -1,0 +1,23 @@
+{
+  "ABI": 1,
+  "precision": "IEEE FP64; no fast-math; FP contraction disabled",
+  "compiler": "g++ (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0",
+  "compiler_target": "aarch64-linux-gnu",
+  "command": [
+    "/usr/bin/g++",
+    "-std=c++17",
+    "-O3",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-shared",
+    "-fPIC",
+    "-fvisibility=hidden",
+    "/root/ps_native_ops_20261028/candidate_app/native_ops/ps_diagnostic.cpp",
+    "-o",
+    "/root/ps_native_ops_20261028/candidate_app/native_ops/libps_diagnostic_aarch64.so"
+  ],
+  "architecture": "aarch64",
+  "library": "libps_diagnostic_aarch64.so",
+  "source_sha256": "0801509c14f6a6f368badbec06a7ad4dc48f637358d12fcafb286e74fd58cd56",
+  "library_sha256": "e0a2cdffa8258bba5ab7997deee9cbfbb90827e7919d8e268de1ef2cc9d82210"
+}

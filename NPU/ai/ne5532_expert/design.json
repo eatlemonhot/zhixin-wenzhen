@@ -1,0 +1,220 @@
+{
+  "name": "A_TWO_STAGE_FILTER_AMPLIFIER",
+  "parts": [
+    {
+      "ref": "R1",
+      "kind": "R",
+      "a": "P",
+      "b": "NIN",
+      "value": 100,
+      "role": "signal",
+      "package": "0805"
+    },
+    {
+      "ref": "R2",
+      "kind": "R",
+      "a": "N1",
+      "b": "0",
+      "value": 1000,
+      "role": "signal",
+      "package": "0805"
+    },
+    {
+      "ref": "R3",
+      "kind": "R",
+      "a": "AMP1",
+      "b": "FB1",
+      "value": 2000,
+      "role": "signal",
+      "package": "0805"
+    },
+    {
+      "ref": "R4",
+      "kind": "R",
+      "a": "FB1",
+      "b": "0",
+      "value": 1000,
+      "role": "signal",
+      "package": "0805"
+    },
+    {
+      "ref": "R5",
+      "kind": "R",
+      "a": "AMP1",
+      "b": "N2",
+      "value": 330,
+      "role": "signal",
+      "package": "0805"
+    },
+    {
+      "ref": "R6",
+      "kind": "R",
+      "a": "AMP2",
+      "b": "FB2",
+      "value": 1000,
+      "role": "signal",
+      "package": "0805"
+    },
+    {
+      "ref": "R7",
+      "kind": "R",
+      "a": "FB2",
+      "b": "0",
+      "value": 1000,
+      "role": "signal",
+      "package": "0805"
+    },
+    {
+      "ref": "R8",
+      "kind": "R",
+      "a": "AMP2",
+      "b": "OUT",
+      "value": 22,
+      "role": "signal",
+      "package": "0805"
+    },
+    {
+      "ref": "R9",
+      "kind": "R",
+      "a": "OUT",
+      "b": "0",
+      "value": 1000,
+      "role": "signal",
+      "package": "0805"
+    },
+    {
+      "ref": "R10",
+      "kind": "R",
+      "a": "N2",
+      "b": "0",
+      "value": 1000,
+      "role": "signal",
+      "package": "0805"
+    },
+    {
+      "ref": "C1",
+      "kind": "C",
+      "a": "NIN",
+      "b": "N1",
+      "value": 1e-07,
+      "role": "signal",
+      "package": "0805"
+    },
+    {
+      "ref": "C2",
+      "kind": "C",
+      "a": "N2",
+      "b": "0",
+      "value": 1e-08,
+      "role": "signal",
+      "package": "0805"
+    },
+    {
+      "ref": "C3",
+      "kind": "C",
+      "a": "OUT",
+      "b": "0",
+      "value": 1e-08,
+      "role": "signal",
+      "package": "0805"
+    },
+    {
+      "ref": "C4",
+      "kind": "C",
+      "a": "VCC",
+      "b": "0",
+      "value": 1e-07,
+      "role": "rail_bypass",
+      "package": "0805"
+    },
+    {
+      "ref": "C5",
+      "kind": "C",
+      "a": "VEE",
+      "b": "0",
+      "value": 1e-07,
+      "role": "rail_bypass",
+      "package": "0805"
+    },
+    {
+      "ref": "C6",
+      "kind": "C",
+      "a": "AMP1",
+      "b": "FB1",
+      "value": 1e-10,
+      "role": "signal",
+      "package": "0805"
+    },
+    {
+      "ref": "C7",
+      "kind": "C",
+      "a": "AMP2",
+      "b": "FB2",
+      "value": 1e-10,
+      "role": "signal",
+      "package": "0805"
+    },
+    {
+      "ref": "C8",
+      "kind": "C",
+      "a": "VCC",
+      "b": "0",
+      "value": 4.7e-06,
+      "role": "rail_bulk",
+      "package": "0805"
+    },
+    {
+      "ref": "C9",
+      "kind": "C",
+      "a": "VEE",
+      "b": "0",
+      "value": 4.7e-06,
+      "role": "rail_bulk",
+      "package": "0805"
+    },
+    {
+      "ref": "U1",
+      "kind": "DUAL_OPAMP",
+      "value": "NE5532",
+      "package": "SOIC-8",
+      "role": "two signal stages",
+      "supply": {
+        "8": "VCC",
+        "4": "VEE"
+      },
+      "channels": [
+        {
+          "name": "A",
+          "plus": "N1",
+          "minus": "FB1",
+          "out": "AMP1"
+        },
+        {
+          "name": "B",
+          "plus": "N2",
+          "minus": "FB2",
+          "out": "AMP2"
+        }
+      ]
+    }
+  ],
+  "main_probes": [
+    "AMP1",
+    "AMP2",
+    "OUT"
+  ],
+  "fixed_input": "P",
+  "supply_V": {
+    "VCC": 5,
+    "VEE": -5
+  },
+  "mode": "fixed_input_linear_transfer",
+  "excluded_75ohm_probes": [
+    "N1",
+    "N2",
+    "FB1",
+    "FB2",
+    "VCC",
+    "VEE"
+  ]
+}

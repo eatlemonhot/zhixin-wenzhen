@@ -1,0 +1,29 @@
+{
+  "completed": true,
+  "stages": [
+    {
+      "stage": "parse",
+      "exit": 0
+    },
+    {
+      "stage": "optimize",
+      "exit": 0
+    },
+    {
+      "stage": "quantize",
+      "exit": 0
+    },
+    {
+      "stage": "adapt",
+      "exit": 0
+    },
+    {
+      "stage": "generate",
+      "exit": 0
+    }
+  ],
+  "compute_ops": 12,
+  "all_compute_ZG330": true,
+  "source_sha256": "f938beddb84a18c9091f8c95055dcb42a4548df7b103e4840c5aa4d475962d5a",
+  "NPU_executed": false
+}

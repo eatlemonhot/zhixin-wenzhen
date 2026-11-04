@@ -1,0 +1,132 @@
+{
+  "0": {
+    "dimension": 2,
+    "ridge": 0.0001,
+    "validation_MSE": 0.0
+  },
+  "1": {
+    "dimension": 12,
+    "ridge": 0.01,
+    "validation_MSE": 0.049705119682538906
+  },
+  "2": {
+    "dimension": 12,
+    "ridge": 0.01,
+    "validation_MSE": 0.3938304722506294
+  },
+  "3": {
+    "dimension": 6,
+    "ridge": 0.1,
+    "validation_MSE": 0.16624378535465464
+  },
+  "4": {
+    "dimension": 10,
+    "ridge": 0.1,
+    "validation_MSE": 0.4057426580301231
+  },
+  "5": {
+    "dimension": 6,
+    "ridge": 0.1,
+    "validation_MSE": 0.13069977114434042
+  },
+  "6": {
+    "dimension": 6,
+    "ridge": 0.0001,
+    "validation_MSE": 0.1547692431835776
+  },
+  "7": {
+    "dimension": 8,
+    "ridge": 0.0001,
+    "validation_MSE": 0.00020948336667037974
+  },
+  "8": {
+    "dimension": 2,
+    "ridge": 0.0001,
+    "validation_MSE": 1.5568249449851193
+  },
+  "9": {
+    "dimension": 2,
+    "ridge": 0.0001,
+    "validation_MSE": 5.640122545005936e-05
+  },
+  "10": {
+    "dimension": 12,
+    "ridge": 0.0001,
+    "validation_MSE": 0.00015061710445723897
+  },
+  "11": {
+    "dimension": 6,
+    "ridge": 0.1,
+    "validation_MSE": 0.9405450363489134
+  },
+  "12": {
+    "dimension": 12,
+    "ridge": 0.0001,
+    "validation_MSE": 0.46723875008067495
+  },
+  "13": {
+    "dimension": 10,
+    "ridge": 0.0001,
+    "validation_MSE": 19.052328264833378
+  },
+  "14": {
+    "dimension": 8,
+    "ridge": 0.01,
+    "validation_MSE": 8.875743320181214e-05
+  },
+  "15": {
+    "dimension": 2,
+    "ridge": 0.1,
+    "validation_MSE": 0.5815923063587134
+  },
+  "16": {
+    "dimension": 6,
+    "ridge": 0.0001,
+    "validation_MSE": 0.05897978218618008
+  },
+  "17": {
+    "dimension": 10,
+    "ridge": 0.01,
+    "validation_MSE": 0.018704860871568932
+  },
+  "18": {
+    "dimension": 8,
+    "ridge": 0.0001,
+    "validation_MSE": 6.80533032221776e-05
+  },
+  "19": {
+    "dimension": 2,
+    "ridge": 0.01,
+    "validation_MSE": 0.00842467170239334
+  },
+  "20": {
+    "dimension": 2,
+    "ridge": 0.01,
+    "validation_MSE": 0.008469544459847607
+  },
+  "21": {
+    "dimension": 10,
+    "ridge": 0.1,
+    "validation_MSE": 0.0009638023880005488
+  },
+  "22": {
+    "dimension": 2,
+    "ridge": 0.0001,
+    "validation_MSE": 0.07106534562135881
+  },
+  "23": {
+    "dimension": 2,
+    "ridge": 0.1,
+    "validation_MSE": 0.1202291576763604
+  },
+  "24": {
+    "dimension": 10,
+    "ridge": 0.0001,
+    "validation_MSE": 0.02571430321270638
+  },
+  "25": {
+    "dimension": 2,
+    "ridge": 0.0001,
+    "validation_MSE": 0.3139980446130284
+  }
+}

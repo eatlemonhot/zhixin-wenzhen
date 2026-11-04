@@ -1,0 +1,93 @@
+{
+  "source": "Assembly 1.step",
+  "units": "mm",
+  "root": {
+    "name": "",
+    "meshes": [],
+    "children": [
+      {
+        "name": "Assembly 1",
+        "meshes": [],
+        "children": [
+          {
+            "name": "Part 1",
+            "meshes": [
+              0
+            ],
+            "children": []
+          },
+          {
+            "name": "Part 1",
+            "meshes": [
+              1
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "meshes": [
+    {
+      "name": "Part 1",
+      "file": "fixture_0.stl",
+      "bounds": {
+        "min": [
+          -297.90912171143293,
+          -62.811829730328796,
+          -52.226000000000006
+        ],
+        "max": [
+          -158.10912171143303,
+          -27.81182973032884,
+          -48.226
+        ]
+      },
+      "triangles": 779,
+      "sha256": "5858db93a86ae495609cfacd14a617032afa853edc15a0bdbe210796eecc543b"
+    },
+    {
+      "name": "Part 1",
+      "file": "fixture_1.stl",
+      "bounds": {
+        "min": [
+          -344.0097437024155,
+          -166.51477758884042,
+          -56.31305640382843
+        ],
+        "max": [
+          -112.009743702415,
+          21.285222411159552,
+          -48.31305640382806
+        ]
+      },
+      "triangles": 2466,
+      "sha256": "efbfce5c78affc8da1ddd70a2f2f295d1f0a9d84f7e156faee6e96ec13a51f63"
+    }
+  ],
+  "source_sha256": "c8502acc682eab7ae64f21b19db5df1986276b8ddcac91f876bfe95b9191a11d",
+  "display_edits": "Flattened PCBPT and two Chinese recessed marks only; original STEP unchanged.",
+  "pcb_mount": {
+    "opening_bounds_cad_mm": {
+      "min": [
+        -283.50793688672275,
+        -30.714777588840263,
+        -50.31305640382837
+      ],
+      "max": [
+        -160.5115505181073,
+        -9.216584404532497,
+        -50.31305640382833
+      ]
+    },
+    "entry_side": "+Y",
+    "default_view": "slot_end_at_top",
+    "note": "User confirmed fixed upper-left slot corner; rigid clamp slides to the opposite PCB edge as board size/orientation changes. Display only, not machine alignment.",
+    "anchor": "slot_upper_left",
+    "board_axes": {
+      "x": "+X",
+      "y": "-Y"
+    },
+    "clamp_motion": "translate_Y_to_board_bottom_edge"
+  }
+}

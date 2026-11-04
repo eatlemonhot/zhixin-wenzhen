@@ -1,0 +1,5 @@
+[generate]
+json = "E:/ngspice/rs10k_pl_lsq_20261026/compiled/A_01/adapted/a_pl_lsq_ranker_adapted.json"
+raw = "E:/ngspice/rs10k_pl_lsq_20261026/compiled/A_01/adapted/a_pl_lsq_ranker_adapted.raw"
+jr_path = "E:/ngspice/rs10k_pl_lsq_20261026/compiled/A_01/generated"
+log_path = "E:/ngspice/rs10k_pl_lsq_20261026/compiled/A_01/generate_logs"

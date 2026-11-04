@@ -1,0 +1,158 @@
+[
+  {
+    "id": 0,
+    "name": "normal",
+    "ref": null,
+    "mode": "normal"
+  },
+  {
+    "id": 1,
+    "name": "R3_low",
+    "ref": "R3",
+    "mode": "low"
+  },
+  {
+    "id": 2,
+    "name": "R3_high",
+    "ref": "R3",
+    "mode": "high"
+  },
+  {
+    "id": 3,
+    "name": "R6_low",
+    "ref": "R6",
+    "mode": "low"
+  },
+  {
+    "id": 4,
+    "name": "R6_high",
+    "ref": "R6",
+    "mode": "high"
+  },
+  {
+    "id": 5,
+    "name": "R5_low",
+    "ref": "R5",
+    "mode": "low"
+  },
+  {
+    "id": 6,
+    "name": "R5_high",
+    "ref": "R5",
+    "mode": "high"
+  },
+  {
+    "id": 7,
+    "name": "R5_open",
+    "ref": "R5",
+    "mode": "open"
+  },
+  {
+    "id": 8,
+    "name": "R5_short",
+    "ref": "R5",
+    "mode": "short"
+  },
+  {
+    "id": 9,
+    "name": "R8_open",
+    "ref": "R8",
+    "mode": "open"
+  },
+  {
+    "id": 10,
+    "name": "R8_short",
+    "ref": "R8",
+    "mode": "short"
+  },
+  {
+    "id": 11,
+    "name": "C1_low",
+    "ref": "C1",
+    "mode": "low"
+  },
+  {
+    "id": 12,
+    "name": "C1_high",
+    "ref": "C1",
+    "mode": "high"
+  },
+  {
+    "id": 13,
+    "name": "C1_open",
+    "ref": "C1",
+    "mode": "open"
+  },
+  {
+    "id": 14,
+    "name": "C1_short",
+    "ref": "C1",
+    "mode": "short"
+  },
+  {
+    "id": 15,
+    "name": "C2_low",
+    "ref": "C2",
+    "mode": "low"
+  },
+  {
+    "id": 16,
+    "name": "C2_high",
+    "ref": "C2",
+    "mode": "high"
+  },
+  {
+    "id": 17,
+    "name": "C2_open",
+    "ref": "C2",
+    "mode": "open"
+  },
+  {
+    "id": 18,
+    "name": "C2_short",
+    "ref": "C2",
+    "mode": "short"
+  },
+  {
+    "id": 19,
+    "name": "C3_low",
+    "ref": "C3",
+    "mode": "low"
+  },
+  {
+    "id": 20,
+    "name": "C3_high",
+    "ref": "C3",
+    "mode": "high"
+  },
+  {
+    "id": 21,
+    "name": "C3_open",
+    "ref": "C3",
+    "mode": "open"
+  },
+  {
+    "id": 22,
+    "name": "R10_low",
+    "ref": "R10",
+    "mode": "low"
+  },
+  {
+    "id": 23,
+    "name": "R10_high",
+    "ref": "R10",
+    "mode": "high"
+  },
+  {
+    "id": 24,
+    "name": "R2_low",
+    "ref": "R2",
+    "mode": "low"
+  },
+  {
+    "id": 25,
+    "name": "R2_high",
+    "ref": "R2",
+    "mode": "high"
+  }
+]

@@ -1,0 +1,14 @@
+#!/bin/sh
+set -eu
+motor_tool_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+motor_command=${1:-help}
+if [ "$#" -gt 0 ]; then shift; fi
+case "$motor_command" in
+  rebuild) exec python3 -B "$motor_tool_dir/fast_rebuild.py" "$@" ;;
+  circle) exec python3 -B "$motor_tool_dir/fast_rebuild.py" --circle-only "$@" ;;
+  home) exec python3 -B "$motor_tool_dir/fast_rebuild.py" --home-only "$@" ;;
+  status) exec python3 -B "$motor_tool_dir/motorctl.py" status "$@" ;;
+  stop) exec python3 -B "$motor_tool_dir/motorctl.py" stop "$@" ;;
+  clear-stop) exec python3 -B "$motor_tool_dir/motorctl.py" clear-stop "$@" ;;
+  *) printf '%s\n' 'Usage: ./motor {rebuild|circle|home|status} [--execute] [options]' './motor stop | ./motor clear-stop' ;;
+esac

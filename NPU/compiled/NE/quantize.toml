@@ -1,0 +1,7 @@
+[quantize]
+json = "E:/ngspice/rs10k_pl_lsq_20261026/compiled/NE_01/optimized/ne5532_pl_lsq_ranker_optimized.json"
+raw = "E:/ngspice/rs10k_pl_lsq_20261026/compiled/NE_01/optimized/ne5532_pl_lsq_ranker_optimized.raw"
+target = "zhuge"
+jr_path = "E:/ngspice/rs10k_pl_lsq_20261026/compiled/NE_01/fp16"
+log_path = "E:/ngspice/rs10k_pl_lsq_20261026/compiled/NE_01/quantize_logs"
+qdtype = "fp16"

@@ -1,0 +1,101 @@
+{
+  "board_revision": "LXB-R4-SENSE117",
+  "part": "xc7z020clg484-2",
+  "baseline_logic": "DIG5-R4-LOWRATE-BULK",
+  "baseline_firmware": "R4-P1-IRQFP-SENSE117",
+  "adc_clock_hz": 25000000,
+  "frame_samples": 8192,
+  "max_decimation_log2": 16,
+  "filter": "cic3",
+  "phase_metadata_version": 2,
+  "pipeline_tick_compensation": 2,
+  "timing_ns": {
+    "WNS": 0.24,
+    "WHS": 0.215,
+    "WPWS": 0.264
+  },
+  "physical_pl_pins": 52,
+  "independent_pwm_channels": 2,
+  "new_bsp_used": true,
+  "ddr_bytes": 536870912,
+  "offline_checks_passed": true,
+  "cdc_overall_clean": false,
+  "retained_official_ip_cdc_critical_counts": {
+    "CDC-1": 2,
+    "CDC-10": 1,
+    "CDC-11": 2,
+    "CDC-13": 6
+  },
+  "cdc_note": "告警限于官方网口IP复位同步、专用时钟复用及全双工未用COL/CRS；原始报告保留，不能宣称CDC零严重告警",
+  "new_board_programmed": false,
+  "new_board_tested": false,
+  "flash_written": false,
+  "ddr_board_tested": false,
+  "ethernet_board_tested": false,
+  "analog_calibrated": false,
+  "evidence_directory": "C:\\Users\\33525\\FDW_NEXT\\outputs\\checkpoint_110_hellofpga_migration_audit",
+  "implementation_directory": "C:\\Users\\33525\\FDW_NEXT\\outputs\\checkpoint_110_hellofpga_migration_audit\\implementation_04",
+  "firmware_directory": "C:\\Users\\33525\\FDW_NEXT\\outputs\\checkpoint_110_hellofpga_migration_audit\\firmware_05",
+  "files": [
+    {
+      "name": "actual_pins.csv",
+      "bytes": 6938,
+      "sha256": "a007f0391542a88a6dbd3824ec54a3141a1b780f7c826a57785ba6fecd610e92"
+    },
+    {
+      "name": "application.elf",
+      "bytes": 916216,
+      "sha256": "728a896521ca89e8d0298ace82d0161d89506934e006f43a5bdbe165e2e2a7f8"
+    },
+    {
+      "name": "board_pins.xdc",
+      "bytes": 4578,
+      "sha256": "511168d2b1eea0203f4f10bd7f95caa6f278b7e4caf4252d5cf25e5f6cf8a83f"
+    },
+    {
+      "name": "boot.bif",
+      "bytes": 74,
+      "sha256": "ca903916b8973e9ca45ccf948c6ca051e8c2d8ce3cc0854c9c38bcbd210a93ce"
+    },
+    {
+      "name": "BOOT.bin",
+      "bytes": 4350248,
+      "sha256": "aecad905f23ddfe924683e2be6ea0785bfddd4239efdd6e85579914fecd663ce"
+    },
+    {
+      "name": "boot_review.json",
+      "bytes": 1939,
+      "sha256": "58f5964ebb47c34b429fe7ee80edcfee6e5478bb3953b84dda63278d1bbed003"
+    },
+    {
+      "name": "fsbl.elf",
+      "bytes": 584360,
+      "sha256": "d97e0d2fce4de48ecfd6babca1e387c1e1d72f517431269d9c336c0d1c621946"
+    },
+    {
+      "name": "hardware.xsa",
+      "bytes": 320581,
+      "sha256": "a1d682a20aae4cd341096b458e77e7fb772cad3f8c3e6a5f32eb4af39dabffa6"
+    },
+    {
+      "name": "source_comparison.json",
+      "bytes": 12962,
+      "sha256": "f2c7bbf923640d0e3f958e3d84cdb2cca1641ef111079590edbdbd67d3317130"
+    },
+    {
+      "name": "system.bit",
+      "bytes": 4045690,
+      "sha256": "d3c61e710d23427c973c45e8fbf47454ade74d76674c395d61b47ac74289bd95"
+    },
+    {
+      "name": "system.ltx",
+      "bytes": 2617,
+      "sha256": "0de531a2a9cd3e4c0849be48649cfbcc0f3e75e1f78199f87ded940729fa6095"
+    }
+  ],
+  "sense_protocol": 1,
+  "role_masks": [
+    1,
+    4
+  ]
+}

@@ -1,0 +1,14 @@
+<section id="diagnosis-dashboard" hidden role="region" aria-label="测量执行与诊断结果">
+  <header class="dd-header"><h2 id="dd-headline">等待生成测量方案</h2><button id="dd-close" type="button" hidden>返回工程</button></header>
+  <div class="dd-toolbar"><span class="dd-pill">电路诊断</span><span id="dd-elapsed"></span><div class="dd-controls"><button id="dd-start" class="clickable" type="button" disabled>开始测量</button><button id="dd-cancel" class="clickable" type="button" disabled>取消任务</button></div></div>
+  <div class="dd-body">
+    <div id="dd-alerts" role="status"></div>
+    <section class="dd-log-section"><div class="dd-section-title"><h3>执行日志</h3><span id="dd-progress">尚未开始</span></div><progress id="dd-progress-bar" max="36" value="0" aria-label="测量进度"></progress><ol id="dd-logs" class="dd-logs" role="log" aria-live="polite" aria-relevant="additions"></ol><p id="dd-live" class="dd-live" role="status">生成方案后开始执行。</p></section>
+    <section id="dd-result-section" class="dd-results" hidden><h3 id="dd-result-title">故障候选</h3><div id="dd-ranking" class="dd-ranks"></div><p class="dd-muted">百分比为模型排序占比。</p></section>
+    <details class="dd-details"><summary id="dd-plan-label">测量方案</summary><p id="dd-plan"></p></details>
+    <details class="dd-details"><summary>测量数据</summary><div class="dd-section-title"><span id="dd-data-count"></span><select id="dd-filter" aria-label="筛选测量条件"><option value="all">全部条件</option><option value="measured">已完成</option><option value="waiting">待执行</option><option value="optional">未执行</option></select></div><div class="dd-table-wrap"><table class="dd-table"><thead><tr><th>测点</th><th>频率</th><th>Rs</th><th>|C/A| / 相位</th><th>帧数</th><th>状态</th></tr></thead><tbody id="dd-conditions"></tbody></table></div></details>
+    <section id="dd-records" class="dd-downloads"><h3>数据与下载</h3></section>
+    <div id="dd-tools" class="dd-tools"></div>
+    <p class="dd-footnote" id="dd-note">数据来源及执行状态以本次任务记录为准。</p>
+  </div>
+</section>

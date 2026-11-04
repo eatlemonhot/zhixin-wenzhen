@@ -1,0 +1,26 @@
+{
+  "schema": "unpowered-knowledge-v1",
+  "supply_boundary": "DUT supply leads disconnected; fixed common GND retained; residual charge must settle",
+  "supported_physics": {
+    "resistor": "Y_R = 1/R",
+    "capacitor": "Y_C = j*2*pi*f*C",
+    "nodal_equation": "Y(f)*V(f)=I(f)",
+    "source": "50 ohm source plus external Rs=100 or 10000 ohm",
+    "frontend_admittance": "j*w*50pF + 1/(1kohm + 1/(1/10Mohm+j*w*5pF))",
+    "input_current": "I_DUT=(VA-VB)/Rs after complex channel calibration",
+    "faults": {"low_factor": [0.75,0.95],"high_factor": [1.05,1.25],"open": "remove branch", "short": "0.1 ohm branch"}
+  },
+  "diagnostic_rules": [
+    "Network ranking never removes a physically compatible candidate by itself",
+    "Fit normal component tolerances using normal reference before fault diagnosis",
+    "Retain all classes explaining observed data within pre-frozen thresholds",
+    "Choose the condition of largest compatible-response variance with a small public Rs-switch cost",
+    "Freeze candidate prediction and obtain two independent confirmation observations",
+    "Unmeasured slots are masked, never treated as measured zeros",
+    "Slot P is internal VB with ADC probe raised, never dual contact on the excitation pad",
+    "Parallel-branch shorts may be indistinguishable; preserve both candidates",
+    "Lost return/loading paths may render several changes below measurement resolution",
+    "Unknown topology or active unqualified power-off circuit is rejected"
+  ],
+  "not_implemented": ["unqualified active semiconductor power-off response", "arbitrary unseen topology identification", "L networks", "multiple simultaneous faults", "hardware acquisition", "ICraft compilation and NPU execution"]
+}

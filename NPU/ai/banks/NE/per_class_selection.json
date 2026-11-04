@@ -1,0 +1,132 @@
+{
+  "0": {
+    "dimension": 2,
+    "ridge": 0.0001,
+    "validation_MSE": 0.0
+  },
+  "1": {
+    "dimension": 6,
+    "ridge": 0.1,
+    "validation_MSE": 0.7223935236754035
+  },
+  "2": {
+    "dimension": 2,
+    "ridge": 0.0001,
+    "validation_MSE": 2.0146740740402813
+  },
+  "3": {
+    "dimension": 6,
+    "ridge": 0.0001,
+    "validation_MSE": 0.8323536478457746
+  },
+  "4": {
+    "dimension": 2,
+    "ridge": 0.0001,
+    "validation_MSE": 1.0401561670803383
+  },
+  "5": {
+    "dimension": 2,
+    "ridge": 0.01,
+    "validation_MSE": 1.994380164636435
+  },
+  "6": {
+    "dimension": 4,
+    "ridge": 0.0001,
+    "validation_MSE": 1.017650474746893
+  },
+  "7": {
+    "dimension": 12,
+    "ridge": 0.01,
+    "validation_MSE": 0.007449216258234704
+  },
+  "8": {
+    "dimension": 12,
+    "ridge": 0.0001,
+    "validation_MSE": 1.336117102262571
+  },
+  "9": {
+    "dimension": 12,
+    "ridge": 0.1,
+    "validation_MSE": 0.0012179030330609535
+  },
+  "10": {
+    "dimension": 12,
+    "ridge": 0.0001,
+    "validation_MSE": 0.000940801881377059
+  },
+  "11": {
+    "dimension": 8,
+    "ridge": 0.1,
+    "validation_MSE": 3.560894184971522
+  },
+  "12": {
+    "dimension": 12,
+    "ridge": 0.01,
+    "validation_MSE": 4.205297698003663
+  },
+  "13": {
+    "dimension": 8,
+    "ridge": 0.1,
+    "validation_MSE": 25.736456289817763
+  },
+  "14": {
+    "dimension": 8,
+    "ridge": 0.1,
+    "validation_MSE": 0.0023070584471298417
+  },
+  "15": {
+    "dimension": 12,
+    "ridge": 0.1,
+    "validation_MSE": 1.439902695411999
+  },
+  "16": {
+    "dimension": 4,
+    "ridge": 0.0001,
+    "validation_MSE": 2.0087167759552025
+  },
+  "17": {
+    "dimension": 12,
+    "ridge": 0.0001,
+    "validation_MSE": 0.061961639380670126
+  },
+  "18": {
+    "dimension": 12,
+    "ridge": 0.01,
+    "validation_MSE": 0.0010926934365838126
+  },
+  "19": {
+    "dimension": 10,
+    "ridge": 0.1,
+    "validation_MSE": 0.05595066789256466
+  },
+  "20": {
+    "dimension": 12,
+    "ridge": 0.0001,
+    "validation_MSE": 0.06429952367068646
+  },
+  "21": {
+    "dimension": 12,
+    "ridge": 0.01,
+    "validation_MSE": 0.002963102382937908
+  },
+  "22": {
+    "dimension": 12,
+    "ridge": 0.01,
+    "validation_MSE": 0.08936252089741974
+  },
+  "23": {
+    "dimension": 6,
+    "ridge": 0.1,
+    "validation_MSE": 0.15533064335078764
+  },
+  "24": {
+    "dimension": 8,
+    "ridge": 0.0001,
+    "validation_MSE": 0.20896164289810137
+  },
+  "25": {
+    "dimension": 12,
+    "ridge": 0.01,
+    "validation_MSE": 0.34540321567916554
+  }
+}

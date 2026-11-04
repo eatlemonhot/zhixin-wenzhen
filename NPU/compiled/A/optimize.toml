@@ -1,0 +1,6 @@
+[optimize]
+json = "E:/ngspice/rs10k_pl_lsq_20261026/compiled/A_01/parsed/a_pl_lsq_ranker_parsed.json"
+raw = "E:/ngspice/rs10k_pl_lsq_20261026/compiled/A_01/parsed/a_pl_lsq_ranker_parsed.raw"
+target = "zhuge"
+jr_path = "E:/ngspice/rs10k_pl_lsq_20261026/compiled/A_01/optimized"
+log_path = "E:/ngspice/rs10k_pl_lsq_20261026/compiled/A_01/optimize_logs"

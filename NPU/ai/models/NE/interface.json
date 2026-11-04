@@ -1,0 +1,45 @@
+{
+  "schema": "ab-pl-lsq-100-10k-v1",
+  "family": "NE",
+  "variant": "A_NE5532_PL_LSQ_100_10K_V1",
+  "feature_contract": "pl-lsq8192-dds-mean-v1",
+  "Rs_ohm": [
+    100,
+    10000
+  ],
+  "input_shape": [
+    1,
+    470
+  ],
+  "output_shape": [
+    1,
+    26
+  ],
+  "frequencies_hz": [
+    2000,
+    5000,
+    10000,
+    20000,
+    50000,
+    100000
+  ],
+  "fixed_input_model_domain": "P only; a movable source must stay within each expert electrical domain.",
+  "available_features": [
+    true,
+    true,
+    false,
+    false,
+    true,
+    true
+  ],
+  "normal_reference_frames": 256,
+  "measurement_frames": [
+    16,
+    256
+  ],
+  "phase_policy": "Coherent DDS; random first phases aggregated using per-frame LSQ; phase evidence retained for CPU prediction.",
+  "approximation": "64-point phase grid, 24 waveform harmonics, floating-point LSQ, normalized CIC3. Not bit-exact RTL, raw ADC quantization or measured calibration.",
+  "same_DUT_normal_reference_required": true,
+  "real_hardware": false,
+  "NPU_executed": false
+}

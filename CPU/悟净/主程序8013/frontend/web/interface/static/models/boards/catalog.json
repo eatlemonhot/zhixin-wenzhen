@@ -1,0 +1,15 @@
+{
+  "schema": "circuitscout.step-catalog/v1",
+  "models": {
+    "d6c5a425b6e4ca13cb78f4d47bda45201a80db2e597c7cb253967478e2f68fe5": {
+      "layout_id": "d6c5a425b6e4ca13cb78f4d47bda45201a80db2e597c7cb253967478e2f68fe5",
+      "source": "3D_PCB1_2026-10-25.step",
+      "source_sha256": "c5150e6b2bd5fffd7623b3ff6b84ecb5a4ad0a3d991d2d192a46234595ff7f8b",
+      "units": "mm",
+      "width_mm": 100.00000066,
+      "height_mm": 100.00000066,
+      "component_count": 72,
+      "manifest": "boards/d6c5a425b6e4ca13/model.json"
+    }
+  }
+}

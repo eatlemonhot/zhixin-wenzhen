@@ -1,0 +1,51 @@
+{
+  "CircuitScout-UPSTREAM-MIT.txt": {
+    "source": "web/UPSTREAM_LICENSE.md",
+    "sha256": "7c8c181c4a1ec30a60283628edc2d2de0f91759dcabcb8b54c444481026913ed",
+    "bytes": 1069
+  },
+  "Threejs-MIT.txt": {
+    "source": "web/interface/static/js/vendor/THREE-LICENSE.txt",
+    "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+    "bytes": 1081
+  },
+  "OCCT-import-js-LGPL-2.1.txt": {
+    "source": "web/interface/static/js/vendor/occt/license.occt-import-js.txt",
+    "sha256": "7ffe1954587c77dfba1cf8eb9b2ea743671fa6e63f9e7a2f258119d42e14eefe",
+    "bytes": 27030
+  },
+  "OpenCascade-LICENSE.txt": {
+    "source": "web/interface/static/js/vendor/occt/license.occt.txt",
+    "sha256": "090f8eb6ba63e72887c1f89b009fb1656cfda02d83b6e9805b20468520a5d77f",
+    "bytes": 26936
+  },
+  "OCCT-NOTICE.txt": {
+    "source": "web/interface/static/js/vendor/occt/NOTICE.md",
+    "sha256": "a729ffcf01c42ef050895435d59354791424c34b73f83f2ce451a33e04d886e2",
+    "bytes": 323
+  },
+  "EDA-format-reference-NOTICES.txt": {
+    "source": "web/EDA_IMPORT_NOTICES.md",
+    "sha256": "81c26cf90c8355ed3fa51ed8d5033c1761527acedcad5eb6096541addcc60ef1",
+    "bytes": 4255
+  },
+  "LGPL-2.1-full.txt": {
+    "source": "/usr/share/common-licenses/LGPL-2.1",
+    "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95",
+    "bytes": 26419
+  },
+  "SocketIO-NOTICE.txt": {
+    "source": "web/interface/static/js/socket.io.min.js",
+    "version_header": "Socket.IO v4.5.4",
+    "sha256": "75968f1cc7cf5af64792889ccb8df5673d42bc54c962ea9d1b2cc6ba4a545240",
+    "bytes": 96,
+    "extraction": "原文件头；p5为内嵌Processing声明，将字面量\\n转换为换行。"
+  },
+  "p5-embedded-NOTICE.txt": {
+    "source": "web/interface/static/js/p5.min.js",
+    "version_header": "p5.js v1.6.0",
+    "sha256": "c729c7509d391a111e1c12e4a2600cf071207518384ea858c6261ac8e1a3d709",
+    "bytes": 880,
+    "extraction": "原文件头；p5为内嵌Processing声明，将字面量\\n转换为换行。"
+  }
+}

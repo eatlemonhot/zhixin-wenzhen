@@ -1,0 +1,6 @@
+[adapt]
+json = "E:/ngspice/rs10k_pl_lsq_20261026/compiled/A_01/fp16/a_pl_lsq_ranker_quantized.json"
+raw = "E:/ngspice/rs10k_pl_lsq_20261026/compiled/A_01/fp16/a_pl_lsq_ranker_quantized.raw"
+target = "zhuge"
+jr_path = "E:/ngspice/rs10k_pl_lsq_20261026/compiled/A_01/adapted"
+log_path = "E:/ngspice/rs10k_pl_lsq_20261026/compiled/A_01/adapt_logs"

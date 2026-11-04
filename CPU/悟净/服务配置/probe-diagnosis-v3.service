@@ -1,0 +1,28 @@
+[Unit]
+Description=CircuitScout fixed-ground staged ABCA and PS native diagnosis
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/probe_motion_fixed_ground_20261028/app
+Environment=PATH=/root/probe_diagnosis_v3_20261027/venv/bin:/root/icraft3361_test/runtime/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+Environment=LD_LIBRARY_PATH=/root/icraft3361_test/runtime/usr/lib/aarch64-linux-gnu
+Environment=OPENBLAS_NUM_THREADS=1
+Environment=OMP_NUM_THREADS=1
+Environment=MKL_NUM_THREADS=1
+Environment=MALLOC_ARENA_MAX=2
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment=PROBE_NODE_ROLE=board
+Environment=PROBE_INFERENCE_BACKEND=guarded
+Environment=PROBE_PS_NATIVE=both
+ExecStart=/root/probe_diagnosis_v3_20261027/venv/bin/python -B /root/probe_motion_fixed_ground_20261028/app/frontend/scripts/start_web.py --host 192.168.126.49 --port 8013 --data-dir /root/probe_diagnosis_bne_v4_20261028/runtime --motor-root /root/wujing_motor_control
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=20
+KillMode=control-group
+UMask=0077
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

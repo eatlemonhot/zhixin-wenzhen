@@ -1,0 +1,59 @@
+#diagnosis-dashboard{box-sizing:border-box;background:var(--secondary-background);color:var(--primary-text);font:inherit;text-align:left}
+#diagnosis-dashboard.dd-inline{position:relative;left:1rem;top:0;display:flex;flex-direction:column;flex:1 1 0;min-height:0;min-width:0;width:calc(100% - 2rem);max-width:calc(100% - 2rem);overflow:hidden;border:1px solid #626262;border-radius:var(--corner-radius)}
+#diagnosis-dashboard[hidden],#diagnosis-dashboard [hidden]{display:none!important}
+#diagnosis-dashboard *{box-sizing:border-box}
+#diagnosis-dashboard h2,#diagnosis-dashboard h3,#diagnosis-dashboard p{margin:0}
+#diagnosis-dashboard h2{font-size:1.12rem;font-weight:600}
+#diagnosis-dashboard h3{font-size:.94rem;font-weight:600}
+#diagnosis-dashboard button,#diagnosis-dashboard select{width:auto;margin:0;padding:5px 12px;background:var(--button-background);color:var(--button-text);border:var(--button-border-width) solid var(--button-border);border-radius:var(--corner-radius);font:inherit;font-size:.83rem;cursor:pointer}
+#diagnosis-dashboard button:hover:not(:disabled){background:var(--button-background-hover)}
+#diagnosis-dashboard button:disabled{opacity:.4;cursor:default}
+#diagnosis-dashboard #dd-start,#diagnosis-dashboard #diagnostic-clearance{background:var(--accent-color);border-color:var(--accent-color);color:#fff}
+#diagnosis-dashboard a{color:var(--primary-text);font-size:.83rem;text-decoration:underline;text-underline-offset:3px}
+.dd-header{padding:11px 14px;border-bottom:1px solid #454545;flex:none}
+.dd-toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:10px;padding:8px 14px;background:var(--primary-background);flex:none;font-size:.8rem;color:var(--secondary-text)}
+.dd-pill{color:var(--primary-text);font-size:.85rem}
+.dd-controls{margin-left:auto;display:flex;align-items:center;gap:7px}
+.dd-body{display:flex;flex-direction:column;gap:12px;flex:1 1 0;min-height:0;overflow:auto;padding:12px 14px 16px}
+.dd-log-section{display:flex;flex-direction:column;flex:1 0 230px;min-height:230px;gap:8px}
+.dd-section-title{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+#dd-progress,#dd-data-count{font-size:.78rem;color:var(--secondary-text);font-variant-numeric:tabular-nums}
+#dd-progress-bar{width:100%;height:4px;flex:none;border:0;background:#454545;accent-color:var(--accent-color)}
+#dd-progress-bar::-webkit-progress-bar{background:#454545}
+#dd-progress-bar::-webkit-progress-value{background:var(--accent-color)}
+.dd-logs{list-style:none;margin:0;padding:0;flex:1 1 0;min-height:130px;max-height:360px;overflow:auto;border-top:1px solid #454545;border-bottom:1px solid #454545}
+.dd-logs li{display:grid;grid-template-columns:60px 42px minmax(0,1fr);gap:10px;padding:7px 0;border-bottom:1px solid #303030;line-height:1.55;font-size:.82rem}
+.dd-logs li:last-child{border-bottom:0}
+.dd-logs time{color:#999;font-variant-numeric:tabular-nums}
+.dd-logs b{color:var(--secondary-text);font-weight:400}
+.dd-logs span{overflow-wrap:anywhere}
+.dd-live{border-left:3px solid var(--accent-color);padding:5px 8px;font-size:.84rem;line-height:1.55;background:#292929;color:var(--primary-text)}
+.dd-results{padding:9px 0;border-bottom:1px solid #454545}
+.dd-ranks{margin-top:7px;display:grid;gap:5px}
+.dd-rank{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:6px 0;font-size:.9rem}
+.dd-rank strong{color:var(--accent-color);font-weight:600;font-variant-numeric:tabular-nums}
+.dd-muted,.dd-footnote{color:var(--secondary-text);font-size:.74rem;line-height:1.55}
+.dd-details{font-size:.82rem;border-bottom:1px solid #454545;padding:6px 0}
+.dd-details>summary{cursor:pointer;color:var(--secondary-text);padding:2px 0}
+.dd-details[open]>summary{color:var(--primary-text);margin-bottom:8px}
+#dd-plan{font-size:.82rem;line-height:1.7;overflow-wrap:anywhere}
+.dd-table-wrap{overflow:auto;max-height:260px;margin-top:7px}
+.dd-table{border-collapse:collapse;width:100%;white-space:nowrap;font-size:.78rem}
+.dd-table td,.dd-table th{padding:7px;border-bottom:1px solid #444;text-align:left}
+.dd-table th{position:sticky;top:0;background:#303030;color:var(--secondary-text);font-weight:400}
+.dd-state.measured{color:var(--primary-text)}
+.dd-state.acquiring{color:var(--accent-color)}
+.dd-downloads h3{margin-bottom:7px!important}
+#diagnostic-unpowered-files{display:flex;flex-wrap:wrap;gap:8px 18px;margin-bottom:7px}
+#diagnostic-unpowered-files br{display:none}
+#diagnostic-job-status{display:none;font-size:.84rem;line-height:1.55;white-space:pre-wrap}
+#diagnostic-job-status[data-state=error]{display:block;color:#ffb5a8;border-left:3px solid #ff8d7e;padding:7px 10px;background:#392626}
+.dd-tools{font-size:.78rem;color:var(--secondary-text)}
+.dd-tools summary{cursor:pointer}
+.dd-tools pre{white-space:pre-wrap;font:inherit;line-height:1.5}
+#diagnostic-clearance-notice{display:flex;align-items:center;flex-wrap:wrap;gap:8px;padding:8px 14px;background:#30261f;border-bottom:1px solid var(--accent-color);font-size:.83rem;color:#fff;flex:none}
+#diagnostic-clearance-notice span{flex:1;min-width:180px}
+#diagnostic-clearance-notice button{white-space:normal}
+#workflow-strip,#workbench-status{background:var(--primary-background);color:var(--secondary-text)}
+#execution-mode{background:var(--secondary-background);color:var(--primary-text);border-color:#8d8d8d}
+@media(max-width:900px){.dd-header,.dd-toolbar,#diagnostic-clearance-notice{padding-left:10px;padding-right:10px}.dd-body{padding:10px}.dd-logs li{grid-template-columns:48px 34px 1fr;gap:6px}.dd-log-section{flex-basis:210px;min-height:210px}.dd-controls{gap:5px}}

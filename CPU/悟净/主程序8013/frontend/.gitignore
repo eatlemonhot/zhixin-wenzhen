@@ -1,0 +1,12 @@
+.venv/
+runtime/
+__pycache__/
+*.pyc
+*.cookies.txt
+.env
+web/instance/
+web/interface/static/uploads/*
+.deps/
+.test_tmp/
+tests_*.log
+dependency_install*.log

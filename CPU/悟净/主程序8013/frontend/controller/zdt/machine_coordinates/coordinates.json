@@ -1,0 +1,95 @@
+{
+  "port": "usb://ch340",
+  "baud": 115200,
+  "mm_per_rev": 40,
+  "degrees_per_mm": 9,
+  "coordinate_type": "independent_carriage_reference",
+  "conventions": {
+    "X": "each arm inward from its own outer homing release",
+    "Y": "front to back from each front homing release",
+    "machine_x_positive": "right",
+    "machine_y_positive": "back",
+    "right_x_increasing_value_moves": "left",
+    "left_x_increasing_value_moves": "right"
+  },
+  "home_release_mm": 0.5555555555555556,
+  "soft_margin_from_release_mm": 2,
+  "homing_speed_rpm": 10,
+  "ordinary_speed_rpm": 5,
+  "joint_x_limit": {
+    "min_each_inward_mm": 2,
+    "max_combined_inward_mm": 201.2,
+    "measured_release_sums_mm": [
+      203.31321614583334,
+      203.21189778645834
+    ],
+    "additional_clearance_mm": 2,
+    "nominal_rail_length_mm": 300,
+    "approximate_block_length_mm": 45,
+    "nominal_free_length_mm": 210,
+    "constraint": "right_x_inward_mm + left_x_inward_mm <= max_combined_inward_mm"
+  },
+  "transport": "userspace CH340 libusb",
+  "valid": false,
+  "common_probe_tip_frame_calibrated": false,
+  "external_position_accuracy_measured": false,
+  "handover_note": "Device-specific geometry reference only. No live position is supplied. Rebuild and re-teach on the actual rig.",
+  "axes": {
+    "1": {
+      "name": "right_x",
+      "axis": "X",
+      "arm": "right",
+      "home_direction": 1,
+      "positive_mm_sign": 1,
+      "address": 1,
+      "soft_min_mm": 2,
+      "soft_max_mm": 199.2,
+      "measured_full_span_mm": null,
+      "origin": {
+        "origin_encoder_deg": 347.6129150390625
+      }
+    },
+    "2": {
+      "name": "left_x",
+      "axis": "X",
+      "arm": "left",
+      "home_direction": 1,
+      "positive_mm_sign": 1,
+      "address": 2,
+      "soft_min_mm": 2,
+      "soft_max_mm": 199.2,
+      "measured_full_span_mm": null,
+      "origin": {
+        "origin_encoder_deg": 121.83837890625
+      }
+    },
+    "3": {
+      "name": "left_y",
+      "axis": "Y",
+      "arm": "left",
+      "home_direction": 0,
+      "positive_mm_sign": -1,
+      "address": 3,
+      "soft_min_mm": 2,
+      "soft_max_mm": 157.1,
+      "measured_full_span_mm": 159.1133978949653,
+      "origin": {
+        "origin_encoder_deg": 268.5772705078125
+      }
+    },
+    "4": {
+      "name": "right_y",
+      "axis": "Y",
+      "arm": "right",
+      "home_direction": 1,
+      "positive_mm_sign": 1,
+      "address": 4,
+      "soft_min_mm": 2,
+      "soft_max_mm": 157.0,
+      "measured_full_span_mm": 159.05847981770833,
+      "origin": {
+        "origin_encoder_deg": 70.90576171875
+      }
+    }
+  }
+}

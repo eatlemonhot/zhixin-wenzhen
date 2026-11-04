@@ -1,0 +1,291 @@
+{
+  "passed": true,
+  "timing_ns": {
+    "WNS": 0.24,
+    "WHS": 0.215,
+    "WPWS": 0.264
+  },
+  "pl_ports_checked": 52,
+  "original_r4_package_unchanged": true,
+  "original_protected_sources_unchanged": true,
+  "cdc_overall_clean": false,
+  "retained_official_ip_cdc_critical_counts": {
+    "CDC-1": 2,
+    "CDC-10": 1,
+    "CDC-11": 2,
+    "CDC-13": 6
+  },
+  "board_tested": false,
+  "source_comparisons": [
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\ad9226_axis_source.v",
+      "sha256": "ea3eb4316ded3066a692999b5200a4a958e0b4b173a165b863d3a34443d28d80",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_adc_command.v",
+      "sha256": "fdb45fb56ab04c24a6fb2f130a59f30d98cc2312b33d3740df2fd1a4d88fb66f",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_adc_command_cdc.v",
+      "sha256": "0df10a7b7f0494a1d0932d78bebb83605e59b8b74ccbc73aa035201b0ae527c9",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_adc_frame_record.v",
+      "sha256": "e5b4e716032c104b4fa6b6fbfee8a5e43f985b7cf8df22e3029388232fcdf8f7",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_adc_phase_axis_source.v",
+      "sha256": "e1a1b83bebb3f19b394994da7fa0734ad54f96529e62e75239d861bd912233b9",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_adc_prepare.v",
+      "sha256": "3507e5826e24ad3219693d26a039220fc1749c831585f25c6dcae79a5b5e9e52",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_adc_record.v",
+      "sha256": "cb4a20b45ed13401c22b580512217e18b4af17d9baa7193724d2c799815ca8f5",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_adc_trigger_gate.v",
+      "sha256": "2a514a50c6088c0ed7a70ced3f7032da45672c9142e669c76a8319a621608a1d",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_cdc_frame_readback.v",
+      "sha256": "c86e80da7409bb62bd2d28fa3e18ec535684b58a68e650df0b1027cb851d9074",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_cdc_mailbox.v",
+      "sha256": "980aac82da2e9f52b6e46c5659871b767f4d46dc97a1c9e230c66b72f104f937",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_cdc_readback.v",
+      "sha256": "5fa88469c5940bbc26e767fbb56cc8db5174901990c3dc70fc350e491c942815",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_cdc_snapshot.v",
+      "sha256": "accaa1d0e2f92edb29ee9a8d9b0a8ce2fccb1d9e2cf986527827775687685e7e",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_cic3_decimator.v",
+      "sha256": "15cd618bf165055a27fd8d89b6bf2c149b357c7fdf148d91b06038e92bfbc12d",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_dac902_control.v",
+      "sha256": "42af67eb77ee53faa74ebbb8049b540bceb3126550c82473a92356030de65ee7",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_dac902_dds.v",
+      "sha256": "69e09e100cc18a9db40dd05eeb5ec91e5d4b1615e15a3c753cfa64aebbfcea8e",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_dac902_output.v",
+      "sha256": "960fa907a0598b0282cd1715332fa3c0653eb078f6276bf860b05e70db751b20",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_dac902_phase_control.v",
+      "sha256": "c8aa0fbc51269d29e7e7eb964042484e7debc35b5aedccfc6230f72a1bd70e79",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_digital_axi.v",
+      "sha256": "77083d8c5407d0f159761c5157485f62b92f97f3e8c999d935819e1d27d253f2",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_digital_capture.v",
+      "sha256": "776b39d237ecb9645a9c4680ca02cd661be982305255963eddbaae1079e2da72",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_event_cdc.v",
+      "sha256": "75e61f6dee5bb297793a129d8982a875b4013bf3e9351f244a8ecc053d40bd94",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_phase_query_bridge.v",
+      "sha256": "e7959eccccb30a2673677e08e2262d032ba061031cc31180b77cfde06ce75de2",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_phase_reference.v",
+      "sha256": "2e65cf6d4682a448b1eeb0aeb029517f5b36f4ac371589477a003703d73e9854",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_probe_router.v",
+      "sha256": "8031a3b8f240e7fe72c31b1eb97d2288516bc3faf1bb14631bbb909fdd9a23d3",
+      "changed_for_board_port": true
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_pwm_axi.v",
+      "sha256": "32ad255421fc46497e00e2794231b88407df964a073eafa5ea41da2c8c87dcf3",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_pwm_burst.v",
+      "sha256": "ba05742a27e9eb38f283acbe72b616a20fbbcd71f3ba9a06f551d3f6d40eafbd",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_pwm_burst_axi.v",
+      "sha256": "28061aeef9539f3e74c4497fd1e9653f5310f4312840a246aeca823b3163494b",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_pwm_core.v",
+      "sha256": "72ed86f7958fcbb05d9815129302e326a2429f51ce49e218ea05902aeaf64cf9",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\rtl\\fdw_sine12_4096.mem",
+      "sha256": "7417f80989db6354aae20e710517586e320fc3f2912e172ff11f25c91b7896a8",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\constrs\\ad9226_timing.xdc",
+      "sha256": "18ab8dcde3726b2e8e015372eef952be495cb526fd6872bb5f52ac99d0a0d96d",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\constrs\\dac902_timing.xdc",
+      "sha256": "89796878abef118658736896988567298e18a9337d6fb30863f506e5d54705bb",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\hardware\\7020\\candidates\\lxb_r4_port\\constrs\\digital_async_timing.xdc",
+      "sha256": "2f477acf78ba2bfb60636ab5f0d40c6aeeda8a9f1d65b60ccaf898efca77ab4e",
+      "changed_for_board_port": true
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\software\\7020\\candidates\\lxb_r4_port\\src\\fdw_adc_capture.c",
+      "sha256": "41d317ab11989c48646b1888b7830599cfdcd6c375482bd2af2ec45b7a024c38",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\software\\7020\\candidates\\lxb_r4_port\\src\\fdw_adc_capture.h",
+      "sha256": "789e1fdc9abf81a251285509ab8371375d3c339cd8a44c07952a10ab7bc6c6b4",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\software\\7020\\candidates\\lxb_r4_port\\src\\fdw_adc_control.c",
+      "sha256": "c584e45a76673cfe521e43363bad8062917e46aadf8ab69c5516b2065bca6905",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\software\\7020\\candidates\\lxb_r4_port\\src\\fdw_adc_control.h",
+      "sha256": "4cf7afb4612f46db7ca164d241a482e68d54165852427c43728c91467b2c2aad",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\software\\7020\\candidates\\lxb_r4_port\\src\\fdw_bulk_frame.c",
+      "sha256": "bb9b72b1d57b3eaf1176c6986ee8988ea30b4f383a6dd2c06dc53d00bc31ecf3",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\software\\7020\\candidates\\lxb_r4_port\\src\\fdw_bulk_frame.h",
+      "sha256": "a82d60be99ce46b1fdfbdb6a873f43897b91f283753ac496fe56c2d1796d3bd7",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\software\\7020\\candidates\\lxb_r4_port\\src\\fdw_dac_control.c",
+      "sha256": "d994ec8df2c718f44b0743e04cf95c391863c75cb7d65bcf0ef681f78a1f375f",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\software\\7020\\candidates\\lxb_r4_port\\src\\fdw_dac_control.h",
+      "sha256": "2de7232cd10712cb3fec51ff1c3f9c272bcd4a8ad5ff16468f64285d8f8f465c",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\software\\7020\\candidates\\lxb_r4_port\\src\\fdw_digital_control.c",
+      "sha256": "b1aeae6fa2e6456b37ecfa551817a3201d771067b2691884882db8f1bd0a9a10",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\software\\7020\\candidates\\lxb_r4_port\\src\\fdw_digital_control.h",
+      "sha256": "3b15b0a554c1c2638113b9d078495029913bc4d413d36a4d5e44204cf9a11960",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\software\\7020\\candidates\\lxb_r4_port\\src\\fdw_irq_vectors.S",
+      "sha256": "43bad5395832bb3dffc3e395dcf1c30d64023983e693de7462c9fe2f86e16054",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\software\\7020\\candidates\\lxb_r4_port\\src\\fdw_phase_control.c",
+      "sha256": "0c165830cfdf037621867dc652cc7f7375b758b9f7146f53c227cd1bf8f0f7d7",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\software\\7020\\candidates\\lxb_r4_port\\src\\fdw_phase_control.h",
+      "sha256": "4aeaa55ab934918085e166651cf57be554993c3a0a00ab0c781a01cbaf56ddab",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\software\\7020\\candidates\\lxb_r4_port\\src\\fdw_probe_control.c",
+      "sha256": "0af7f9931d0b27cc0104d12fc6688240306e201e0ce09b52a6e71869df974a44",
+      "changed_for_board_port": true
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\software\\7020\\candidates\\lxb_r4_port\\src\\fdw_probe_control.h",
+      "sha256": "c47b5a03f3e0b6c6622ae53b89d0ea17610dd04b8f74af3eb75e96b63efe3690",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\software\\7020\\candidates\\lxb_r4_port\\src\\fdw_pwm_control.c",
+      "sha256": "1236083f972de111cbd4839dd64de3ce99246e518bfa6c904759d38fbb35a042",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\software\\7020\\candidates\\lxb_r4_port\\src\\fdw_pwm_control.h",
+      "sha256": "25c7712708b539f34e12873ae7b90876c8e8223a275c2e9111b1ca74b6be4c22",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\software\\7020\\candidates\\lxb_r4_port\\src\\lscript.ld",
+      "sha256": "3ebe5a9d8c14adaba99eed3e2aa170d7b9381ed5527d87a378f047a6342b6bdb",
+      "changed_for_board_port": true
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\software\\7020\\candidates\\lxb_r4_port\\src\\main.c",
+      "sha256": "f560f7dfc6abfb70dd4f3f49a48d613c53e8dd78e39667c76b8de3314e073458",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\software\\7020\\candidates\\lxb_r4_port\\src\\platform.c",
+      "sha256": "401df360a6efabc3981e1ddaad0939b834c47daea4a73c780255de2469690759",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\software\\7020\\candidates\\lxb_r4_port\\src\\platform.h",
+      "sha256": "c3bfd8904a6a26899d0262c17b3f17f130cea69bd3be682487c7135926d02116",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\software\\7020\\candidates\\lxb_r4_port\\src\\platform_config.h",
+      "sha256": "d86306bb52f12142c3342c17e48fb269abd18df65a65574b717e0b95b8e784bf",
+      "changed_for_board_port": false
+    },
+    {
+      "file": "C:\\Users\\33525\\FDW_NEXT\\software\\7020\\candidates\\lxb_r4_port\\src\\tcp_server.c",
+      "sha256": "b096b24b91e6abeff270250fdcf4efc9ba9fedff52d894e3a24094dbe33ac8dd",
+      "changed_for_board_port": true
+    }
+  ]
+}

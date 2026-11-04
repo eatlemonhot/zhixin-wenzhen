@@ -1,0 +1,222 @@
+namespace flatbuffer;
+
+union Attribute{
+	HardOp,
+	Cast,
+	ImageMake,
+	Detpost,
+	Input,
+	Output,
+	SwapOrder,
+	Resize,
+	AlignAxis,
+	PruneAxis,
+	Reorg,
+	Add,
+	Multiply,
+	Yolo,
+	SegPost,
+	WarpAffine
+}
+
+table HardOp {
+	sync_idx : uint32;
+	layer_count : uint32;
+	hdop_instr_data : [ubyte];
+	hdop_param_data : [ubyte];
+	hdop_instr_logic_addr : uint32;		//for mmu's icore
+	hdop_instr_physic_addr : uint32;
+	hdop_param_addr : uint32;	
+}
+
+table Cast {
+}
+
+table ImageMake {
+	imk_reg_base : uint64;
+	imk_input_port : uint32;
+	imk_pad_size : [uint32];
+	imk_pre_mean : [float];
+	imk_pre_scale : [float];
+	imk_one_fast : bool;		
+	imk_input_bits : int32;	
+}
+
+table Detpost {
+	detpost_layer_en : int32;
+	detpost_chn_1st : int32;
+	detpost_chn_2nd : int32;
+	detpost_chn_3rd : int32;
+	detpost_anchor_num : int32;
+	detpost_cmp_chn : int32;
+	detpost_cmp_en : int32;
+	detpost_cmp_mask0 : int32;
+	detpost_cmp_mask1 : int32;
+	detpost_valid_chn : int32;
+	detpost_data_thr : [int32];
+	detpost_reg_base : uint64;
+}
+
+table MInversedArray {
+	nums : [float];
+}
+
+table WarpAffine {
+	src_size : [int64];
+	m_inversed : [MInversedArray];
+	flags : int32;
+	border_mode : int32;
+	border_value : int32;
+	sleep_time :  int32;
+	pl_chunk_addr : uint64;
+}
+
+table Input {
+}
+
+table Output {
+}
+
+table SwapOrder {
+	order : [uint32];
+	axis : int32;
+}
+
+table Resize {
+	size : [uint32];
+	interpolation : ubyte;
+}
+
+table AlignedUnit {
+	index : [uint32];
+	unit : [uint32];
+}
+
+table AlignAxis {
+	aligned_units : [AlignedUnit];
+}
+
+table PruneAxis {
+	index : [uint32];
+}
+
+table Reorg {
+	stride : uint32;
+}
+
+table Add {
+	alpha : [float];
+	beta : [float];
+}
+
+table Multiply {
+}
+
+table Yolo {
+	anchors : [float];
+	class_num : uint32;
+	num : uint32;
+	mask : [uint32];
+	max : uint32;
+	scale_x_y : float;
+	confidence_thresh : float;
+	iou_thresh : float;
+	beta_nms : float;
+	nms_kind : string;
+}
+
+table SegPost {
+	mode : int32;
+	src_ysize : int32;
+	src_xsize : int32;
+	dst_ysize : int32;
+	dst_xsize : int32;
+	align_corner : bool;
+	reg_base : uint64;
+}
+
+table Op {
+	compile_target : ubyte;		//0:BuyiTarget, 1:FPGATarget, 2:HostTarget
+	op_id : uint32;
+	ifms : [uint32];
+	ofms : [uint32];
+	attribute : Attribute;
+}
+
+table QuantizedType {
+	m : [int32];			//if is ExpQuantizedScaleArray
+	exp : [int32];			//if is ExpQuantizedScaleArray
+	origin_scale : [float];	//0 means no normatio
+	axis : int32 = -1;
+}
+
+table Normratio {
+	data : [float];			//0 means no normatio
+	axis : int32 = -1;
+}
+
+table MergedAxisSection {
+	s : uint32;
+	e : uint32;
+}
+
+table MergedAxisDistr {
+	merged_axis : [uint32];
+	section : [MergedAxisSection];	//only save unvaild section
+}
+
+table Ftmp {
+	dtype : ubyte;			//0:sint8, 1:uint8, 2:sint16, 3:uint16, 4:fp32
+	mtype : ubyte;			//0:ExternalMem, 1:OnChipMem, 2:HostMem
+	v_id : uint32;
+	addr : uint32;
+	size : uint32;
+	shape : [int32];
+	layout : string;
+	param_data : [ubyte];   //if it is params
+	merged_distrs : [MergedAxisDistr];
+	normratio : Normratio;	
+	scale : QuantizedType;
+}
+
+struct Segment {
+	//logic_addr for mmu table 
+	ftmp_segment_logic_addr : uint32;	
+	ftmp_segment_phy_addr : uint32;
+	ftmp_segment_bytesize : uint32;
+	input_segment_logic_addr : uint32;
+	input_segment_phy_addr : uint32;
+	input_segment_bytesize : uint32;
+	instr_segment_logic_addr : uint32;
+	instr_segment_phy_addr : uint32;
+	instr_segment_bytesize : uint32;
+	output_segment_logic_addr : uint32;
+	output_segment_phy_addr : uint32;
+	output_segment_bytesize : uint32;
+	params_segment_logic_addr : uint32;
+	params_segment_phy_addr : uint32;
+	params_segment_bytesize : uint32;
+	//if chunk is empty, chunk_begin and chunk_bytesize is 0
+	ftmp_chunk_begin : uint32;
+	ftmp_chunk_bytesize : uint32;
+	input_chunk_begin : uint32;
+	input_chunk_bytesize : uint32;
+	instr_chunk_begin : uint32;
+	instr_chunk_bytesize : uint32;
+	output_chunk_begin : uint32;
+	output_chunk_bytesize : uint32;
+	params_chunk_begin : uint32;
+	params_chunk_bytesize : uint32;
+}
+
+table Network {
+	mpe_rows : ubyte;
+	mpe_cols : ubyte;
+	mmu_mode : ubyte;  		//0:no-mmu, 1:mmu
+	name : string;
+	segment : Segment;
+	ops : [Op];
+	ftmps : [Ftmp];
+}
+
+root_type Network;

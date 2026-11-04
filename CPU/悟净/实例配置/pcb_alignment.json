@@ -1,0 +1,1250 @@
+{
+  "revision": 20,
+  "layout_id": "f116046002da036e509484479c19943ade8a9def695bd128daa9368456de1a32",
+  "orientation": 0,
+  "anchors": {
+    "right": {
+      "x": 120.06921074444445,
+      "y": 149.8914659222222,
+      "reference_id": "891ba39e4065b99c3bd915da8178276f698811b815d809a91ca20142b3b79569",
+      "reference_frame": {
+        "reference_id": "891ba39e4065b99c3bd915da8178276f698811b815d809a91ca20142b3b79569",
+        "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+        "origins": {
+          "1": 349.65087890625,
+          "2": 123.5302734375,
+          "3": 258.2830810546875,
+          "4": 71.092529296875
+        },
+        "degrees_per_mm": 9,
+        "signs": {
+          "1": 1,
+          "2": 1,
+          "3": -1,
+          "4": 1
+        }
+      },
+      "pad_id": "eda_6b7ce7992141746c1c2b89f4b71a66af",
+      "taught_point": {
+        "x": 43.82476629999999,
+        "y": 4.7692437
+      },
+      "pcb_frame_version": 2
+    },
+    "left": {
+      "x": 11.964888888888886,
+      "y": 133.934002,
+      "reference_id": "d623369d23028aac361b0d78fc5443e4e8c2a3ed0ba3cd7f1309dfae7039bfab",
+      "reference_frame": {
+        "reference_id": "d623369d23028aac361b0d78fc5443e4e8c2a3ed0ba3cd7f1309dfae7039bfab",
+        "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+        "origins": {
+          "1": 349.6563720703125,
+          "2": 123.5137939453125,
+          "3": 258.5302734375,
+          "4": 71.03759765625
+        },
+        "degrees_per_mm": 9,
+        "signs": {
+          "1": 1,
+          "2": 1,
+          "3": -1,
+          "4": 1
+        }
+      },
+      "pad_id": "eda_ad3024253fb8a753e5f47848c63dddb9",
+      "taught_point": {
+        "x": 14.224,
+        "y": 17.034001999999997
+      },
+      "pcb_frame_version": 2
+    }
+  },
+  "offsets": {
+    "left": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "right": {
+      "x": 0.0,
+      "y": 0.0
+    }
+  },
+  "history": {
+    "d6c5a425b6e4ca13cb78f4d47bda45201a80db2e597c7cb253967478e2f68fe5:0:left": [
+      {
+        "anchor": {
+          "x": 10.309670177777779,
+          "y": 98.65423662222223,
+          "reference_id": "24a90caeb182c7a65cea9df433554c3418fda13cfce56b30992b8ca7371b758e",
+          "pad_id": "eda_5690507aacbddc42a50f0ec4e725445b"
+        },
+        "offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    ],
+    "d6c5a425b6e4ca13cb78f4d47bda45201a80db2e597c7cb253967478e2f68fe5:0:right": [],
+    "f116046002da036e509484479c19943ade8a9def695bd128daa9368456de1a32:0:right": [
+      {
+        "anchor": {
+          "x": 121.9206678,
+          "y": 150.74262946666664,
+          "reference_id": "b2a58f22e51605cb35b90398f9cb480aa66c7d07c6959d358d5134bf33e2576b",
+          "reference_frame": {
+            "reference_id": "b2a58f22e51605cb35b90398f9cb480aa66c7d07c6959d358d5134bf33e2576b",
+            "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+            "origins": {
+              "1": 349.7772216796875,
+              "2": 123.0633544921875,
+              "3": 257.8216552734375,
+              "4": 70.9881591796875
+            },
+            "degrees_per_mm": 9,
+            "signs": {
+              "1": 1,
+              "2": 1,
+              "3": -1,
+              "4": 1
+            }
+          },
+          "pad_id": "eda_432a77cc755e89473ae6b4ca0753533e",
+          "taught_point": {
+            "x": 42.0206678,
+            "y": 17.0759628
+          },
+          "pcb_frame_version": 2
+        },
+        "offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      {
+        "anchor": {
+          "x": 118.93153773333333,
+          "y": 150.72287064444447,
+          "reference_id": "20fd85d91fc1f1b4b6811c71be91c139243304c8a92c136c9b0c7f15bb480816",
+          "reference_frame": {
+            "reference_id": "20fd85d91fc1f1b4b6811c71be91c139243304c8a92c136c9b0c7f15bb480816",
+            "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+            "origins": {
+              "1": 349.5355224609375,
+              "2": 123.189697265625,
+              "3": 258.519287109375,
+              "4": 71.1474609375
+            },
+            "degrees_per_mm": 9,
+            "signs": {
+              "1": 1,
+              "2": 1,
+              "3": -1,
+              "4": 1
+            }
+          },
+          "pad_id": "eda_b589f35fe2344af159c52414d47c8b98",
+          "taught_point": {
+            "x": 46.8982044,
+            "y": 17.278426200000002
+          },
+          "pcb_frame_version": 2
+        },
+        "offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      {
+        "anchor": {
+          "x": 121.40254407777778,
+          "y": 149.68035481111113,
+          "reference_id": "31a9395addcf02a96f6671d83b386bb52f87323e19fde6630726ff02f368010f",
+          "reference_frame": {
+            "reference_id": "31a9395addcf02a96f6671d83b386bb52f87323e19fde6630726ff02f368010f",
+            "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+            "origins": {
+              "1": 349.6453857421875,
+              "2": 123.299560546875,
+              "3": 258.5302734375,
+              "4": 71.19140625
+            },
+            "degrees_per_mm": 9,
+            "signs": {
+              "1": 1,
+              "2": 1,
+              "3": -1,
+              "4": 1
+            }
+          },
+          "pad_id": "eda_6b7ce7992141746c1c2b89f4b71a66af",
+          "taught_point": {
+            "x": 43.82476629999999,
+            "y": 4.7692437
+          },
+          "pcb_frame_version": 2
+        },
+        "offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      {
+        "anchor": {
+          "x": 120.44264884444443,
+          "y": 149.71175953333335,
+          "reference_id": "2f910c7dc85ded8d6f26e72f5c0ee9961f8e01bdb92c5d8ec8611d428f372b45",
+          "reference_frame": {
+            "reference_id": "2f910c7dc85ded8d6f26e72f5c0ee9961f8e01bdb92c5d8ec8611d428f372b45",
+            "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+            "origins": {
+              "1": 349.7662353515625,
+              "2": 122.84912109375,
+              "3": 258.28857421875,
+              "4": 71.004638671875
+            },
+            "degrees_per_mm": 9,
+            "signs": {
+              "1": 1,
+              "2": 1,
+              "3": -1,
+              "4": 1
+            }
+          },
+          "pad_id": "eda_b589f35fe2344af159c52414d47c8b98",
+          "taught_point": {
+            "x": 46.8982044,
+            "y": 17.278426200000002
+          },
+          "pcb_frame_version": 2
+        },
+        "offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      {
+        "anchor": {
+          "x": 120.36921074444443,
+          "y": 150.63591036666668,
+          "reference_id": "7e1071d9eb16d51c4ecf22f2737cbb0aa7f93c91d0bb737f6849fa3b98d56d76",
+          "reference_frame": {
+            "reference_id": "7e1071d9eb16d51c4ecf22f2737cbb0aa7f93c91d0bb737f6849fa3b98d56d76",
+            "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+            "origins": {
+              "1": 349.6563720703125,
+              "2": 123.5302734375,
+              "3": 258.64013671875,
+              "4": 71.015625
+            },
+            "degrees_per_mm": 9,
+            "signs": {
+              "1": 1,
+              "2": 1,
+              "3": -1,
+              "4": 1
+            }
+          },
+          "pad_id": "eda_6b7ce7992141746c1c2b89f4b71a66af",
+          "taught_point": {
+            "x": 43.82476629999999,
+            "y": 4.7692437
+          },
+          "pcb_frame_version": 2
+        },
+        "offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      {
+        "anchor": {
+          "x": 120.45809963333333,
+          "y": 150.9581325888889,
+          "reference_id": "2792dcc80764b9f4fbbd422646f7ec0cd2330db84c3e89f3942e8be282b57d83",
+          "reference_frame": {
+            "reference_id": "2792dcc80764b9f4fbbd422646f7ec0cd2330db84c3e89f3942e8be282b57d83",
+            "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+            "origins": {
+              "1": 349.6673583984375,
+              "2": 123.409423828125,
+              "3": 258.5302734375,
+              "4": 70.916748046875
+            },
+            "degrees_per_mm": 9,
+            "signs": {
+              "1": 1,
+              "2": 1,
+              "3": -1,
+              "4": 1
+            }
+          },
+          "pad_id": "eda_6b7ce7992141746c1c2b89f4b71a66af",
+          "taught_point": {
+            "x": 43.82476629999999,
+            "y": 4.7692437
+          },
+          "pcb_frame_version": 2
+        },
+        "offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      {
+        "anchor": {
+          "x": 119.09143296666666,
+          "y": 150.92479925555557,
+          "reference_id": "08f8d32e245d00befdc8bad087736df6409c2fa3a1aa69e0cfb17318d44131d3",
+          "reference_frame": {
+            "reference_id": "08f8d32e245d00befdc8bad087736df6409c2fa3a1aa69e0cfb17318d44131d3",
+            "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+            "origins": {
+              "1": 349.6563720703125,
+              "2": 123.299560546875,
+              "3": 258.5247802734375,
+              "4": 71.004638671875
+            },
+            "degrees_per_mm": 9,
+            "signs": {
+              "1": 1,
+              "2": 1,
+              "3": -1,
+              "4": 1
+            }
+          },
+          "pad_id": "eda_6b7ce7992141746c1c2b89f4b71a66af",
+          "taught_point": {
+            "x": 43.82476629999999,
+            "y": 4.7692437
+          },
+          "pcb_frame_version": 2
+        },
+        "offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    ],
+    "f116046002da036e509484479c19943ade8a9def695bd128daa9368456de1a32:0:left": [
+      {
+        "anchor": {
+          "x": 12.864888888888888,
+          "y": 132.72289088888888,
+          "reference_id": "1ed9bb0b1ca71d599d293f860a380dd884828d915dc8a42f343fe7cea31c3f34",
+          "reference_frame": {
+            "reference_id": "1ed9bb0b1ca71d599d293f860a380dd884828d915dc8a42f343fe7cea31c3f34",
+            "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+            "origins": {
+              "1": 349.7662353515625,
+              "2": 123.299560546875,
+              "3": 258.5137939453125,
+              "4": 71.202392578125
+            },
+            "degrees_per_mm": 9,
+            "signs": {
+              "1": 1,
+              "2": 1,
+              "3": -1,
+              "4": 1
+            }
+          },
+          "pad_id": "eda_ad3024253fb8a753e5f47848c63dddb9",
+          "taught_point": {
+            "x": 14.224,
+            "y": 17.034001999999997
+          },
+          "pcb_frame_version": 2
+        },
+        "offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      {
+        "anchor": {
+          "x": 11.295243444444445,
+          "y": 131.99429613333334,
+          "reference_id": "c5f118020f37e6a8e284a7f8654578e55a7ca4da2db311b754bc770eee577ba3",
+          "reference_frame": {
+            "reference_id": "c5f118020f37e6a8e284a7f8654578e55a7ca4da2db311b754bc770eee577ba3",
+            "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+            "origins": {
+              "1": 349.6673583984375,
+              "2": 123.079833984375,
+              "3": 258.4039306640625,
+              "4": 71.114501953125
+            },
+            "degrees_per_mm": 9,
+            "signs": {
+              "1": 1,
+              "2": 1,
+              "3": -1,
+              "4": 1
+            }
+          },
+          "pad_id": "eda_947930b9b6af56958d5282fc01f4f5ca",
+          "taught_point": {
+            "x": 24.849201,
+            "y": 11.3609628
+          },
+          "pcb_frame_version": 2
+        },
+        "offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      {
+        "anchor": {
+          "x": 11.309333333333335,
+          "y": 132.01177977777778,
+          "reference_id": "7e1071d9eb16d51c4ecf22f2737cbb0aa7f93c91d0bb737f6849fa3b98d56d76",
+          "reference_frame": {
+            "reference_id": "7e1071d9eb16d51c4ecf22f2737cbb0aa7f93c91d0bb737f6849fa3b98d56d76",
+            "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+            "origins": {
+              "1": 349.6563720703125,
+              "2": 123.5302734375,
+              "3": 258.64013671875,
+              "4": 71.015625
+            },
+            "degrees_per_mm": 9,
+            "signs": {
+              "1": 1,
+              "2": 1,
+              "3": -1,
+              "4": 1
+            }
+          },
+          "pad_id": "eda_ad3024253fb8a753e5f47848c63dddb9",
+          "taught_point": {
+            "x": 14.224,
+            "y": 17.034001999999997
+          },
+          "pcb_frame_version": 2
+        },
+        "offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      {
+        "anchor": {
+          "x": 11.509333333333334,
+          "y": 132.00066866666666,
+          "reference_id": "2792dcc80764b9f4fbbd422646f7ec0cd2330db84c3e89f3942e8be282b57d83",
+          "reference_frame": {
+            "reference_id": "2792dcc80764b9f4fbbd422646f7ec0cd2330db84c3e89f3942e8be282b57d83",
+            "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+            "origins": {
+              "1": 349.6673583984375,
+              "2": 123.409423828125,
+              "3": 258.5302734375,
+              "4": 70.916748046875
+            },
+            "degrees_per_mm": 9,
+            "signs": {
+              "1": 1,
+              "2": 1,
+              "3": -1,
+              "4": 1
+            }
+          },
+          "pad_id": "eda_ad3024253fb8a753e5f47848c63dddb9",
+          "taught_point": {
+            "x": 14.224,
+            "y": 17.034001999999997
+          },
+          "pcb_frame_version": 2
+        },
+        "offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      {
+        "anchor": {
+          "x": 11.409333333333333,
+          "y": 133.98955755555554,
+          "reference_id": "3ebd013749fe4fb4a4b1d68ff922ba3ce3077cb48f2efa05cc06f9d5cac238c2",
+          "reference_frame": {
+            "reference_id": "3ebd013749fe4fb4a4b1d68ff922ba3ce3077cb48f2efa05cc06f9d5cac238c2",
+            "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+            "origins": {
+              "1": 349.6673583984375,
+              "2": 123.5302734375,
+              "3": 258.64013671875,
+              "4": 70.916748046875
+            },
+            "degrees_per_mm": 9,
+            "signs": {
+              "1": 1,
+              "2": 1,
+              "3": -1,
+              "4": 1
+            }
+          },
+          "pad_id": "eda_ad3024253fb8a753e5f47848c63dddb9",
+          "taught_point": {
+            "x": 14.224,
+            "y": 17.034001999999997
+          },
+          "pcb_frame_version": 2
+        },
+        "offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    ]
+  },
+  "profiles": {
+    "d6c5a425b6e4ca13cb78f4d47bda45201a80db2e597c7cb253967478e2f68fe5:0": {
+      "layout_id": "d6c5a425b6e4ca13cb78f4d47bda45201a80db2e597c7cb253967478e2f68fe5",
+      "orientation": 0,
+      "anchors": {
+        "left": {
+          "x": 13.227666666666671,
+          "y": 106.59346844444445,
+          "reference_id": "c0f3dc8d2a3df7f92d9e0653313d42a67534b7d99abaaba78043806133029660",
+          "reference_frame": {
+            "reference_id": "c0f3dc8d2a3df7f92d9e0653313d42a67534b7d99abaaba78043806133029660",
+            "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+            "origins": {
+              "1": 349.7607421875,
+              "2": 123.5302734375,
+              "3": 258.5302734375,
+              "4": 70.982666015625
+            },
+            "degrees_per_mm": 9,
+            "signs": {
+              "1": 1,
+              "2": 1,
+              "3": -1,
+              "4": 1
+            }
+          },
+          "pad_id": "eda_54cc4d668650af180d7e61ae795b07bd"
+        },
+        "right": {
+          "x": 120.59755555555554,
+          "y": 149.8551351111111,
+          "reference_id": "46ee908ee7134447121793cccf07d3156fb0a3140a5fb0d805cb2f2b78e39079",
+          "reference_frame": {
+            "reference_id": "46ee908ee7134447121793cccf07d3156fb0a3140a5fb0d805cb2f2b78e39079",
+            "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+            "origins": {
+              "1": 349.7772216796875,
+              "2": 123.409423828125,
+              "3": 258.5247802734375,
+              "4": 70.916748046875
+            },
+            "degrees_per_mm": 9,
+            "signs": {
+              "1": 1,
+              "2": 1,
+              "3": -1,
+              "4": 1
+            }
+          },
+          "pad_id": "eda_d2b9a2b09bf9262e1e34ee2e7113b2ce",
+          "taught_point": {
+            "x": 94.74199999999999,
+            "y": 47.94402399999999
+          },
+          "pcb_frame_version": 2
+        }
+      },
+      "offsets": {
+        "left": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "right": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    },
+    "f116046002da036e509484479c19943ade8a9def695bd128daa9368456de1a32:0": {
+      "layout_id": "f116046002da036e509484479c19943ade8a9def695bd128daa9368456de1a32",
+      "orientation": 0,
+      "anchors": {
+        "right": {
+          "x": 120.06921074444445,
+          "y": 149.8914659222222,
+          "reference_id": "891ba39e4065b99c3bd915da8178276f698811b815d809a91ca20142b3b79569",
+          "reference_frame": {
+            "reference_id": "891ba39e4065b99c3bd915da8178276f698811b815d809a91ca20142b3b79569",
+            "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+            "origins": {
+              "1": 349.65087890625,
+              "2": 123.5302734375,
+              "3": 258.2830810546875,
+              "4": 71.092529296875
+            },
+            "degrees_per_mm": 9,
+            "signs": {
+              "1": 1,
+              "2": 1,
+              "3": -1,
+              "4": 1
+            }
+          },
+          "pad_id": "eda_6b7ce7992141746c1c2b89f4b71a66af",
+          "taught_point": {
+            "x": 43.82476629999999,
+            "y": 4.7692437
+          },
+          "pcb_frame_version": 2
+        },
+        "left": {
+          "x": 11.964888888888886,
+          "y": 133.934002,
+          "reference_id": "d623369d23028aac361b0d78fc5443e4e8c2a3ed0ba3cd7f1309dfae7039bfab",
+          "reference_frame": {
+            "reference_id": "d623369d23028aac361b0d78fc5443e4e8c2a3ed0ba3cd7f1309dfae7039bfab",
+            "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+            "origins": {
+              "1": 349.6563720703125,
+              "2": 123.5137939453125,
+              "3": 258.5302734375,
+              "4": 71.03759765625
+            },
+            "degrees_per_mm": 9,
+            "signs": {
+              "1": 1,
+              "2": 1,
+              "3": -1,
+              "4": 1
+            }
+          },
+          "pad_id": "eda_ad3024253fb8a753e5f47848c63dddb9",
+          "taught_point": {
+            "x": 14.224,
+            "y": 17.034001999999997
+          },
+          "pcb_frame_version": 2
+        }
+      },
+      "offsets": {
+        "left": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "right": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      }
+    }
+  },
+  "schema": 3,
+  "fixture_registration": {
+    "mount_id": "slot_upper_left_v1",
+    "anchors": {
+      "left": {
+        "x": 11.964888888888886,
+        "y": 133.934002,
+        "reference_id": "d623369d23028aac361b0d78fc5443e4e8c2a3ed0ba3cd7f1309dfae7039bfab",
+        "reference_frame": {
+          "reference_id": "d623369d23028aac361b0d78fc5443e4e8c2a3ed0ba3cd7f1309dfae7039bfab",
+          "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+          "origins": {
+            "1": 349.6563720703125,
+            "2": 123.5137939453125,
+            "3": 258.5302734375,
+            "4": 71.03759765625
+          },
+          "degrees_per_mm": 9,
+          "signs": {
+            "1": 1,
+            "2": 1,
+            "3": -1,
+            "4": 1
+          }
+        },
+        "pad_id": "eda_ad3024253fb8a753e5f47848c63dddb9",
+        "taught_point": {
+          "x": 14.224,
+          "y": 17.034001999999997
+        },
+        "pcb_frame_version": 2,
+        "source_layout_id": "f116046002da036e509484479c19943ade8a9def695bd128daa9368456de1a32",
+        "source_orientation": 0,
+        "mounting": "slot_upper_left_v1"
+      },
+      "right": {
+        "x": 120.06921074444445,
+        "y": 149.8914659222222,
+        "reference_id": "891ba39e4065b99c3bd915da8178276f698811b815d809a91ca20142b3b79569",
+        "reference_frame": {
+          "reference_id": "891ba39e4065b99c3bd915da8178276f698811b815d809a91ca20142b3b79569",
+          "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+          "origins": {
+            "1": 349.65087890625,
+            "2": 123.5302734375,
+            "3": 258.2830810546875,
+            "4": 71.092529296875
+          },
+          "degrees_per_mm": 9,
+          "signs": {
+            "1": 1,
+            "2": 1,
+            "3": -1,
+            "4": 1
+          }
+        },
+        "pad_id": "eda_6b7ce7992141746c1c2b89f4b71a66af",
+        "taught_point": {
+          "x": 43.82476629999999,
+          "y": 4.7692437
+        },
+        "pcb_frame_version": 2,
+        "source_layout_id": "f116046002da036e509484479c19943ade8a9def695bd128daa9368456de1a32",
+        "source_orientation": 0,
+        "mounting": "slot_upper_left_v1"
+      }
+    },
+    "offsets": {
+      "left": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "right": {
+        "x": 0.0,
+        "y": 0.0
+      }
+    },
+    "history": {
+      "right": [
+        {
+          "anchor": {
+            "x": 120.59755555555554,
+            "y": 149.8551351111111,
+            "reference_id": "46ee908ee7134447121793cccf07d3156fb0a3140a5fb0d805cb2f2b78e39079",
+            "reference_frame": {
+              "reference_id": "46ee908ee7134447121793cccf07d3156fb0a3140a5fb0d805cb2f2b78e39079",
+              "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+              "origins": {
+                "1": 349.7772216796875,
+                "2": 123.409423828125,
+                "3": 258.5247802734375,
+                "4": 70.916748046875
+              },
+              "degrees_per_mm": 9,
+              "signs": {
+                "1": 1,
+                "2": 1,
+                "3": -1,
+                "4": 1
+              }
+            },
+            "pad_id": "eda_d2b9a2b09bf9262e1e34ee2e7113b2ce",
+            "taught_point": {
+              "x": 94.74199999999999,
+              "y": 47.94402399999999
+            },
+            "pcb_frame_version": 2,
+            "source_layout_id": "d6c5a425b6e4ca13cb78f4d47bda45201a80db2e597c7cb253967478e2f68fe5",
+            "source_orientation": 0,
+            "mounting": "slot_upper_left_v1"
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        },
+        {
+          "anchor": {
+            "x": 121.9206678,
+            "y": 150.74262946666664,
+            "reference_id": "b2a58f22e51605cb35b90398f9cb480aa66c7d07c6959d358d5134bf33e2576b",
+            "reference_frame": {
+              "reference_id": "b2a58f22e51605cb35b90398f9cb480aa66c7d07c6959d358d5134bf33e2576b",
+              "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+              "origins": {
+                "1": 349.7772216796875,
+                "2": 123.0633544921875,
+                "3": 257.8216552734375,
+                "4": 70.9881591796875
+              },
+              "degrees_per_mm": 9,
+              "signs": {
+                "1": 1,
+                "2": 1,
+                "3": -1,
+                "4": 1
+              }
+            },
+            "pad_id": "eda_432a77cc755e89473ae6b4ca0753533e",
+            "taught_point": {
+              "x": 42.0206678,
+              "y": 17.0759628
+            },
+            "pcb_frame_version": 2,
+            "source_layout_id": "f116046002da036e509484479c19943ade8a9def695bd128daa9368456de1a32",
+            "source_orientation": 0,
+            "mounting": "slot_upper_left_v1"
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        },
+        {
+          "anchor": {
+            "x": 118.93153773333333,
+            "y": 150.72287064444447,
+            "reference_id": "20fd85d91fc1f1b4b6811c71be91c139243304c8a92c136c9b0c7f15bb480816",
+            "reference_frame": {
+              "reference_id": "20fd85d91fc1f1b4b6811c71be91c139243304c8a92c136c9b0c7f15bb480816",
+              "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+              "origins": {
+                "1": 349.5355224609375,
+                "2": 123.189697265625,
+                "3": 258.519287109375,
+                "4": 71.1474609375
+              },
+              "degrees_per_mm": 9,
+              "signs": {
+                "1": 1,
+                "2": 1,
+                "3": -1,
+                "4": 1
+              }
+            },
+            "pad_id": "eda_b589f35fe2344af159c52414d47c8b98",
+            "taught_point": {
+              "x": 46.8982044,
+              "y": 17.278426200000002
+            },
+            "pcb_frame_version": 2,
+            "source_layout_id": "f116046002da036e509484479c19943ade8a9def695bd128daa9368456de1a32",
+            "source_orientation": 0,
+            "mounting": "slot_upper_left_v1"
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        },
+        {
+          "anchor": {
+            "x": 121.40254407777778,
+            "y": 149.68035481111113,
+            "reference_id": "31a9395addcf02a96f6671d83b386bb52f87323e19fde6630726ff02f368010f",
+            "reference_frame": {
+              "reference_id": "31a9395addcf02a96f6671d83b386bb52f87323e19fde6630726ff02f368010f",
+              "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+              "origins": {
+                "1": 349.6453857421875,
+                "2": 123.299560546875,
+                "3": 258.5302734375,
+                "4": 71.19140625
+              },
+              "degrees_per_mm": 9,
+              "signs": {
+                "1": 1,
+                "2": 1,
+                "3": -1,
+                "4": 1
+              }
+            },
+            "pad_id": "eda_6b7ce7992141746c1c2b89f4b71a66af",
+            "taught_point": {
+              "x": 43.82476629999999,
+              "y": 4.7692437
+            },
+            "pcb_frame_version": 2,
+            "source_layout_id": "f116046002da036e509484479c19943ade8a9def695bd128daa9368456de1a32",
+            "source_orientation": 0,
+            "mounting": "slot_upper_left_v1"
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        },
+        {
+          "anchor": {
+            "x": 120.44264884444443,
+            "y": 149.71175953333335,
+            "reference_id": "2f910c7dc85ded8d6f26e72f5c0ee9961f8e01bdb92c5d8ec8611d428f372b45",
+            "reference_frame": {
+              "reference_id": "2f910c7dc85ded8d6f26e72f5c0ee9961f8e01bdb92c5d8ec8611d428f372b45",
+              "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+              "origins": {
+                "1": 349.7662353515625,
+                "2": 122.84912109375,
+                "3": 258.28857421875,
+                "4": 71.004638671875
+              },
+              "degrees_per_mm": 9,
+              "signs": {
+                "1": 1,
+                "2": 1,
+                "3": -1,
+                "4": 1
+              }
+            },
+            "pad_id": "eda_b589f35fe2344af159c52414d47c8b98",
+            "taught_point": {
+              "x": 46.8982044,
+              "y": 17.278426200000002
+            },
+            "pcb_frame_version": 2,
+            "source_layout_id": "f116046002da036e509484479c19943ade8a9def695bd128daa9368456de1a32",
+            "source_orientation": 0,
+            "mounting": "slot_upper_left_v1"
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        },
+        {
+          "anchor": {
+            "x": 120.36921074444443,
+            "y": 150.63591036666668,
+            "reference_id": "7e1071d9eb16d51c4ecf22f2737cbb0aa7f93c91d0bb737f6849fa3b98d56d76",
+            "reference_frame": {
+              "reference_id": "7e1071d9eb16d51c4ecf22f2737cbb0aa7f93c91d0bb737f6849fa3b98d56d76",
+              "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+              "origins": {
+                "1": 349.6563720703125,
+                "2": 123.5302734375,
+                "3": 258.64013671875,
+                "4": 71.015625
+              },
+              "degrees_per_mm": 9,
+              "signs": {
+                "1": 1,
+                "2": 1,
+                "3": -1,
+                "4": 1
+              }
+            },
+            "pad_id": "eda_6b7ce7992141746c1c2b89f4b71a66af",
+            "taught_point": {
+              "x": 43.82476629999999,
+              "y": 4.7692437
+            },
+            "pcb_frame_version": 2,
+            "source_layout_id": "f116046002da036e509484479c19943ade8a9def695bd128daa9368456de1a32",
+            "source_orientation": 0,
+            "mounting": "slot_upper_left_v1"
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        },
+        {
+          "anchor": {
+            "x": 120.45809963333333,
+            "y": 150.9581325888889,
+            "reference_id": "2792dcc80764b9f4fbbd422646f7ec0cd2330db84c3e89f3942e8be282b57d83",
+            "reference_frame": {
+              "reference_id": "2792dcc80764b9f4fbbd422646f7ec0cd2330db84c3e89f3942e8be282b57d83",
+              "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+              "origins": {
+                "1": 349.6673583984375,
+                "2": 123.409423828125,
+                "3": 258.5302734375,
+                "4": 70.916748046875
+              },
+              "degrees_per_mm": 9,
+              "signs": {
+                "1": 1,
+                "2": 1,
+                "3": -1,
+                "4": 1
+              }
+            },
+            "pad_id": "eda_6b7ce7992141746c1c2b89f4b71a66af",
+            "taught_point": {
+              "x": 43.82476629999999,
+              "y": 4.7692437
+            },
+            "pcb_frame_version": 2,
+            "source_layout_id": "f116046002da036e509484479c19943ade8a9def695bd128daa9368456de1a32",
+            "source_orientation": 0,
+            "mounting": "slot_upper_left_v1"
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        },
+        {
+          "anchor": {
+            "x": 119.09143296666666,
+            "y": 150.92479925555557,
+            "reference_id": "08f8d32e245d00befdc8bad087736df6409c2fa3a1aa69e0cfb17318d44131d3",
+            "reference_frame": {
+              "reference_id": "08f8d32e245d00befdc8bad087736df6409c2fa3a1aa69e0cfb17318d44131d3",
+              "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+              "origins": {
+                "1": 349.6563720703125,
+                "2": 123.299560546875,
+                "3": 258.5247802734375,
+                "4": 71.004638671875
+              },
+              "degrees_per_mm": 9,
+              "signs": {
+                "1": 1,
+                "2": 1,
+                "3": -1,
+                "4": 1
+              }
+            },
+            "pad_id": "eda_6b7ce7992141746c1c2b89f4b71a66af",
+            "taught_point": {
+              "x": 43.82476629999999,
+              "y": 4.7692437
+            },
+            "pcb_frame_version": 2,
+            "source_layout_id": "f116046002da036e509484479c19943ade8a9def695bd128daa9368456de1a32",
+            "source_orientation": 0,
+            "mounting": "slot_upper_left_v1"
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        }
+      ],
+      "left": [
+        {
+          "anchor": {
+            "x": 13.227666666666671,
+            "y": 133.89542044444445,
+            "reference_id": "c0f3dc8d2a3df7f92d9e0653313d42a67534b7d99abaaba78043806133029660",
+            "reference_frame": {
+              "reference_id": "c0f3dc8d2a3df7f92d9e0653313d42a67534b7d99abaaba78043806133029660",
+              "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+              "origins": {
+                "1": 349.7607421875,
+                "2": 123.5302734375,
+                "3": 258.5302734375,
+                "4": 70.982666015625
+              },
+              "degrees_per_mm": 9,
+              "signs": {
+                "1": 1,
+                "2": 1,
+                "3": -1,
+                "4": 1
+              }
+            },
+            "pad_id": "eda_54cc4d668650af180d7e61ae795b07bd",
+            "pcb_frame_version": 2,
+            "y_direction_migration": {
+              "from_version": 1,
+              "reference_y_mm": 13.650976,
+              "reference_preserved": true
+            },
+            "taught_point": {
+              "x": 45.339,
+              "y": 13.650976
+            },
+            "source_layout_id": "d6c5a425b6e4ca13cb78f4d47bda45201a80db2e597c7cb253967478e2f68fe5",
+            "source_orientation": 0,
+            "mounting": "slot_upper_left_v1"
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        },
+        {
+          "anchor": {
+            "x": 12.864888888888888,
+            "y": 132.72289088888888,
+            "reference_id": "1ed9bb0b1ca71d599d293f860a380dd884828d915dc8a42f343fe7cea31c3f34",
+            "reference_frame": {
+              "reference_id": "1ed9bb0b1ca71d599d293f860a380dd884828d915dc8a42f343fe7cea31c3f34",
+              "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+              "origins": {
+                "1": 349.7662353515625,
+                "2": 123.299560546875,
+                "3": 258.5137939453125,
+                "4": 71.202392578125
+              },
+              "degrees_per_mm": 9,
+              "signs": {
+                "1": 1,
+                "2": 1,
+                "3": -1,
+                "4": 1
+              }
+            },
+            "pad_id": "eda_ad3024253fb8a753e5f47848c63dddb9",
+            "taught_point": {
+              "x": 14.224,
+              "y": 17.034001999999997
+            },
+            "pcb_frame_version": 2,
+            "source_layout_id": "f116046002da036e509484479c19943ade8a9def695bd128daa9368456de1a32",
+            "source_orientation": 0,
+            "mounting": "slot_upper_left_v1"
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        },
+        {
+          "anchor": {
+            "x": 11.295243444444445,
+            "y": 131.99429613333334,
+            "reference_id": "c5f118020f37e6a8e284a7f8654578e55a7ca4da2db311b754bc770eee577ba3",
+            "reference_frame": {
+              "reference_id": "c5f118020f37e6a8e284a7f8654578e55a7ca4da2db311b754bc770eee577ba3",
+              "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+              "origins": {
+                "1": 349.6673583984375,
+                "2": 123.079833984375,
+                "3": 258.4039306640625,
+                "4": 71.114501953125
+              },
+              "degrees_per_mm": 9,
+              "signs": {
+                "1": 1,
+                "2": 1,
+                "3": -1,
+                "4": 1
+              }
+            },
+            "pad_id": "eda_947930b9b6af56958d5282fc01f4f5ca",
+            "taught_point": {
+              "x": 24.849201,
+              "y": 11.3609628
+            },
+            "pcb_frame_version": 2,
+            "source_layout_id": "f116046002da036e509484479c19943ade8a9def695bd128daa9368456de1a32",
+            "source_orientation": 0,
+            "mounting": "slot_upper_left_v1"
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        },
+        {
+          "anchor": {
+            "x": 11.309333333333335,
+            "y": 132.01177977777778,
+            "reference_id": "7e1071d9eb16d51c4ecf22f2737cbb0aa7f93c91d0bb737f6849fa3b98d56d76",
+            "reference_frame": {
+              "reference_id": "7e1071d9eb16d51c4ecf22f2737cbb0aa7f93c91d0bb737f6849fa3b98d56d76",
+              "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+              "origins": {
+                "1": 349.6563720703125,
+                "2": 123.5302734375,
+                "3": 258.64013671875,
+                "4": 71.015625
+              },
+              "degrees_per_mm": 9,
+              "signs": {
+                "1": 1,
+                "2": 1,
+                "3": -1,
+                "4": 1
+              }
+            },
+            "pad_id": "eda_ad3024253fb8a753e5f47848c63dddb9",
+            "taught_point": {
+              "x": 14.224,
+              "y": 17.034001999999997
+            },
+            "pcb_frame_version": 2,
+            "source_layout_id": "f116046002da036e509484479c19943ade8a9def695bd128daa9368456de1a32",
+            "source_orientation": 0,
+            "mounting": "slot_upper_left_v1"
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        },
+        {
+          "anchor": {
+            "x": 11.509333333333334,
+            "y": 132.00066866666666,
+            "reference_id": "2792dcc80764b9f4fbbd422646f7ec0cd2330db84c3e89f3942e8be282b57d83",
+            "reference_frame": {
+              "reference_id": "2792dcc80764b9f4fbbd422646f7ec0cd2330db84c3e89f3942e8be282b57d83",
+              "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+              "origins": {
+                "1": 349.6673583984375,
+                "2": 123.409423828125,
+                "3": 258.5302734375,
+                "4": 70.916748046875
+              },
+              "degrees_per_mm": 9,
+              "signs": {
+                "1": 1,
+                "2": 1,
+                "3": -1,
+                "4": 1
+              }
+            },
+            "pad_id": "eda_ad3024253fb8a753e5f47848c63dddb9",
+            "taught_point": {
+              "x": 14.224,
+              "y": 17.034001999999997
+            },
+            "pcb_frame_version": 2,
+            "source_layout_id": "f116046002da036e509484479c19943ade8a9def695bd128daa9368456de1a32",
+            "source_orientation": 0,
+            "mounting": "slot_upper_left_v1"
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        },
+        {
+          "anchor": {
+            "x": 11.409333333333333,
+            "y": 133.98955755555554,
+            "reference_id": "3ebd013749fe4fb4a4b1d68ff922ba3ce3077cb48f2efa05cc06f9d5cac238c2",
+            "reference_frame": {
+              "reference_id": "3ebd013749fe4fb4a4b1d68ff922ba3ce3077cb48f2efa05cc06f9d5cac238c2",
+              "mechanical_id": "10c101bc287d6ba86de63da8b419bd7988cc929c56366d72226d17ee6083b139",
+              "origins": {
+                "1": 349.6673583984375,
+                "2": 123.5302734375,
+                "3": 258.64013671875,
+                "4": 70.916748046875
+              },
+              "degrees_per_mm": 9,
+              "signs": {
+                "1": 1,
+                "2": 1,
+                "3": -1,
+                "4": 1
+              }
+            },
+            "pad_id": "eda_ad3024253fb8a753e5f47848c63dddb9",
+            "taught_point": {
+              "x": 14.224,
+              "y": 17.034001999999997
+            },
+            "pcb_frame_version": 2,
+            "source_layout_id": "f116046002da036e509484479c19943ade8a9def695bd128daa9368456de1a32",
+            "source_orientation": 0,
+            "mounting": "slot_upper_left_v1"
+          },
+          "offset": {
+            "x": 0.0,
+            "y": 0.0
+          }
+        }
+      ]
+    }
+  }
+}

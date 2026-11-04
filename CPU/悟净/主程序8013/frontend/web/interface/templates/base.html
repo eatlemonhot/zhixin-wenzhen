@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CircuitScout · 悟净电路探测</title>
+    <link rel="stylesheet" href="/static/css/main.css?v=20261024-cleanup-1">
+    <link rel="stylesheet" href="/static/css/kicanvas.css">
+    <script src="/static/js/socket.io.min.js"></script>
+    <script src="/static/js/p5.min.js"></script>
+    {% block head %}{% endblock %}
+<link rel="stylesheet" href="/static/css/workbench.css?v=motion-20261030-1">
+<link rel="stylesheet" href="/static/css/design-package.css?v=observable-v3">
+<link rel="stylesheet" href="/static/css/diagnosis-dashboard.css?v=console-20261101">
+<link rel="stylesheet" href="/static/css/pcb-calibration.css?v=pad-teach-20261029-1">
+<link rel="stylesheet" href="/static/css/probe-waveforms.css?v=console-20261101"></head>
+<body>
+    <main>
+        <div id="left-pannel" class="pannel">
+            <div id="control-section" class="pannel-section">
+                <h2>探针控制</h2>
+                <p>左臂（X：1号，Y：3号）</p>
+                <div>
+                    <button id="left-move-top-button" class="clickable control-button">上移</button>
+                </div>
+                <div>
+                    <button id="left-move-left-button" class="clickable control-button">左</button>
+                    <button id="left-move-probe-button" class="clickable control-button">下探</button>
+                    <button id="left-move-right-button" class="clickable control-button">右</button>
+                </div>
+                <div>
+                    <button id="left-move-bottom-button" class="clickable control-button">下移</button>
+                </div>
+
+                <div class="small-offset"></div>
+                <p>右臂（X：2号，Y：4号）</p>
+                <div>
+                    <button id="right-move-top-button" class="clickable control-button">上移</button>
+                </div>
+                <div>
+                    <button id="right-move-left-button" class="clickable control-button">左</button>
+                    <button id="right-move-probe-button" class="clickable control-button">下探</button>
+                    <button id="right-move-right-button" class="clickable control-button">右</button>
+                </div>
+                <div>
+                    <button id="right-move-bottom-button" class="clickable control-button">下移</button>
+                </div>
+            </div>
+        </div>
+        <div id="main-view">
+            <div id="workflow-strip"><span>① 导入设计包 → ② 校验电路 → ③ 生成诊断任务 → ④ 装夹与测点预览</span><label id="execution-mode-label">执行模式<select id="execution-mode"><option value="offline">离线规划</option><option value="online">实机控制</option></select></label></div>
+            <div id="workbench-status" role="status">正在读取工程…</div>
+            <div id="main-display-selection">
+                <button id="open-diagnosis-dashboard" type="button" class="main-display-button">诊断看板</button>
+                <button id="main-display-schematics-button" class="main-display-button" onclick="switchToSchematics()">原理图</button>
+                <button id="main-display-pcb-3D-button" class="main-display-button" onclick="switchToPCB('3D')">PCB 三维视图</button>
+                <button id="main-display-pcb-2D-button" class="main-display-button main-display-button-selected" onclick="switchToPCB('2D')">PCB 二维视图</button>
+            </div>
+            <div id="main-schematics-section" class="main-display-section" hidden><div class="view-tools"><select id="schematic-page" aria-label="原理图页"></select><button id="schematic-fit">适应原理图</button><button id="schematic-focus">定位所选器件</button><span id="schematic-count"></span></div><div id="schematic-canvas"></div></div>
+            <div id="main-pcb-3D-section" class="main-display-section" hidden><div class="view-tools"><button id="assembly-top">俯视（槽口朝上）</button><button id="assembly-iso">装配视角</button><label><input type="checkbox" id="show-fixture" checked>显示底板/挡板</label><span id="assembly-status">加载机械模型…</span></div><div id="assembly-legend">蓝：左针　粉：右针。右栏选针后，点击焊盘按所选模式定位；拖拽只旋转视图。</div></div>
+            <div id="main-pcb-2D-section" class="main-display-section"><button id="pcb-fit" class="view-fit">适应PCB</button></div>
+        </div>
+        <div id="right-pannel" class="pannel">
+            <div id="probe-control-host"></div>
+            <form method="POST" class="pannel-section" action="/kicad/process_files" enctype=multipart/form-data target="hiddenFrame">
+                <h2>① 导入嘉立创工程</h2>
+                <div id="design-dropzone" role="button" tabindex="0" aria-label="选择或拖入嘉立创epro2工程"><strong>拖入一个 epro2 工程</strong><span>自动提取原理图、PCB、网络和器件参数</span><span class="drop-hint">需要元件三维外形时，可同时选择同版STEP</span></div>
+                <input type="file" id="design-multiple-files" multiple accept=".epro2,.step,.stp" hidden>
+                <div class="custom-file-upload-group">
+                    <label for="layout-file" id="layout-file-button" class="clickable custom-file-upload">选择嘉立创工程 (.epro2)</label>
+                    <input type="file" id="layout-file" class="file-upload-input" name="layout_file" accept=".epro2" onchange="subFile(this, 'layout')">
+                </div>
+                <div class="custom-file-upload-group"><label for="step-file" id="step-file-button" class="clickable custom-file-upload">选择整板STEP（可选）</label><input type="file" id="step-file" class="file-upload-input" name="step_file" accept=".step,.stp" onchange="subFile(this, 'step')"></div>
+                <ul id="design-file-list" aria-live="polite"></ul><button id="design-clear-files" type="button" class="text-button">清空所选文件</button>
+                <button id="upload-button" class="clickable">导入工程</button><button id="upload-cancel" type="button" class="clickable" hidden>取消导入</button>
+                <p id="upload-status" role="status" aria-live="polite">只需一个epro2，无需另传网表或BOM。STEP可选；上传不会启动电机或测试。</p>
+            </form>
+            <section id="diagnostic-panel" class="pannel-section workbench-panel">
+<h2>② 供电模式 → 测量方案 → 自动测量</h2>
+<div id="design-readiness" role="status">尚未导入epro2工程</div><div id="design-statistics" class="design-statistics"></div><ul id="design-issues"></ul>
+<details><summary>查看工程器件参数</summary><div class="bom-table-scroll"><table id="design-bom-table"><thead><tr><th>位号</th><th>标称值/型号</th><th>容差</th></tr></thead><tbody></tbody></table></div></details>
+<form id="diagnostic-job-form" novalidate>
+<p><strong>1. 选择待测板供电模式</strong></p>
+<label>测试供电<select id="job-power"><option value="">请选择</option><option value="unpowered">断电测试</option></select></label>
+<p id="measurement-capability" role="status"></p>
+<details id="measurement-advanced"><summary>高级测量设置（网络等自动识别，通常无需调整）</summary>
+<label>参考地网络<select id="job-ground" required><option value="">请先导入设计</option></select></label>
+<label id="job-reference-label-wrap" hidden>板况记录<select id="job-reference-label"><option value="unknown">未知，记录测量结果</option><option value="user_declared_normal">用户确认的正常参考板</option><option value="suspected_fault">疑似故障板</option></select></label>
+<label>执行模式<select id="job-analysis-mode"><option value="diagnosis">自动故障诊断</option><option value="reference">采集正常参考</option><option value="measurement">扫频测量</option></select></label>
+<label>待测板编号<input id="job-dut-id" maxlength="128"></label>
+<label>校准配置<select id="job-calibration"><option value="">请选择</option></select></label>
+<label>正常参考<select id="job-normal-reference"><option value="">请选择</option></select></label>
+<input id="job-calibration-file" type="file" accept=".json" hidden><button id="job-calibration-import" type="button">导入校准数据</button>
+<label id="job-excitation-label" hidden>断电激励网络<select id="job-excitation"><option value="">请先导入设计</option></select></label>
+<label id="job-rails-label">电源网络=电压(V)，每行一项<textarea id="job-rails" aria-describedby="job-power-help" rows="2" placeholder="例如 VCC=5&#10;VEE=-5"></textarea></label>
+<p id="job-power-help" class="job-power-help"></p><button id="job-use-rail-suggestions" type="button" class="text-button" hidden>填入电源建议（请核对）</button>
+<label>允许的输入峰值上限(V)<input id="job-peak" type="number" min="0.000001" max="10" step="any" value="0.1"></label>
+</details>
+<button id="download-diagnostic-job" type="submit" class="clickable" disabled>2. 生成测量方案</button></form>
+<p id="diagnostic-plan-summary" role="status"></p><details><summary>查看自动生成的任务JSON</summary><pre id="diagnostic-job-json"></pre></details><button id="diagnostic-export" type="button" disabled>导出方案 / 检查记录</button>
+<button id="diagnostic-unpowered-start" type="button" disabled>3. 开始自动测量</button>
+<div id="diagnostic-unpowered-controls" hidden>
+  <p><a href="/diagnosis/unpowered/model/lab" target="_blank" rel="noopener">断电模型离线分析：已保存校准特征</a></p>
+<p>点击开始后自动检查设备和现有参考，通过后按方案移位、采集并生成报告。开始本身不会自动回零或解除保护停车。</p>
+<label style="display:block"><input id="job-fixed-ground" type="checkbox" style="width:auto">接线确认：DUT GND 已接测量公共地（整板节点扫频需要）</label>
+<p>两端阻抗测法采用左针DAC、右针GND，与固定公共地的多节点测量模式区分。</p>
+<details id="diagnostic-setup-tools"><summary>设备状态与恢复（未就绪时展开处理）</summary>
+<button id="diagnostic-online" type="button">开启实机模式</button><button id="diagnostic-check" type="button">检查设备与现有参考</button><button id="diagnostic-refresh-readiness" type="button">刷新连接状态</button>
+<label><input id="diagnostic-clear-confirm" type="checkbox">我已目视确认双针离开板面</label><button id="diagnostic-clear-stop" type="button" disabled>解除软件停车并复核</button>
+<pre id="diagnostic-unpowered-readiness" role="status" aria-live="polite"></pre>
+</details>
+<p>每次XY移位前仍需目视确认双针离板。未校准数据不作正常／故障判定。</p>
+<button id="diagnostic-unpowered-cancel" type="button" disabled>取消断电测量</button>
+<button id="diagnostic-clearance" type="button" hidden>已目视确认双针离板，继续移位</button><div id="diagnostic-unpowered-files"></div>
+</div>
+<pre id="diagnostic-events" aria-live="polite"></pre><p id="diagnostic-result-summary" role="status"></p><details><summary>查看完整测量与诊断记录</summary><pre id="diagnostic-result"></pre></details><a id="design-pdf-link" hidden target="_blank" rel="noopener">查看原理图PDF</a>
+<p id="diagnostic-job-status" role="status">先导入工程并选择供电模式，生成方案后点击开始。未上电时也可生成方案。</p></section>
+            <details class="pannel-section workbench-panel"><summary>三维装夹位置（mm，仅预览）</summary><label>相对槽口横移 X<input id="fixture-x" type="number" min="-500" max="500" step="0.1" value="0"></label><label>相对槽口向下偏移 Y<input id="fixture-y" type="number" min="-500" max="500" step="0.1" value="0"></label><label>板厚<input id="fixture-thickness" type="number" min="0.2" max="10" step="0.1" value="1.6"></label><button id="fixture-reset" type="button" class="clickable">恢复槽口左上角对齐</button><p id="fixture-note"></p><p>PCB预览X向右、Y向下，Z向上；左上角固定在槽口，挡板随板高滑动，原尺寸不变。匹配STEP时采用模型真实板厚，元件高度不随板厚缩放。</p></details>
+            <hr>
+            <div id="layout-config-selection-section" class="pannel-section">
+                <h2>电路板方向</h2>
+
+                <div id="orientation-selection" class="full-line">
+                    <button id="orientation-selection-first-button" class="clickable orientation-selection-button orientation-selection-button-selected" onclick="switchOrientation(0)">0°</button>
+                    <button id="orientation-selection-second-button" class="clickable orientation-selection-button" onclick="switchOrientation(90)">90°</button>
+                    <button id="orientation-selection-third-button" class="clickable orientation-selection-button" onclick="switchOrientation(180)">180°</button>
+                    <button id="orientation-selection-fourth-button" class="clickable orientation-selection-button" onclick="switchOrientation(270)">270°</button>
+                </div>
+            </div>
+            <hr>
+            <details id="pcb-legacy-selection"><summary>按网络/双针选点（高级）</summary>
+            <form id="net-selection-section" class="pannel-section" action="/kicad/select_nets" method="post" target="hiddenFrame">
+                <h2>网络选择</h2>
+
+                <div class="pannel-twenty-seventy">
+                    <div>
+                        <input id="net-selection-first-mouse-select" class="net-selection-slider" type="checkbox"/>
+                        <label class="clickable toggle" for="net-selection-first-mouse-select" onclick="untoggle('second');untoggleCandidate('first');untoggleCandidate('second')">点选</label>
+                    </div>
+                    <select id="net-selection-first-select" class="clickable" name="first-net"></select>
+                </div>
+
+                <div class="pannel-twenty-seventy">
+                    <div>
+                        <input id="net-selection-second-mouse-select" class="net-selection-slider" type="checkbox"/>
+                        <label class="clickable toggle" for="net-selection-second-mouse-select" onclick="untoggle('first');untoggleCandidate('first');untoggleCandidate('second')">点选</label>
+                    </div>
+                    <select id="net-selection-second-select" class="clickable" name="second-net"></select>
+                </div>
+
+                <button id="clickable net-selection-button" class="clickable">查找候选测点</button>
+                <p id="net-selection-status"></p>
+            </form>
+            <hr>
+            <div class="pannel-section">
+                <h2>探针测点选择</h2>
+                <div class=" pannel-fifty-fifty">
+                    <div>
+                        <input id="candidates-selection-first-mouse-select" class="net-selection-slider" type="checkbox"/>
+                        <label id="candidates-selection-first-label" class="clickable toggle" for="candidates-selection-first-mouse-select" onclick="untoggleCandidate('second');untoggle('first');untoggle('second')">左探针：</label>
+                    </div>
+
+                    <div>
+                        <input id="candidates-selection-second-mouse-select" class="net-selection-slider" type="checkbox"/>
+                        <label id="candidates-selection-second-label" class="clickable toggle" for="candidates-selection-second-mouse-select" onclick="untoggleCandidate('first');untoggle('first');untoggle('second')">右探针：</label>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            </details>
+            <div class="pannel-section probe-offset-inputs">
+                <h2>高级附加补偿</h2>
+                <div class="pannel-fifty-fifty">
+                    <p>左</p>
+                    <p>右</p>
+                </div>
+                <div class="pannel-fourty-fourty">
+                    <input id="probe-left-x-offset" class="clickable" type="number" value="0" min="-100" max="100" step="0.1">
+                    <p>X</p>
+                    <input id="probe-right-x-offset" class="clickable" type="number" value="0" min="-100" max="100" step="0.1">
+                </div>
+                <div class="pannel-fourty-fourty">
+                    <input id="probe-left-y-offset" class="clickable" type="number" value="0" min="-100" max="100" step="0.1">
+                    <p>Y</p>
+                    <input id="probe-right-y-offset" class="clickable" type="number" value="0" min="-100" max="100" step="0.1">
+                </div>
+            </div>
+            <hr>
+            <div class="pannel-section">
+                <button id="probe-button" class="clickable">移动到测点</button>
+            </div>
+        </div>
+    </main>
+    {% include "diagnosis-dashboard.html" %}
+    <iframe name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>
+
+    <script src="/static/js/main.js?v=pad-teach-20261029-1"></script>
+    <script src="/static/js/socket.js?v=v3-20261025-1"></script>
+    <script src="/static/js/motor-status.js?v=v3-20261025-1"></script>
+    <script src="/static/js/workbench.js?v=motion-20261030-1"></script>
+    <script type="module" src="/static/js/assembly-view.js?v=motion-20261030-1"></script>
+    <script src="/static/js/motor-control.js?v=pad-teach-20261029-1"></script>
+    <script src="/static/js/pcb-control.js?v=fixture-registration-20261030-1"></script>
+    <script src="/static/js/probe-waveform-data.js?v=console-20261101"></script><script src="/static/js/probe-waveforms.js?v=console-20261101"></script><script src="/static/js/diagnosis-dashboard.js?v=console-20261101"></script>
+    <script src="/static/js/design-package.js?v=20261104"></script>
+    <script src="/static/js/closed-loop.js?v=20261104"></script>
+    <script src="/static/js/pcb-upload.js?v=epro-only-20261029-1"></script>
+    <link rel="stylesheet" href="/static/css/servo-control.css?v=pwm-tuner-20261029-1">
+    <script src="/static/js/servo-control.js?v=pad-teach-20261029-1"></script>
+<script src="/static/js/diagnosis-console-layout.js?v=console-20261101"></script></body>
+</html>
+
+
+

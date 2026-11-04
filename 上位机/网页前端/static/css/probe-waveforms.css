@@ -1,0 +1,21 @@
+body.pw-bottom-layout{--pw-dock-height:clamp(220px,29dvh,300px);justify-content:flex-start;overflow:hidden}
+body.pw-bottom-layout>main{flex:1 1 0;min-height:0;height:0;width:100%}
+#main-probe-waveforms-section{box-sizing:border-box;flex:0 0 var(--pw-dock-height,260px);width:100%;height:var(--pw-dock-height,260px);min-width:0;display:flex;flex-direction:column;gap:5px;padding:6px 10px 5px;background:var(--secondary-background,#1b1b1b);border-top:2px solid var(--accent-color,#ff6400);overflow:hidden;text-align:left}
+#main-probe-waveforms-section[hidden]{display:none!important}
+#main-probe-waveforms-section .pw-heading{flex:0 0 22px;display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--primary-text,#fff)}
+#main-probe-waveforms-section .pw-heading h2{font-size:.92rem;font-weight:600;margin:0;padding:0}
+.pw-state{font-size:.76rem;color:var(--secondary-text,#c3c3c3);text-align:right;overflow-wrap:anywhere;max-width:65%}
+.pw-grid{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:repeat(2,minmax(0,1fr));gap:4px}
+.pw-box{display:grid;grid-template-columns:100px minmax(0,1fr);margin:0;min-width:0;min-height:0;border:1px solid #555555;background:#161616;border-radius:var(--corner-radius,.3rem);overflow:hidden}
+.pw-box figcaption{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;padding:6px;background:#242424;border-right:1px solid #555555;font-size:.85rem;color:#ffffff}
+.pw-probe-name{display:flex;align-items:center;gap:7px;font-weight:500;white-space:nowrap}
+.pw-probe-name::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--pw-color)}
+.pw-probe-side{color:#bbbbbb;font-size:.7rem;font-weight:400}
+.pw-unit{color:#999999;font-size:.65rem;font-weight:400}
+.pw-box.pw-a{--pw-color:#72b8f3}.pw-box.pw-b{--pw-color:#ed9cc3}
+.pw-chart{min-width:0;min-height:0;position:relative;background:#161616}
+.pw-chart canvas{display:block!important;width:100%!important;height:100%!important;max-width:100%}
+.pw-empty{position:absolute;inset:0;display:flex;justify-content:center;align-items:center;color:#bbbbbb;pointer-events:none;font-size:.8rem}
+.pw-empty[hidden]{display:none}
+#main-probe-waveforms-section .pw-note{flex:0 0 15px;margin:0;padding:0;color:#aaaaaa;font-size:.7rem;line-height:15px;text-align:right;white-space:nowrap}
+@media(max-height:650px){body.pw-bottom-layout{--pw-dock-height:200px}.pw-box figcaption{gap:4px}}

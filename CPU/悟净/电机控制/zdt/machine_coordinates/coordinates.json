@@ -1,0 +1,205 @@
+{
+  "valid": true,
+  "established_at_utc": "2026-10-19T14:15:11.451700+00:00",
+  "port": "usb://ch340",
+  "baud": 115200,
+  "mm_per_rev": 40,
+  "degrees_per_mm": 9,
+  "coordinate_type": "independent_carriage_reference",
+  "conventions": {
+    "X": "each arm inward from its own outer homing release",
+    "Y": "front to back from each front homing release",
+    "machine_x_positive": "right",
+    "machine_y_positive": "back",
+    "right_x_increasing_value_moves": "left",
+    "left_x_increasing_value_moves": "right"
+  },
+  "common_probe_tip_frame_calibrated": false,
+  "external_position_accuracy_measured": false,
+  "home_release_mm": 0.5555555555555556,
+  "soft_margin_from_release_mm": 2,
+  "homing_speed_rpm": 10,
+  "ordinary_speed_rpm": 5,
+  "joint_x_limit": {
+    "min_each_inward_mm": 2,
+    "max_combined_inward_mm": 201.2,
+    "measured_release_sums_mm": [
+      203.31321614583334,
+      203.21189778645834
+    ],
+    "additional_clearance_mm": 2,
+    "nominal_rail_length_mm": 300,
+    "approximate_block_length_mm": 45,
+    "nominal_free_length_mm": 210,
+    "constraint": "right_x_inward_mm + left_x_inward_mm <= max_combined_inward_mm"
+  },
+  "axes": {
+    "1": {
+      "name": "right_x",
+      "axis": "X",
+      "arm": "right",
+      "home_direction": 1,
+      "positive_mm_sign": 1,
+      "address": 1,
+      "origin": {
+        "origin_encoder_deg": 349.6453857421875,
+        "reference_sample": {
+          "voltage_v": 12.013,
+          "bus_current_ma": 4,
+          "phase_current_ma": 179,
+          "raw_encoder": 49050,
+          "encoder": 63651,
+          "target_deg": 0.0,
+          "speed_rpm": 0.0,
+          "position_deg": 0.0,
+          "position_error_deg": 0.0,
+          "temperature_c": 27.0,
+          "home_flags": 3,
+          "motor_flags": 131,
+          "position_mm": 0.0,
+          "monotonic_s": 152.31781554,
+          "sample_gap_s": 0.015876380000008794
+        },
+        "zero_acknowledged": true
+      },
+      "soft_min_mm": 2,
+      "soft_max_mm": 199.2,
+      "measured_full_span_mm": null,
+      "origin_repeat_error_deg": 0.10986328125
+    },
+    "2": {
+      "name": "left_x",
+      "axis": "X",
+      "arm": "left",
+      "home_direction": 1,
+      "positive_mm_sign": 1,
+      "address": 2,
+      "origin": {
+        "origin_encoder_deg": 122.84912109375,
+        "reference_sample": {
+          "voltage_v": 11.99,
+          "bus_current_ma": 0,
+          "phase_current_ma": 101,
+          "raw_encoder": 28050,
+          "encoder": 22364,
+          "target_deg": 0.0,
+          "speed_rpm": 0.0,
+          "position_deg": 0.0,
+          "position_error_deg": 0.0,
+          "temperature_c": 27.0,
+          "home_flags": 3,
+          "motor_flags": 131,
+          "position_mm": 0.0,
+          "monotonic_s": 152.34231127,
+          "sample_gap_s": 0.015818270000011125
+        },
+        "zero_acknowledged": true
+      },
+      "soft_min_mm": 2,
+      "soft_max_mm": 199.2,
+      "measured_full_span_mm": null,
+      "origin_repeat_error_deg": 0.0
+    },
+    "3": {
+      "name": "left_y",
+      "axis": "Y",
+      "arm": "left",
+      "home_direction": 0,
+      "positive_mm_sign": -1,
+      "address": 3,
+      "origin": {
+        "origin_encoder_deg": 257.9534912109375,
+        "reference_sample": {
+          "voltage_v": 12.004,
+          "bus_current_ma": 0,
+          "phase_current_ma": 72,
+          "raw_encoder": 13294,
+          "encoder": 46959,
+          "target_deg": 0.0,
+          "speed_rpm": 0.0,
+          "position_deg": 0.0,
+          "position_error_deg": 0.0,
+          "temperature_c": 28.0,
+          "home_flags": 3,
+          "motor_flags": 131,
+          "position_mm": -0.0,
+          "monotonic_s": 152.36655955,
+          "sample_gap_s": 0.01563676000000669
+        },
+        "zero_acknowledged": true
+      },
+      "soft_min_mm": 2,
+      "soft_max_mm": 157.1,
+      "measured_full_span_mm": 159.1133978949653,
+      "origin_repeat_error_deg": 0.076904296875
+    },
+    "4": {
+      "name": "right_y",
+      "axis": "Y",
+      "arm": "right",
+      "home_direction": 1,
+      "positive_mm_sign": 1,
+      "address": 4,
+      "origin": {
+        "origin_encoder_deg": 71.136474609375,
+        "reference_sample": {
+          "voltage_v": 12.152,
+          "bus_current_ma": 0,
+          "phase_current_ma": 38,
+          "raw_encoder": 56858,
+          "encoder": 12950,
+          "target_deg": 0.0,
+          "speed_rpm": 0.0,
+          "position_deg": 0.0,
+          "position_error_deg": -0.03,
+          "temperature_c": 28.0,
+          "home_flags": 3,
+          "motor_flags": 131,
+          "position_mm": 0.0,
+          "monotonic_s": 152.41513334,
+          "sample_gap_s": 0.03994468999999867
+        },
+        "zero_acknowledged": true
+      },
+      "soft_min_mm": 2,
+      "soft_max_mm": 157.0,
+      "measured_full_span_mm": 159.05847981770833,
+      "origin_repeat_error_deg": 0.02197265625
+    }
+  },
+  "measurement_file": "C:\\Users\\xoyz\\Desktop\\something\\FPGA\\zdt\\machine_coordinates\\measure_limits_results.json",
+  "verification_file": "C:\\Users\\xoyz\\Desktop\\something\\FPGA\\zdt\\machine_coordinates\\20261019_221511_verify_coordinates_summary.json",
+  "last_verified_at_utc": "2026-03-13T03:30:45.967249+00:00",
+  "last_verification_file": "/root/wujing_motor_control/zdt/machine_coordinates/20260313_033031_web_ec8df85c10f2462c8944d71a393b9370_fast_rebuild_summary.json",
+  "final_positions_mm": {
+    "1": 1.9777777777777779,
+    "2": 1.9555555555555557,
+    "3": 1.9555555555555557,
+    "4": 2.0
+  },
+  "last_rehomed_at_utc": "2026-03-13T03:30:43.701867+00:00",
+  "transport": "userspace CH340 libusb",
+  "last_recovery_verification": "/root/wujing_motor_control/zdt/wujing_usb_probe/20261022_circle_attempt01_verified.json",
+  "last_display_at_utc": "2026-03-13T06:26:54.207584+00:00",
+  "origin_recommissioning": {
+    "performed_at_utc": "2026-10-28T18:26:11.973548+00:00",
+    "report_file": "/root/wujing_motor_control/zdt/machine_coordinates/20260313_040522_rebaseline20261029a_fast_rebuild_summary.json",
+    "reason": "Operator adjusted motor 3 belt tension and added a cover; travel unchanged",
+    "previous_origins": {
+      "1": 347.6129150390625,
+      "2": 121.83837890625,
+      "3": 268.5772705078125,
+      "4": 70.90576171875
+    },
+    "repeated_approach_error_deg": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.010986328125,
+      "4": 0.010986328125
+    },
+    "repeat_limit_deg": 2,
+    "limits_remeasured": false,
+    "previous_measured_limits_retained": true,
+    "pcb_alignment_requires_new_reference": true
+  }
+}

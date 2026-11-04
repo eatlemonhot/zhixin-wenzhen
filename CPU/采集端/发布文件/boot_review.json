@@ -1,0 +1,72 @@
+{
+  "boot_bytes": 4350248,
+  "boot_sha256": "aecad905f23ddfe924683e2be6ea0785bfddd4239efdd6e85579914fecd663ce",
+  "image_count": 3,
+  "partition_count": 4,
+  "images": [
+    {
+      "offset": 2304,
+      "name": "fsbl.elf",
+      "first_partition_header": 3200,
+      "partition_count": 1
+    },
+    {
+      "offset": 2368,
+      "name": "system.bit",
+      "first_partition_header": 3264,
+      "partition_count": 1
+    },
+    {
+      "offset": 2432,
+      "name": "application.elf",
+      "first_partition_header": 3328,
+      "partition_count": 2
+    }
+  ],
+  "partitions": [
+    {
+      "header_offset": 3200,
+      "image": "fsbl.elf",
+      "offset": 5888,
+      "bytes": 128756,
+      "load_address": 0,
+      "entry_address": 0,
+      "attributes": 16,
+      "source_bytes_verified": 99600,
+      "sha256": "8aeea4b531a9c09b81bad5e0bb46d64a13a280463c3e5bc11a669147953bdb87"
+    },
+    {
+      "header_offset": 3264,
+      "image": "system.bit",
+      "offset": 134656,
+      "bytes": 4045568,
+      "load_address": 0,
+      "entry_address": 0,
+      "attributes": 32,
+      "source_bytes_verified": 4045564,
+      "sha256": "9df053ce97e09e244015f50a830e7250d8c99edbd927d086bc92d145b21c43b9"
+    },
+    {
+      "header_offset": 3328,
+      "image": "application.elf",
+      "offset": 4180224,
+      "bytes": 151672,
+      "load_address": 1048576,
+      "entry_address": 1048576,
+      "attributes": 16,
+      "source_bytes_verified": 151672,
+      "sha256": "0329c80e82411434783492a7ada0cc87ce6777772084e023d9e400a062e927d9"
+    },
+    {
+      "header_offset": 3392,
+      "image": "application.elf",
+      "offset": 4331904,
+      "bytes": 18344,
+      "load_address": 1212416,
+      "entry_address": 0,
+      "attributes": 16,
+      "source_bytes_verified": 18344,
+      "sha256": "a2e9952a3bd1c034530f2a35df34bf1ccecc57fef819bce1ffac8ff15a14d6d4"
+    }
+  ]
+}

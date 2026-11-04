@@ -1,0 +1,6 @@
+occt-import-js 0.0.23，原样取自官方npm包的dist目录。
+
+上游：https://github.com/kovacsv/occt-import-js
+包：https://www.npmjs.com/package/occt-import-js/v/0.0.23
+
+许可证见license.occt-import-js.txt及license.occt.txt；JS与WASM未修改。网页通过独立Worker调用，服务端不执行CAD转换。
